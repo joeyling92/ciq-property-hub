@@ -142,7 +142,6 @@ export default function HomePage() {
             </h2>
             <p className="text-[var(--text-secondary)] text-sm max-w-xl mx-auto">
               All featured projects are within the JB CIQ / RTS corridor — ideal for Singapore commuters.
-              Click any project to see its exact location on Google Maps.
             </p>
           </div>
 
@@ -154,14 +153,11 @@ export default function HomePage() {
           {/* Project distance cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {projects.map((p) => (
-              <a
+              <div
                 key={p.slug}
-                href={`https://www.google.com/maps/search/${encodeURIComponent(p.mapsQuery)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[var(--bg-primary)] border border-[var(--border)] rounded-lg p-4 hover:border-[var(--accent)] hover:shadow-md transition-all duration-200 group"
+                className="bg-[var(--bg-primary)] border border-[var(--border)] rounded-lg p-4"
               >
-                <p className="text-xs font-semibold text-[var(--accent)] uppercase tracking-wide mb-1 group-hover:underline">
+                <p className="text-xs font-semibold text-[var(--accent)] uppercase tracking-wide mb-1">
                   {p.name}
                 </p>
                 <p className="text-[var(--text-secondary)] text-xs leading-relaxed">
@@ -169,8 +165,7 @@ export default function HomePage() {
                   {" · "}
                   RTS: <span className="font-medium text-[var(--text-primary)]">{p.rtsDistance ?? "TBC"}</span>
                 </p>
-                <p className="text-[var(--accent)] text-xs mt-2 font-medium">View on Google Maps →</p>
-              </a>
+              </div>
             ))}
           </div>
           <p className="text-center text-xs text-[var(--text-muted)] mt-4">
