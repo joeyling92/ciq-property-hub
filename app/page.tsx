@@ -3,6 +3,7 @@ import { projects } from "@/lib/projects";
 import { siteConfig } from "@/lib/siteConfig";
 import PropertyCard from "@/components/PropertyCard";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
+import ProjectMap from "@/components/ProjectMap";
 
 export default function HomePage() {
   return (
@@ -147,16 +148,7 @@ export default function HomePage() {
 
           {/* Map embed */}
           <div className="rounded-xl overflow-hidden border border-[var(--border)] mb-8 shadow-sm">
-            <iframe
-              src="https://maps.google.com/maps?q=Sultan+Iskandar+CIQ+Complex+Johor+Bahru&output=embed&z=14"
-              width="100%"
-              height="380"
-              style={{ border: 0, display: "block" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="JB CIQ Complex area map"
-            />
+            <ProjectMap />
           </div>
 
           {/* Project distance cards */}
