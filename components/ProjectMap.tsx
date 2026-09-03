@@ -1,33 +1,25 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { projects } from "@/lib/projects";
 
-const PROJECTS: { name: string; lat: number; lng: number }[] = [
-  { name: "Summer Suite",       lat: 1.4619400028260015, lng: 103.77023249898488 },
-  { name: "R&F Phase 3",        lat: 1.4609747146882395, lng: 103.77121955735394 },
-  { name: "Gensphere",          lat: 1.4602483562564297, lng: 103.76735905450104 },
-  { name: "Richmond JBCC",      lat: 1.45664691322097,   lng: 103.76426808574679 },
-  { name: "CTC Skyone",         lat: 1.471387226840175,  lng: 103.76413621502037 },
-  { name: "The Address Pelangi",lat: 1.4831925819440923, lng: 103.76604944579364 },
-  { name: "Paragon Gateway",    lat: 1.5025829203222194, lng: 103.7637780760463  },
-  { name: "Calia Residences",   lat: 1.482497830631145,  lng: 103.72085996904143 },
-  { name: "Danga Bay",          lat: 1.4640784625862628, lng: 103.72694993677663 },
-  { name: "Iconic",             lat: 1.465623942962547,  lng: 103.77166334436811 },
+// Projects not yet in lib/projects.ts (standalone HTML pages only)
+const EXTRA_MARKERS: { name: string; lat: number; lng: number; dir: string }[] = [
+  { name: "Summer Suite", lat: 1.4619400028260015, lng: 103.77023249898488, dir: "left"  },
+  { name: "R&F Phase 3",  lat: 1.4609747146882395, lng: 103.77121955735394, dir: "right" },
 ];
 
-// Tooltip direction assigned per-marker to reduce label collisions.
-const TOOLTIP_DIRS = [
-  "left",   // Summer Suite
-  "right",  // R&F Phase 3
-  "left",   // Gensphere
-  "bottom", // Richmond JBCC
-  "top",    // CTC Skyone
-  "right",  // The Address Pelangi
-  "top",    // Paragon Gateway
-  "left",   // Calia Residences
-  "bottom", // Danga Bay
-  "top",    // Iconic
-] as const;
+// Tooltip direction per slug for projects sourced from lib/projects.ts
+const SLUG_DIR: Record<string, string> = {
+  "gensphere":                "left",
+  "richmond-jbcc":            "bottom",
+  "ctc-skyone":               "top",
+  "the-address":              "right",
+  "paragon-gateway":          "top",
+  "calia-residences":         "left",
+  "country-garden-danga-bay": "bottom",
+  "the-iconic-pgb":           "top",
+};
 
 export default function ProjectMap() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -73,14 +65,26 @@ export default function ProjectMap() {
       const L = (window as any).L;
       if (!L || !containerRef.current || mapRef.current) return;
 
+      // Build combined marker list: hardcoded extras + lib projects with coordinates
+      const libMarkers = projects
+        .filter((p) => p.lat != null && p.lng != null)
+        .map((p) => ({
+          name: p.name,
+          lat:  p.lat!,
+          lng:  p.lng!,
+          dir:  SLUG_DIR[p.slug] ?? "top",
+        }));
+
+      const ALL_MARKERS = [...EXTRA_MARKERS, ...libMarkers];
+
       const map = L.map(containerRef.current, {
-        dragging:         false,
-        scrollWheelZoom:  false,
-        touchZoom:        false,
-        doubleClickZoom:  false,
-        boxZoom:          false,
-        keyboard:         false,
-        zoomControl:      false,
+        dragging:           false,
+        scrollWheelZoom:    false,
+        touchZoom:          false,
+        doubleClickZoom:    false,
+        boxZoom:            false,
+        keyboard:           false,
+        zoomControl:        false,
         attributionControl: true,
       });
 
@@ -90,10 +94,10 @@ export default function ProjectMap() {
         maxZoom: 18,
       }).addTo(map);
 
-      const latlngs: [number, number][] = PROJECTS.map((p) => [p.lat, p.lng]);
+      const latlngs: [number, number][] = ALL_MARKERS.map((m) => [m.lat, m.lng]);
 
-      PROJECTS.forEach((project, i) => {
-        L.circleMarker([project.lat, project.lng], {
+      ALL_MARKERS.forEach((marker) => {
+        L.circleMarker([marker.lat, marker.lng], {
           radius:      7,
           fillColor:   "#1d4ed8",
           color:       "#ffffff",
@@ -102,9 +106,9 @@ export default function ProjectMap() {
           fillOpacity: 1,
         })
           .addTo(map)
-          .bindTooltip(project.name, {
+          .bindTooltip(marker.name, {
             permanent:  true,
-            direction:  TOOLTIP_DIRS[i],
+            direction:  marker.dir,
             offset:     [0, 0],
             className:  "proj-label",
           });

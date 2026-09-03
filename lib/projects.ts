@@ -47,6 +47,8 @@ export type Project = {
   faq: FAQItem[];
   awards?: AwardItem[];
   mapsQuery: string;
+  lat?: number;
+  lng?: number;
   ciqDistance?: string;
   rtsDistance?: string;
   shuttleService?: string;
@@ -159,19 +161,21 @@ export const projects: Project[] = [
       },
       {
         question: "Who operates this website — is this the official Richmond JBCC site?",
-        answer: "No. This page is operated by Terry Toh, an independent property marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844). This is NOT the official website of Richmond Asia Group or Richmond JBCC. All information here is for general reference and should be verified directly with the developer.",
+        answer: "No. This page is operated by an independent property marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844). This is NOT the official website of Richmond Asia Group or Richmond JBCC. All information here is for general reference and should be verified directly with the developer.",
       },
     ],
     mapsQuery: "Richmond JBCC Johor Bahru City Centre",
+    lat: 1.45664691322097,
+    lng: 103.76426808574679,
     ciqDistance: "~1km",
     rtsDistance: "~3km",
     shuttleService: "TBC",
     coveredWalkway: "TBC",
     whatsappMessage:
-      "Hi Terry, I found your website and I'm interested in Richmond JBCC in JB City Centre. Could you share the latest unit availability, floor plans and current package?",
+      "Hi, I found your website and I'm interested in Richmond JBCC in JB City Centre. Could you share the latest unit availability, floor plans and current package?",
     metaTitle: "Richmond JBCC | Freehold Hotel Suites JB City Centre | CIQ Property Hub",
     metaDescription:
-      "Richmond JBCC by Richmond Asia Group — freehold hotel suites managed by Hyatt Place in JB City Centre. From RM 1,020,000. 1km from CIQ. Info by Terry Toh, independent consultant.",
+      "Richmond JBCC by Richmond Asia Group — freehold hotel suites managed by Hyatt Place in JB City Centre. From RM 1,020,000. 1km from CIQ. Independent consultant information.",
   },
 
   {
@@ -320,6 +324,8 @@ export const projects: Project[] = [
       },
     ],
     mapsQuery: "Calia Residences Johor Bahru",
+    lat: 1.482497830631145,
+    lng: 103.72085996904143,
     ciqDistance: "TBC",
     rtsDistance: "TBC",
     shuttleService: "TBC",
@@ -393,6 +399,8 @@ export const projects: Project[] = [
       },
     ],
     mapsQuery: "Gensphere Johor Bahru",
+    lat: 1.4602483562564297,
+    lng: 103.76735905450104,
     ciqDistance: "TBC",
     rtsDistance: "TBC",
     shuttleService: "TBC",
@@ -467,6 +475,8 @@ export const projects: Project[] = [
       },
     ],
     mapsQuery: "CTC Skyone Johor Bahru",
+    lat: 1.471387226840175,
+    lng: 103.76413621502037,
     ciqDistance: "TBC",
     rtsDistance: "TBC",
     shuttleService: "TBC",
@@ -546,6 +556,8 @@ export const projects: Project[] = [
       },
     ],
     mapsQuery: "Country Garden Danga Bay Johor Bahru",
+    lat: 1.4640784625862628,
+    lng: 103.72694993677663,
     ciqDistance: "TBC",
     rtsDistance: "TBC",
     shuttleService: "TBC",
@@ -620,6 +632,8 @@ export const projects: Project[] = [
       },
     ],
     mapsQuery: "The Address Johor Bahru",
+    lat: 1.4831925819440923,
+    lng: 103.76604944579364,
     ciqDistance: "TBC",
     rtsDistance: "TBC",
     shuttleService: "TBC",
@@ -694,6 +708,8 @@ export const projects: Project[] = [
       },
     ],
     mapsQuery: "Paragon Gateway Johor Bahru",
+    lat: 1.5025829203222194,
+    lng: 103.7637780760463,
     ciqDistance: "TBC",
     rtsDistance: "TBC",
     shuttleService: "TBC",
@@ -812,19 +828,21 @@ export const projects: Project[] = [
       },
       {
         question: "Who operates this website — is this the official The Iconic by PGB site?",
-        answer: "No. This page is operated by Terry Toh, an independent property marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844). This is NOT the official website of PGB Iconic Sdn Bhd or The Iconic by PGB. All information here is for general reference and should be verified directly with the developer.",
+        answer: "No. This page is operated by an independent property marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844). This is NOT the official website of PGB Iconic Sdn Bhd or The Iconic by PGB. All information here is for general reference and should be verified directly with the developer.",
       },
     ],
     mapsQuery: "The Iconic by PGB Stulang Darat Johor Bahru",
+    lat: 1.465623942962547,
+    lng: 103.77166334436811,
     ciqDistance: "~2km",
     rtsDistance: "~2km",
     shuttleService: "Free shuttle (~5 min)",
     coveredWalkway: "TBC",
     whatsappMessage:
-      "Hi Terry, I found your website and I'm interested in The Iconic by PGB in Stulang Darat, JB. Could you share the latest unit availability, floor plans and current developer package?",
+      "Hi, I found your website and I'm interested in The Iconic by PGB in Stulang Darat, JB. Could you share the latest unit availability, floor plans and current developer package?",
     metaTitle: "The Iconic by PGB | Freehold Twin Towers JB RTS Corridor | CIQ Property Hub",
     metaDescription:
-      "The Iconic by PGB — 1,510 freehold serviced apartments in Stulang Darat, JB. ~2km to RTS & CIQ. From RM 578,600. Info by Terry Toh, independent consultant.",
+      "The Iconic by PGB — 1,510 freehold serviced apartments in Stulang Darat, JB. ~2km to RTS & CIQ. From RM 578,600. Independent consultant information.",
   },
 ];
 
