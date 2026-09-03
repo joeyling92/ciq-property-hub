@@ -1,7 +1,7 @@
 <title>Calia Residences Danga Bay JB — Coastal Living by PGB | Facilities, Location & Layouts | CIQ Property Hub</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Calia Residences by PGB — freehold serviced apartments in Danga Bay, Johor Bahru. 4 unit types from 453–984 sqft, 28 holistic facilities, GreenRE Gold, free shuttle to CIQ & RTS. Terry Toh REN 84844.">
+<meta name="description" content="Calia Residences by PGB — freehold serviced apartments in Danga Bay, Johor Bahru. 4 unit types from 453–984 sqft, 28 holistic facilities, GreenRE Gold, free shuttle to CIQ & RTS. REN 84844.">
 <meta property="og:title" content="Calia Residences Danga Bay — CIQ Property Hub">
 <meta property="og:description" content="Freehold serviced apartments in Danga Bay JB. 1,274 units across 2 towers, 28 holistic lifestyle facilities, GreenRE Gold, free shuttle to CIQ & RTS. By Paragon Globe Berhad.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap">
@@ -264,6 +264,17 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
 .footer__disclaimer{font-size:11px;color:#3A4A58;line-height:1.7;max-width:800px}
 .footer__back a{color:var(--gold);font-size:12px}
 
+/* ── REGISTER INTEREST FORM ── */
+.calia-form{display:grid;gap:16px;text-align:left;margin-top:8px}
+.calia-form__row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.calia-form__group{display:grid;gap:6px}
+.calia-form__label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(238,244,248,.45)}
+.calia-form__input{width:100%;padding:11px 14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);color:#EEF4F8;font-family:inherit;font-size:14px;outline:none;transition:border-color .2s;border-radius:4px;box-sizing:border-box}
+.calia-form__input::placeholder{color:rgba(238,244,248,.3)}
+.calia-form__input:focus{border-color:var(--gold)}
+.calia-form__textarea{min-height:70px;resize:vertical}
+@media(max-width:600px){.calia-form__row{grid-template-columns:1fr}}
+
 /* ── LIGHTBOX ── */
 .lb{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:500;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s}
 .lb.active{opacity:1;pointer-events:auto}
@@ -305,7 +316,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
 </style>
 
 <!-- IDEN BANNER -->
-<div class="iden">Independent Marketing Negotiator · Terry Toh · REN 84844 · GT Nelson Realty Sdn Bhd · This is not the official developer website</div>
+<div class="iden">Independent Marketing Negotiator · REN 84844 · GT Nelson Realty Sdn Bhd · This is not the official developer website</div>
 
 <!-- NAV -->
 <nav class="nav">
@@ -323,7 +334,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
       <a href="#buyer-guide">Buyer Guide</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="https://wa.me/60XXXXXXXXXX" class="nav__cta">WhatsApp Enquiry</a>
+    <a href="#contact" class="nav__cta">Register Interest</a>
     <button class="nav__toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -336,7 +347,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
     <a href="#residences">Residences</a>
     <a href="#buyer-guide">Buyer Guide</a>
     <a href="#faq">FAQ</a>
-    <a href="https://wa.me/60XXXXXXXXXX" style="color:var(--gold);font-weight:600">WhatsApp Enquiry →</a>
+    <a href="#contact" style="color:var(--gold);font-weight:600">Register Interest →</a>
   </nav>
 </nav>
 
@@ -363,7 +374,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
       <div class="hero__pill"><span>⚡</span> EV Charging Stations</div>
     </div>
     <div class="hero__cta">
-      <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold">WhatsApp Enquiry</a>
+      <a href="#contact" class="btn btn--gold">Register Interest</a>
       <a href="#lifestyle" class="btn btn--outline">View Facilities</a>
     </div>
   </div>
@@ -735,7 +746,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
     </div>
 
     <div class="disclaimer">
-      <strong>Note:</strong> Unit sizes and compositions are from the developer's official brochure (Oct 2025 revision). Pricing is not published — contact Terry Toh (REN 84844) for the current price list. Floor plans, unit availability and specifications are subject to change and/or amendments as may be required by relevant authorities. Refer to the Sale &amp; Purchase Agreement for actual specifications. Artist's impressions are for illustrative purposes only.
+      <strong>Note:</strong> Unit sizes and compositions are from the developer's official brochure (Oct 2025 revision). Pricing is not published — register interest below or contact the developer's sales team for the current price list. Floor plans, unit availability and specifications are subject to change and/or amendments as may be required by relevant authorities. Refer to the Sale &amp; Purchase Agreement for actual specifications. Artist's impressions are for illustrative purposes only.
     </div>
   </div>
 </section>
@@ -787,7 +798,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
         <div style="display:flex;gap:10px;font-size:13px;color:#8AA8C0"><span style="color:var(--gold);flex-shrink:0;margin-top:2px">→</span> RTS full operations are targeted for early 2027 — confirm current status independently before deciding based on RTS proximity</div>
         <div style="display:flex;gap:10px;font-size:13px;color:#8AA8C0"><span style="color:var(--gold);flex-shrink:0;margin-top:2px">→</span> Shuttle service schedule and routes should be confirmed with the developer before purchase</div>
         <div style="display:flex;gap:10px;font-size:13px;color:#8AA8C0"><span style="color:var(--gold);flex-shrink:0;margin-top:2px">→</span> Furnishing includes 5 AC units (5-star), ceiling fans, digital lock, kitchen cabinet, kitchen hood &amp; hob, wardrobes — verify scope with SPA</div>
-        <div style="display:flex;gap:10px;font-size:13px;color:#8AA8C0"><span style="color:var(--gold);flex-shrink:0;margin-top:2px">→</span> Pricing is not published — contact the sales team or Terry Toh (REN 84844) for the current price list</div>
+        <div style="display:flex;gap:10px;font-size:13px;color:#8AA8C0"><span style="color:var(--gold);flex-shrink:0;margin-top:2px">→</span> Pricing is not published — register interest below or contact the developer's sales team for the current price list</div>
       </div>
     </div>
   </div>
@@ -827,27 +838,53 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
 
     <div class="faq-group">
       <h3>Pricing &amp; Purchase</h3>
-      <details class="faq-item"><summary>What is the pricing for Calia Residences?</summary><p>Pricing for Calia Residences is not currently published on the official developer website. Contact Terry Toh (REN 84844) or the developer's sales team directly for the current price list, which includes layout-specific pricing and available units. All pricing is subject to change and availability.</p></details>
+      <details class="faq-item"><summary>What is the pricing for Calia Residences?</summary><p>Pricing for Calia Residences is not currently published on the official developer website. Register interest below or contact the developer's sales team directly for the current price list, which includes layout-specific pricing and available units. All pricing is subject to change and availability.</p></details>
 <details class="faq-item"><summary>Can Singaporeans or foreign buyers purchase Calia Residences?</summary><p>Foreign buyer eligibility, minimum purchase price thresholds and any applicable state levies for Calia Residences should be confirmed directly with the developer's sales team and an independent Malaysian solicitor. These requirements differ depending on nationality and the property's title type.</p></details>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+<!-- CTA / REGISTER INTEREST -->
 <section class="cta-section" id="contact">
   <div class="cta-bg">
     <img src="/calia/facilities/swimming-pool.webp" alt="Calia Residences pool and cabana" loading="lazy">
     <div class="cta-overlay"></div>
   </div>
-  <div class="cta-content">
-    <span class="eyebrow">ENQUIRE TODAY</span>
+  <div class="cta-content" style="max-width:680px">
+    <span class="eyebrow">REGISTER INTEREST</span>
     <h2>Interested in Calia Residences?</h2>
-    <p>Get floor plans, layout details and pricing from Terry Toh — Independent Marketing Negotiator REN 84844, GT Nelson Realty Sdn Bhd.</p>
-    <div class="cta-btns">
-      <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold">WhatsApp Terry</a>
-      <a href="tel:+60XXXXXXXXXX" class="btn btn--outline">Call Now</a>
-    </div>
-    <p class="cta-consultant">Terry Toh · REN 84844 · GT Nelson Realty Sdn Bhd · Independent Marketing Negotiator</p>
+    <p>Submit your details and we will share floor plans, layout information and pricing via WhatsApp. No data is stored on this website.</p>
+    <form class="calia-form" onsubmit="submitForm(event)">
+      <div class="calia-form__row">
+        <div class="calia-form__group">
+          <label class="calia-form__label" for="formName">Your Name *</label>
+          <input class="calia-form__input" id="formName" type="text" placeholder="e.g. Lee Wei Ming" required>
+        </div>
+        <div class="calia-form__group">
+          <label class="calia-form__label" for="formPhone">WhatsApp / Phone *</label>
+          <input class="calia-form__input" id="formPhone" type="tel" placeholder="+60 12-XXX XXXX" required>
+        </div>
+      </div>
+      <div class="calia-form__group">
+        <label class="calia-form__label" for="formUnit">Unit Type Interest</label>
+        <select class="calia-form__input" id="formUnit">
+          <option value="">-- Select (optional) --</option>
+          <option>Type A · 453 sq ft · Studio</option>
+          <option>Type B · 603 sq ft · 2-Bedroom</option>
+          <option>Type C · 730 sq ft · 3-Bedroom</option>
+          <option>Type D · 984 sq ft · 4-Bedroom</option>
+        </select>
+      </div>
+      <div class="calia-form__group">
+        <label class="calia-form__label" for="formMsg">Message (optional)</label>
+        <textarea class="calia-form__input calia-form__textarea" id="formMsg" placeholder="e.g. budget range, investor or own-stay…"></textarea>
+      </div>
+      <button type="submit" class="btn btn--gold" style="width:100%;justify-content:center;gap:8px;padding:14px">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
+        Send via WhatsApp
+      </button>
+    </form>
+    <p class="cta-consultant">REN 84844 · GT Nelson Realty Sdn Bhd · Independent Marketing Negotiator</p>
   </div>
 </section>
 
@@ -857,7 +894,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
     <div class="footer__inner">
       <div>
         <div class="footer__brand">CIQ Property Hub</div>
-        <p class="footer__sub">A property information platform for buyers researching JB–Singapore corridor developments. Presented by Terry Toh, Independent Marketing Negotiator REN 84844, GT Nelson Realty Sdn Bhd.</p>
+        <p class="footer__sub">A property information platform for buyers researching JB–Singapore corridor developments. Presented by REN 84844, Independent Marketing Negotiator, GT Nelson Realty Sdn Bhd.</p>
         <p class="footer__sub" style="margin-top:8px">This is not the official website of Paragon Globe Berhad or any PGB subsidiary.</p>
       </div>
       <div>
@@ -879,10 +916,10 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
           <a href="/projects">All Projects</a>
           <a href="/projects/the-iconic-pgb">The Iconic by PGB</a>
           <a href="/projects/richmond-jbcc">Richmond JBCC</a>
-          <a href="/about">About Terry Toh</a>
+          <a href="/about">About</a>
         </div>
         <div style="margin-top:20px">
-          <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold" style="font-size:12px;padding:10px 18px">WhatsApp Enquiry</a>
+          <a href="#contact" class="btn btn--gold" style="font-size:12px;padding:10px 18px">Register Interest</a>
         </div>
       </div>
     </div>
@@ -904,8 +941,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
 
 <!-- MOBILE STICKY CTA -->
 <div class="mobile-cta">
-  <a href="tel:+60XXXXXXXXXX" class="btn btn--outline" style="border-color:rgba(255,255,255,.2);color:#EEF4F8;font-size:12px;padding:10px">📞 Call</a>
-  <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold" style="font-size:12px;padding:10px">WhatsApp Enquiry</a>
+  <a href="#contact" class="btn btn--outline" style="border-color:rgba(255,255,255,.2);color:#EEF4F8;font-size:12px;padding:10px" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false">Register Interest</a>
 </div>
 
 <script>
@@ -936,4 +972,17 @@ const toggle = document.getElementById('navToggle');
 const mobile = document.getElementById('navMobile');
 toggle.addEventListener('click', () => mobile.classList.toggle('open'));
 mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobile.classList.remove('open')));
+
+function submitForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('formName').value.trim();
+  const phone = document.getElementById('formPhone').value.trim();
+  const unit = document.getElementById('formUnit').value;
+  const msg = document.getElementById('formMsg').value.trim();
+  if (!name || !phone) return;
+  let text = `Hi, I'd like to register my interest in Calia Residences.\n\nName: ${name}\nContact: ${phone}`;
+  if (unit) text += `\nUnit Preference: ${unit}`;
+  if (msg) text += `\nMessage: ${msg}`;
+  window.open('https://wa.me/60128742687?text=' + encodeURIComponent(text), '_blank');
+}
 </script>

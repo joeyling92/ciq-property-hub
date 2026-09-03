@@ -1,7 +1,7 @@
 <title>The Iconic by PGB Johor Bahru — Floor Plans, Prices & Facilities | CIQ Property Hub</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The Iconic by PGB — freehold twin-tower serviced apartments near Bukit Chagar RTS, Johor Bahru. Tower A from RM 578,600. 52 facilities, GreenRE Gold. Presented by Terry Toh REN 84844, GT Nelson Realty.">
+<meta name="description" content="The Iconic by PGB — freehold twin-tower serviced apartments near Bukit Chagar RTS, Johor Bahru. Tower A from RM 578,600. 52 facilities, GreenRE Gold. REN 84844, GT Nelson Realty.">
 <meta property="og:title" content="The Iconic by PGB — CIQ Property Hub">
 <meta property="og:description" content="Freehold serviced apartments near Bukit Chagar RTS. 1,510 units across twin towers. From RM 578,600.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap">
@@ -325,6 +325,17 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
 .footer__back{font-size:12px;color:#807C77;white-space:nowrap}
 .footer__back a{color:var(--gold);text-decoration:underline}
 
+/* ── REGISTER INTEREST FORM ── */
+.calia-form{display:grid;gap:16px;text-align:left;margin-top:8px}
+.calia-form__row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.calia-form__group{display:grid;gap:6px}
+.calia-form__label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(242,240,235,.45)}
+.calia-form__input{width:100%;padding:11px 14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);color:#F2F0EB;font-family:inherit;font-size:14px;outline:none;transition:border-color .2s;border-radius:4px;box-sizing:border-box}
+.calia-form__input::placeholder{color:rgba(242,240,235,.3)}
+.calia-form__input:focus{border-color:var(--gold)}
+.calia-form__textarea{min-height:70px;resize:vertical}
+@media(max-width:600px){.calia-form__row{grid-template-columns:1fr}}
+
 /* ── LIGHTBOX ── */
 .lb{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:500;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s}
 .lb.active{opacity:1;pointer-events:auto}
@@ -376,7 +387,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
 </style>
 
 <!-- INDEPENDENT MARKETING NEGOTIATOR IDENTIFICATION -->
-<div class="iden">Independent Marketing Negotiator · Terry Toh · REN 84844 · GT Nelson Realty Sdn Bhd · This is not the official developer website</div>
+<div class="iden">Independent Marketing Negotiator · REN 84844 · GT Nelson Realty Sdn Bhd · This is not the official developer website</div>
 
 <!-- NAV -->
 <nav class="nav">
@@ -395,7 +406,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
       <a href="#buyer-guide">Buyer Guide</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="https://wa.me/60XXXXXXXXXX" class="nav__cta">WhatsApp Enquiry</a>
+    <a href="#contact" class="nav__cta">Register Interest</a>
     <button class="nav__toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -409,7 +420,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
     <a href="#details">Details</a>
     <a href="#buyer-guide">Buyer Guide</a>
     <a href="#faq">FAQ</a>
-    <a href="https://wa.me/60XXXXXXXXXX" style="color:var(--gold);font-weight:600">WhatsApp Enquiry →</a>
+    <a href="#contact" style="color:var(--gold);font-weight:600">Register Interest →</a>
   </nav>
 </nav>
 
@@ -432,7 +443,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
       <div class="hero__stat"><span class="hero__stat-val">GreenRE Gold</span><span class="hero__stat-lbl">Certification</span></div>
     </div>
     <div class="hero__cta">
-      <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold">WhatsApp Enquiry</a>
+      <a href="#contact" class="btn btn--gold">Register Interest</a>
       <a href="#residences" class="btn btn--outline">View Floor Plans</a>
     </div>
   </div>
@@ -920,7 +931,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
         <div class="unit-price" style="background:var(--bg-alt);border-color:var(--border)">
           <div class="unit-price__label" style="color:var(--text-muted)">Pricing</div>
           <div class="unit-price__value" style="font-size:20px;color:var(--text-mid)">Enquire for current pricing</div>
-          <div class="unit-price__note">Contact Terry Toh for Type B availability and pricing.</div>
+          <div class="unit-price__note">Register interest below for Type B availability and pricing.</div>
         </div>
         <div class="unit-show">
           <h4>Show Unit</h4>
@@ -1057,7 +1068,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
     <div class="section-intro">
       <span class="eyebrow">07 — BUYER GUIDE</span>
       <h2>Everything You Need to Know</h2>
-      <p>Key purchase information presented clearly — package benefits, foreign buyer eligibility, indicative pricing and completion timeline.</p>
+      <p>Key purchase information presented clearly — foreign buyer eligibility, indicative pricing and completion timeline.</p>
     </div>
 
     <div class="pricing-strip">
@@ -1081,18 +1092,11 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
       </div>
     </div>
 
-    <div class="package-grid">
-      <div class="package-card">
-        <h3>Standard Package</h3>
-        <div class="package-item"><span class="num">1</span><p><strong>Free Legal Fees</strong> on Sale &amp; Purchase Agreement and Loan Agreement</p></div>
-        <div class="package-item"><span class="num">2</span><p><strong>Free Stamp Duty</strong> on Loan Disbursement</p></div>
-        <p style="font-size:11px;color:var(--text-muted);margin-top:16px">These are the only package benefits published. Additional promotions should be confirmed directly with the sales team.</p>
-      </div>
+    <div class="package-grid" style="grid-template-columns:1fr">
       <div class="package-card">
         <h3>Foreign Buyer Eligibility</h3>
         <div class="package-item"><span class="num">1</span><p>Foreign buyers eligible to purchase units <strong>priced at RM 500,000 and above</strong></p></div>
-        <div class="package-item"><span class="num">2</span><p>First 50 bookings: <strong>buyer pays RM 25,000</strong> of state levy; developer covers balance. Buyer must sign SPA &amp; LA within 30 days.</p></div>
-        <p style="font-size:11px;color:var(--text-muted);margin-top:16px">Eligibility and levy availability subject to current regulations and developer terms. Confirm with sales team.</p>
+        <p style="font-size:11px;color:var(--text-muted);margin-top:16px">Eligibility subject to current Johor state government regulations. Confirm current requirements with the sales team.</p>
       </div>
     </div>
 
@@ -1147,14 +1151,13 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
       <h3>Specifications &amp; Eligibility</h3>
       <details class="faq-item"><summary>What partial furnishing is planned for Tower A?</summary><p>All Tower A unit types are planned with: 5-star-rated air conditioners (Daikin or equivalent, via voucher) for living area and all bedrooms; 5-star-rated ceiling fans (KDK or equivalent) for living area and master bedroom; a digital lock (Sharp or equivalent); a fitted kitchen cabinet; and a kitchen hood and hob (Electrolux or equivalent). Brands are indicative and subject to change.</p></details>
       <details class="faq-item"><summary>What security and green features are planned?</summary><p>4-tier security: guard house → car park access → lift and lobby control → digital lock at unit. Green features include GreenRE Gold certification, rainwater harvesting, EV charging readiness, and low-VOC paint. Continuous accessibility ramps are planned across the multigenerational facility areas.</p></details>
-      <details class="faq-item"><summary>Can foreigners buy a unit at The Iconic?</summary><p>Yes. Foreign buyers are eligible for units priced RM 500,000 and above. For the first 50 unit bookings, the developer co-pays the state levy — buyer pays RM 25,000 and the developer covers the balance, provided SPA and LA are signed within 30 days. Confirm current availability and levy status with the sales team as terms may have changed.</p></details>
+      <details class="faq-item"><summary>Can foreigners buy a unit at The Iconic?</summary><p>Yes. Foreign buyers are eligible for units priced RM 500,000 and above. Confirm current eligibility requirements and any applicable state levy obligations with the sales team, as terms may have changed.</p></details>
     </div>
 
     <div class="faq-group">
       <h3>Purchase Guidance</h3>
-      <details class="faq-item"><summary>What is included in the published Standard Package?</summary><p>The published Standard Package includes: (1) Free Legal Fees on the SPA and Loan Agreement, and (2) Free Stamp Duty on Loan Disbursement. These are the only benefits published on the developer's website at the time of this page's update. Additional promotions should be confirmed directly with the sales team.</p></details>
       <details class="faq-item"><summary>When is The Iconic expected to be completed?</summary><p>Completion is targeted within 60 months from the date the Sale &amp; Purchase Agreement is signed. No fixed calendar date has been published. This is a target and the Sale &amp; Purchase Agreement governs actual completion obligations.</p></details>
-      <details class="faq-item"><summary>How can I enquire about The Iconic by PGB?</summary><p>Contact Terry Toh, Independent Marketing Negotiator REN 84844, GT Nelson Realty Sdn Bhd via WhatsApp or phone. Use the enquiry form at the bottom of this page or WhatsApp directly. Terry will assist with pricing, floor plans, unit selection, eligibility, and appointment arrangements.</p></details>
+      <details class="faq-item"><summary>How can I enquire about The Iconic by PGB?</summary><p>Use the Register Interest form at the bottom of this page to submit your details. REN 84844, GT Nelson Realty Sdn Bhd will follow up via WhatsApp with pricing, floor plans, unit selection, eligibility, and appointment arrangements.</p></details>
       <details class="faq-item"><summary>Are the plans, specifications and artist impressions final?</summary><p>No. All plans, specifications, artist impressions, prices, facilities and information on this page are indicative, for reference only, and subject to change or amendment as required by relevant authorities. The Sale &amp; Purchase Agreement is the authoritative legal document. Do not make purchase decisions based solely on this page.</p></details>
     </div>
 
@@ -1190,15 +1193,40 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
     <img src="/iconic/exterior/architecture-night.png" alt="The Iconic by PGB night render" loading="lazy">
     <div class="cta-overlay"></div>
   </div>
-  <div class="cta-content">
-    <span class="eyebrow">ENQUIRE TODAY</span>
+  <div class="cta-content" style="max-width:680px">
+    <span class="eyebrow">REGISTER INTEREST</span>
     <h2>Interested in The Iconic by PGB?</h2>
-    <p>Get floor plans, pricing, unit availability and eligibility details from Terry Toh — Independent Marketing Negotiator REN 84844, GT Nelson Realty Sdn Bhd.</p>
-    <div class="cta-btns">
-      <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold">WhatsApp Terry</a>
-      <a href="tel:+60XXXXXXXXXX" class="btn btn--outline">Call Now</a>
-    </div>
-    <p class="cta-consultant">Terry Toh · REN 84844 · GT Nelson Realty Sdn Bhd · Independent Marketing Negotiator</p>
+    <p>Submit your details and we will share floor plans, pricing, unit availability and eligibility details via WhatsApp. No data is stored on this website.</p>
+    <form class="calia-form" onsubmit="submitForm(event)">
+      <div class="calia-form__row">
+        <div class="calia-form__group">
+          <label class="calia-form__label" for="formName">Your Name *</label>
+          <input class="calia-form__input" id="formName" type="text" placeholder="e.g. Lee Wei Ming" required>
+        </div>
+        <div class="calia-form__group">
+          <label class="calia-form__label" for="formPhone">WhatsApp / Phone *</label>
+          <input class="calia-form__input" id="formPhone" type="tel" placeholder="+60 12-XXX XXXX" required>
+        </div>
+      </div>
+      <div class="calia-form__group">
+        <label class="calia-form__label" for="formUnit">Unit Type Interest</label>
+        <select class="calia-form__input" id="formUnit">
+          <option value="">-- Select (optional) --</option>
+          <option>Type A · 526 sq ft · 1 Bedroom</option>
+          <option>Type B · 756 sq ft · 2 Bedrooms</option>
+          <option>Type C · 956 sq ft · 3BR Dual-Key</option>
+        </select>
+      </div>
+      <div class="calia-form__group">
+        <label class="calia-form__label" for="formMsg">Message (optional)</label>
+        <textarea class="calia-form__input calia-form__textarea" id="formMsg" placeholder="e.g. budget range, investor or own-stay, Tower A or B…"></textarea>
+      </div>
+      <button type="submit" class="btn btn--gold" style="width:100%;justify-content:center;gap:8px;padding:14px">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
+        Send via WhatsApp
+      </button>
+    </form>
+    <p class="cta-consultant">REN 84844 · GT Nelson Realty Sdn Bhd · Independent Marketing Negotiator</p>
   </div>
 </section>
 
@@ -1208,7 +1236,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
     <div class="footer__inner">
       <div>
         <div class="footer__brand">CIQ Property Hub</div>
-        <p class="footer__sub">A property information platform for buyers researching JB-Singapore corridor developments. Presented by Terry Toh, Independent Marketing Negotiator REN 84844, GT Nelson Realty Sdn Bhd.</p>
+        <p class="footer__sub">A property information platform for buyers researching JB-Singapore corridor developments. Presented by REN 84844, Independent Marketing Negotiator, GT Nelson Realty Sdn Bhd.</p>
         <p class="footer__sub" style="margin-top:8px">This is not the official website of PGB Iconic Sdn Bhd or Paragon Globe Berhad.</p>
       </div>
       <div>
@@ -1229,11 +1257,11 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
         <div class="footer__links">
           <a href="/">Back to CIQ Property Hub</a>
           <a href="/projects">All Projects</a>
-          <a href="/about">About Terry Toh</a>
+          <a href="/about">About</a>
           <a href="/disclaimer">Disclaimer</a>
         </div>
         <div style="margin-top:20px">
-          <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold" style="font-size:12px;padding:10px 18px">WhatsApp Enquiry</a>
+          <a href="#contact" class="btn btn--gold" style="font-size:12px;padding:10px 18px">Register Interest</a>
         </div>
       </div>
     </div>
@@ -1255,8 +1283,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
 
 <!-- MOBILE STICKY CTA -->
 <div class="mobile-cta">
-  <a href="tel:+60XXXXXXXXXX" class="btn btn--outline" style="border-color:rgba(255,255,255,.25);color:#F2F0EB;font-size:12px;padding:10px">📞 Call</a>
-  <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold" style="font-size:12px;padding:10px">WhatsApp Enquiry</a>
+  <a href="#contact" class="btn btn--gold" style="font-size:12px;padding:10px" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false">Register Interest</a>
 </div>
 
 <script>
@@ -1296,4 +1323,17 @@ const toggle = document.getElementById('navToggle');
 const mobile = document.getElementById('navMobile');
 toggle.addEventListener('click', () => mobile.classList.toggle('open'));
 mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobile.classList.remove('open')));
+
+function submitForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('formName').value.trim();
+  const phone = document.getElementById('formPhone').value.trim();
+  const unit = document.getElementById('formUnit').value;
+  const msg = document.getElementById('formMsg').value.trim();
+  if (!name || !phone) return;
+  let text = `Hi, I'd like to register my interest in The Iconic by PGB.\n\nName: ${name}\nContact: ${phone}`;
+  if (unit) text += `\nUnit Preference: ${unit}`;
+  if (msg) text += `\nMessage: ${msg}`;
+  window.open('https://wa.me/60128742687?text=' + encodeURIComponent(text), '_blank');
+}
 </script>

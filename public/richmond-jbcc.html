@@ -1,7 +1,7 @@
 <title>Richmond JBCC — Hyatt Place Hotel Suites JB City Centre | Floor Plans & GRR | CIQ Property Hub</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Richmond JBCC — freehold hotel suites managed by Hyatt Place in JB CBD beside Tan Hiok Nee. From RM 1,020,000. 32% GRR over 5 years. 1.6km to RTS. Open to Singaporeans. Terry Toh REN 84844.">
+<meta name="description" content="Richmond JBCC — freehold hotel suites managed by Hyatt Place in JB CBD beside Tan Hiok Nee. From RM 1,020,000. 32% GRR over 5 years. 1.6km to RTS. Open to Singaporeans. REN 84844.">
 <meta property="og:title" content="Richmond JBCC — Hyatt Place Hotel Suites JB City Centre | CIQ Property Hub">
 <meta property="og:description" content="Freehold hotel suites managed by Hyatt Place, JB CBD. From RM 1,020,000. 32% guaranteed rental return over 5 years. Open to Singaporean buyers.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap">
@@ -289,6 +289,17 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
 .footer__disclaimer{font-size:11px;color:#504E4B;line-height:1.7;max-width:800px}
 .footer__back a{color:var(--gold);font-size:12px}
 
+/* ── REGISTER INTEREST FORM ── */
+.calia-form{display:grid;gap:16px;text-align:left;margin-top:8px}
+.calia-form__row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.calia-form__group{display:grid;gap:6px}
+.calia-form__label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(242,240,235,.45)}
+.calia-form__input{width:100%;padding:11px 14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);color:#F2F0EB;font-family:inherit;font-size:14px;outline:none;transition:border-color .2s;border-radius:4px;box-sizing:border-box}
+.calia-form__input::placeholder{color:rgba(242,240,235,.3)}
+.calia-form__input:focus{border-color:var(--gold)}
+.calia-form__textarea{min-height:70px;resize:vertical}
+@media(max-width:600px){.calia-form__row{grid-template-columns:1fr}}
+
 /* ── LIGHTBOX ── */
 .lb{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:500;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s}
 .lb.active{opacity:1;pointer-events:auto}
@@ -337,7 +348,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
 </style>
 
 <!-- IDEN BANNER -->
-<div class="iden">Independent Marketing Negotiator · Terry Toh · REN 84844 · GT Nelson Realty Sdn Bhd · This is not the official developer or hotel website</div>
+<div class="iden">Independent Marketing Negotiator · REN 84844 · GT Nelson Realty Sdn Bhd · This is not the official developer or hotel website</div>
 
 <!-- NAV -->
 <nav class="nav">
@@ -355,7 +366,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
       <a href="#buyer-guide">Buyer Guide</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="https://wa.me/60XXXXXXXXXX" class="nav__cta">WhatsApp Enquiry</a>
+    <a href="#contact" class="nav__cta">Register Interest</a>
     <button class="nav__toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -368,7 +379,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
     <a href="#investment">Returns</a>
     <a href="#buyer-guide">Buyer Guide</a>
     <a href="#faq">FAQ</a>
-    <a href="https://wa.me/60XXXXXXXXXX" style="color:var(--gold);font-weight:600">WhatsApp Enquiry →</a>
+    <a href="#contact" style="color:var(--gold);font-weight:600">Register Interest →</a>
   </nav>
 </nav>
 
@@ -401,7 +412,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
       <div class="hero__stat"><span class="hero__stat-val">Q2 2028</span><span class="hero__stat-lbl">Completion</span></div>
     </div>
     <div class="hero__cta">
-      <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold">WhatsApp Enquiry</a>
+      <a href="#contact" class="btn btn--gold">Register Interest</a>
       <a href="#investment" class="btn btn--outline">View Investment Returns</a>
     </div>
   </div>
@@ -659,7 +670,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
           <div class="unit-price__note">Proposed price. Subject to change and unit availability.</div>
         </div>
         <p class="unit-desc">Type A is a compact, efficiently designed hotel room available in twin-bed and king-bed configurations. Fully furnished to Hyatt Place hotel standard, suitable for short-stay rental income or cross-border professionals seeking a city-centre base.</p>
-        <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold" style="font-size:12px">Request Full Price List</a>
+        <a href="#contact" class="btn btn--gold" style="font-size:12px">Register Interest</a>
       </div>
     </div>
 
@@ -678,10 +689,10 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
         <div class="unit-price" style="background:var(--bg-alt);border-color:var(--border)">
           <div class="unit-price__label" style="color:var(--text-muted)">Pricing</div>
           <div class="unit-price__value" style="font-size:20px;color:var(--text-mid)">Enquire for current pricing</div>
-          <div class="unit-price__note">Contact Terry Toh for Type C availability and pricing.</div>
+          <div class="unit-price__note">Register interest below for Type C availability and pricing.</div>
         </div>
         <p class="unit-desc">Type C is a larger suite with a separate living and dining area — suited for longer stays, corporate guests or families. Fully furnished to hotel grade, operated under Hyatt Place management.</p>
-        <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold" style="font-size:12px">Enquire About Type C</a>
+        <a href="#contact" class="btn btn--gold" style="font-size:12px">Register Interest</a>
       </div>
     </div>
   </div>
@@ -838,27 +849,52 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
       <h3>Eligibility &amp; Purchase</h3>
       <details class="faq-item"><summary>Can Singaporeans and foreigners buy Richmond JBCC?</summary><p>Yes. Richmond JBCC is open to foreign buyers, including Singaporeans, subject to Johor's minimum purchase price threshold for foreigners. Buyers should confirm current eligibility requirements, applicable state levy or foreign buyer duties, and any additional approvals with a qualified Malaysian solicitor before proceeding.</p></details>
       <details class="faq-item"><summary>What are the unit types and sizes?</summary><p>Richmond JBCC offers two unit types: Type A — Hotel Rooms in Twin and King bed configurations at 301 sqft (from RM 1,020,000); and Type C — Suites with a separate Living and Dining area at up to 614 sqft (pricing upon enquiry). All units are fully furnished to hotel grade.</p></details>
-      <details class="faq-item"><summary>Can I view Richmond JBCC online or in person?</summary><p>A 360° virtual tour is available on the developer's website. To arrange an in-person gallery visit, WhatsApp Terry Toh (REN 84844) for viewing appointments and the latest price list and floor plans.</p></details>
+      <details class="faq-item"><summary>Can I view Richmond JBCC online or in person?</summary><p>A 360° virtual tour is available on the developer's website. To arrange an in-person gallery visit, register interest below for viewing appointments and the latest price list and floor plans.</p></details>
       <details class="faq-item"><summary>What financing is available for a hotel-suite purchase?</summary><p>Hotel suites carry a commercial title, which differs from residential strata properties. Financing options, loan-to-value ratios and bank eligibility for commercial-titled hotel suites may differ from residential property financing. Check with your preferred bank early in the process, and consult an independent solicitor on the applicable stamp duties, RPGT, and foreign buyer levies.</p></details>
     </div>
   </div>
 </section>
 
-<!-- CTA SECTION -->
+<!-- CTA / REGISTER INTEREST -->
 <section class="cta-section" id="contact">
   <div class="cta-bg">
     <img src="/richmond/interior/bedroom.webp" alt="Richmond JBCC suite interior" loading="lazy">
     <div class="cta-overlay"></div>
   </div>
-  <div class="cta-content">
-    <span class="eyebrow">ENQUIRE TODAY</span>
+  <div class="cta-content" style="max-width:680px">
+    <span class="eyebrow">REGISTER INTEREST</span>
     <h2>Interested in Richmond JBCC?</h2>
-    <p>Get the full price list, GRR terms, floor plans and viewing arrangements from Terry Toh — Independent Marketing Negotiator REN 84844, GT Nelson Realty Sdn Bhd.</p>
-    <div class="cta-btns">
-      <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold">WhatsApp Terry</a>
-      <a href="tel:+60XXXXXXXXXX" class="btn btn--outline">Call Now</a>
-    </div>
-    <p class="cta-consultant">Terry Toh · REN 84844 · GT Nelson Realty Sdn Bhd · Independent Marketing Negotiator</p>
+    <p>Submit your details and we will share the full price list, GRR terms, floor plans and viewing arrangements via WhatsApp. No data is stored on this website.</p>
+    <form class="calia-form" onsubmit="submitForm(event)">
+      <div class="calia-form__row">
+        <div class="calia-form__group">
+          <label class="calia-form__label" for="formName">Your Name *</label>
+          <input class="calia-form__input" id="formName" type="text" placeholder="e.g. Lee Wei Ming" required>
+        </div>
+        <div class="calia-form__group">
+          <label class="calia-form__label" for="formPhone">WhatsApp / Phone *</label>
+          <input class="calia-form__input" id="formPhone" type="tel" placeholder="+60 12-XXX XXXX" required>
+        </div>
+      </div>
+      <div class="calia-form__group">
+        <label class="calia-form__label" for="formUnit">Unit Type Interest</label>
+        <select class="calia-form__input" id="formUnit">
+          <option value="">-- Select (optional) --</option>
+          <option>Type A · Hotel Suite</option>
+          <option>Type B · Studio Suite</option>
+          <option>Type C · Apartment Suite</option>
+        </select>
+      </div>
+      <div class="calia-form__group">
+        <label class="calia-form__label" for="formMsg">Message (optional)</label>
+        <textarea class="calia-form__input calia-form__textarea" id="formMsg" placeholder="e.g. budget range, investor or own-stay, GRR queries…"></textarea>
+      </div>
+      <button type="submit" class="btn btn--gold" style="width:100%;justify-content:center;gap:8px;padding:14px">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
+        Send via WhatsApp
+      </button>
+    </form>
+    <p class="cta-consultant">REN 84844 · GT Nelson Realty Sdn Bhd · Independent Marketing Negotiator</p>
   </div>
 </section>
 
@@ -868,7 +904,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
     <div class="footer__inner">
       <div>
         <div class="footer__brand">CIQ Property Hub</div>
-        <p class="footer__sub">A property information platform for buyers researching JB–Singapore corridor developments. Presented by Terry Toh, Independent Marketing Negotiator REN 84844, GT Nelson Realty Sdn Bhd.</p>
+        <p class="footer__sub">A property information platform for buyers researching JB–Singapore corridor developments. Presented by REN 84844, Independent Marketing Negotiator, GT Nelson Realty Sdn Bhd.</p>
         <p class="footer__sub" style="margin-top:8px">This is not the official website of Richmond Asia Group or Hyatt Hotels Corporation.</p>
       </div>
       <div>
@@ -889,11 +925,11 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
           <a href="/">Back to CIQ Property Hub</a>
           <a href="/projects">All Projects</a>
           <a href="/projects/the-iconic-pgb">The Iconic by PGB</a>
-          <a href="/about">About Terry Toh</a>
+          <a href="/about">About</a>
           <a href="/disclaimer">Disclaimer</a>
         </div>
         <div style="margin-top:20px">
-          <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold" style="font-size:12px;padding:10px 18px">WhatsApp Enquiry</a>
+          <a href="#contact" class="btn btn--gold" style="font-size:12px;padding:10px 18px">Register Interest</a>
         </div>
       </div>
     </div>
@@ -915,8 +951,7 @@ h4{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif}
 
 <!-- MOBILE STICKY CTA -->
 <div class="mobile-cta">
-  <a href="tel:+60XXXXXXXXXX" class="btn btn--outline" style="border-color:rgba(255,255,255,.25);color:#F2F0EB;font-size:12px;padding:10px">📞 Call</a>
-  <a href="https://wa.me/60XXXXXXXXXX" class="btn btn--gold" style="font-size:12px;padding:10px">WhatsApp Enquiry</a>
+  <a href="#contact" class="btn btn--gold" style="font-size:12px;padding:10px" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false">Register Interest</a>
 </div>
 
 <script>
@@ -973,4 +1008,17 @@ const toggle = document.getElementById('navToggle');
 const mobile = document.getElementById('navMobile');
 toggle.addEventListener('click', () => mobile.classList.toggle('open'));
 mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobile.classList.remove('open')));
+
+function submitForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('formName').value.trim();
+  const phone = document.getElementById('formPhone').value.trim();
+  const unit = document.getElementById('formUnit').value;
+  const msg = document.getElementById('formMsg').value.trim();
+  if (!name || !phone) return;
+  let text = `Hi, I'd like to register my interest in Richmond JBCC.\n\nName: ${name}\nContact: ${phone}`;
+  if (unit) text += `\nUnit Preference: ${unit}`;
+  if (msg) text += `\nMessage: ${msg}`;
+  window.open('https://wa.me/60128742687?text=' + encodeURIComponent(text), '_blank');
+}
 </script>

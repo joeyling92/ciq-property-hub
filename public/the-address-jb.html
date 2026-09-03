@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Address Johor Bahru — Your Urban Signature</title>
+<meta name="description" content="The Address JB by Maxim Pelangi — GreenRE certified high-rise in JB City. Type A Studio 450sqft · Type B 660sqft · Type C 865sqft. 40+ facilities. 3km to CIQ. REN 84844.">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap">
+<style>
+:root{
+  --ink:#0A0D16;--depth:#12161F;--slate:#1C2130;--mid:#283040;
+  --amber:#C8780A;--amber-d:#A05F06;--amber-l:#F5DFA0;--amber-faint:rgba(200,120,10,.1);
+  --paper:#F7F3EC;--mist:#EDEAE2;--white:#FAFAF7;
+  --text-on-dark:#D4D0C8;--muted-on-dark:#6E7A8E;--sub-on-dark:#404858;
+  --text-on-light:#181C28;--muted-on-light:#464C5E;--sub-on-light:#7A8092;
+  --border-dark:rgba(255,255,255,.07);--border-light:rgba(24,28,40,.1);
+  --r:4px;--max:1120px;--ease:cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--text-on-light);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:var(--max);margin-inline:auto;padding-inline:clamp(20px,5vw,60px)}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:15px 0;transition:background .3s var(--ease),backdrop-filter .3s var(--ease)}
+.nav.scrolled{background:rgba(10,13,22,.92);backdrop-filter:blur(14px)}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav__brand{display:flex;align-items:center;gap:11px}
+.nav__diamond{width:34px;height:34px;border:1.5px solid var(--amber);display:flex;align-items:center;justify-content:center;transform:rotate(45deg);flex-shrink:0}
+.nav__diamond-inner{width:14px;height:14px;background:var(--amber);transform:rotate(0deg)}
+.nav__brand-text{line-height:1}
+.nav__brand-name{font-family:'DM Serif Display',Georgia,serif;font-size:14px;font-weight:400;color:var(--white);letter-spacing:.06em}
+.nav__brand-sub{font-size:9px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);display:block;margin-top:3px}
+.nav__cta{padding:8px 18px;background:var(--amber);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);transition:background .2s}
+.nav__cta:hover{background:var(--amber-d)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.hero__bg{position:absolute;inset:0;background-image:url('/the-address-jb/hero.png');background-size:cover;background-position:center 20%}
+.hero__overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,13,22,.96) 0%,rgba(10,13,22,.65) 45%,rgba(10,13,22,.1) 100%)}
+.hero__inner{position:relative;padding:120px 0 80px}
+.hero__tag{font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.hero__tag::before{content:'';display:block;width:28px;height:1px;background:currentColor}
+.hero__title{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(48px,9vw,110px);font-weight:400;line-height:.9;color:var(--white);letter-spacing:-.01em}
+.hero__title-sub{display:block;font-style:italic;color:var(--amber-l);font-size:.55em;margin-top:8px}
+.hero__strapline{font-size:clamp(13px,1.8vw,17px);font-weight:300;color:var(--muted-on-dark);margin-top:24px;letter-spacing:.1em;text-transform:uppercase}
+.hero__badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.hero__badge{padding:6px 14px;border:1px solid rgba(255,255,255,.1);font-size:11px;font-weight:500;letter-spacing:.05em;color:var(--muted-on-dark)}
+.hero__badge--amber{border-color:rgba(200,120,10,.45);color:var(--amber-l)}
+.hero__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn-amber{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;background:var(--amber);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);transition:background .2s}
+.btn-amber:hover{background:var(--amber-d)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:12px 25px;border:1.5px solid rgba(255,255,255,.15);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--text-on-dark);transition:border-color .2s}
+.btn-ghost:hover{border-color:rgba(255,255,255,.35)}
+.hero__stats{display:flex;flex-wrap:wrap;gap:32px;margin-top:48px;padding-top:36px;border-top:1px solid var(--border-dark)}
+.hero__stat-val{font-family:'DM Serif Display',Georgia,serif;font-size:36px;font-weight:400;color:var(--amber);line-height:1}
+.hero__stat-label{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-on-dark);margin-top:5px}
+
+/* marquee */
+.marquee-strip{background:var(--amber);padding:12px 0;overflow:hidden}
+.marquee-track{display:flex;white-space:nowrap;animation:marquee 32s linear infinite}
+.marquee-track span{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);padding:0 28px}
+.marquee-track .dot{padding:0;color:rgba(10,13,22,.3)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* shared */
+.section-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--amber)}
+.section-eyebrow::before{content:'';display:block;width:18px;height:1px;background:currentColor}
+.section-title{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(28px,4vw,46px);font-weight:400;line-height:1.15;text-wrap:balance}
+.section-title--dark{color:var(--white)}
+.section-title--light{color:var(--text-on-light)}
+.section-sub{font-size:15px;line-height:1.8;max-width:580px}
+.section-sub--dark{color:var(--muted-on-dark)}
+.section-sub--light{color:var(--muted-on-light)}
+
+/* certifications */
+.certs{background:var(--depth);padding:56px 0}
+.certs__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border-dark);border:1px solid var(--border-dark);margin-top:36px}
+.cert-item{background:var(--slate);padding:24px 28px;display:flex;align-items:flex-start;gap:16px}
+.cert-item__icon{font-size:30px;flex-shrink:0}
+.cert-item__title{font-weight:600;font-size:14px;color:var(--white);margin-bottom:4px}
+.cert-item__desc{font-size:12px;color:var(--muted-on-dark);line-height:1.6}
+
+/* location */
+.location{background:var(--paper);padding:96px 0}
+.location-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:48px}
+.location-img{overflow:hidden;border:1px solid var(--border-light)}
+.location-img img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.location-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.loc-stat{background:var(--depth);padding:20px 22px;border:1px solid var(--border-dark)}
+.loc-stat__val{font-family:'DM Serif Display',Georgia,serif;font-size:32px;font-weight:400;color:var(--amber);line-height:1}
+.loc-stat__label{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-on-dark);margin-top:5px}
+.loc-groups{display:grid;gap:10px}
+.loc-group{background:var(--white);border:1px solid var(--border-light);overflow:hidden}
+.loc-group__head{padding:10px 16px;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-on-light);background:rgba(0,0,0,.02);border-bottom:1px solid var(--border-light)}
+.loc-group__items{padding:10px 16px;display:flex;flex-wrap:wrap;gap:6px}
+.loc-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;background:var(--paper);border:1px solid var(--border-light);font-size:11px;color:var(--muted-on-light)}
+.loc-chip::before{content:'';display:block;width:4px;height:4px;background:var(--amber);flex-shrink:0}
+
+/* units */
+.units{background:var(--slate);padding:96px 0}
+.units-layout{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.unit-card{background:var(--depth);border:1px solid var(--border-dark);overflow:hidden;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.unit-card:hover{transform:translateY(-3px);box-shadow:0 16px 48px rgba(0,0,0,.3)}
+.unit-card__plan{background:var(--white);padding:20px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.unit-card__plan img{width:100%;height:100%;object-fit:contain}
+.unit-card__body{padding:22px 24px}
+.unit-card__type-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px;background:var(--amber-faint);border:1px solid rgba(200,120,10,.35);color:var(--amber);margin-bottom:10px}
+.unit-card__name{font-family:'DM Serif Display',Georgia,serif;font-size:22px;font-weight:400;color:var(--white)}
+.unit-card__tagline{font-size:12px;color:var(--muted-on-dark);margin-top:6px;line-height:1.5}
+.unit-card__size{font-family:'DM Serif Display',Georgia,serif;font-size:38px;font-weight:400;color:var(--amber);line-height:1;margin-top:14px}
+.unit-card__size span{font-size:12px;font-family:'Inter',sans-serif;color:var(--sub-on-dark)}
+.unit-card__config{font-size:13px;color:var(--text-on-dark);margin-top:8px}
+.unit-card__features{list-style:none;display:grid;gap:6px;margin-top:14px;padding-top:14px;border-top:1px solid var(--border-dark)}
+.unit-card__features li{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted-on-dark)}
+.unit-card__features li::before{content:'';display:block;width:4px;height:4px;background:var(--amber);flex-shrink:0}
+.unit-card__actions{display:grid;gap:8px;margin-top:16px}
+.unit-card__tour{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;background:var(--amber-faint);border:1px solid rgba(200,120,10,.35);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);transition:background .2s,color .2s}
+.unit-card__tour:hover{background:var(--amber);color:var(--ink)}
+.unit-card__wa{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;background:rgba(255,255,255,.04);border:1px solid var(--border-dark);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--text-on-dark);transition:border-color .2s}
+.unit-card__wa:hover{border-color:rgba(255,255,255,.2)}
+.units__note{margin-top:20px;font-size:11px;color:var(--sub-on-dark);line-height:1.7}
+
+/* gallery */
+.gallery{background:var(--ink);padding:96px 0}
+.gallery__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:40px}
+.gal-item{position:relative;overflow:hidden;aspect-ratio:16/9;cursor:pointer}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.gal-item:hover img{transform:scale(1.05)}
+.gal-item--wide{grid-column:span 2;aspect-ratio:auto}
+.gal-item--tall{grid-row:span 2;aspect-ratio:auto}
+.gal-item__caption{position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(10,13,22,.85));font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);opacity:0;transition:opacity .3s}
+.gal-item:hover .gal-item__caption{opacity:1}
+
+/* facilities */
+.facilities{background:var(--depth);padding:96px 0}
+.fac-layout{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:48px}
+.fac-block{background:var(--slate);border:1px solid var(--border-dark);overflow:hidden}
+.fac-block--highlight{border-color:rgba(200,120,10,.3);background:linear-gradient(135deg,rgba(200,120,10,.07),var(--slate))}
+.fac-block__header{padding:18px 24px;border-bottom:1px solid var(--border-dark);display:flex;align-items:center;gap:14px}
+.fac-block__level{width:48px;height:48px;border:1.5px solid rgba(200,120,10,.4);display:flex;align-items:center;justify-content:center;font-family:'DM Serif Display',Georgia,serif;font-size:14px;font-weight:400;color:var(--amber);flex-shrink:0;transform:rotate(45deg)}
+.fac-block__level span{transform:rotate(-45deg);display:block}
+.fac-block__title{font-family:'DM Serif Display',Georgia,serif;font-size:20px;color:var(--white)}
+.fac-block__sub{font-size:11px;color:var(--muted-on-dark);margin-top:3px}
+.fac-block__items{padding:16px 24px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fac-item{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--text-on-dark)}
+.fac-item::before{content:'';display:block;width:4px;height:4px;background:var(--amber);flex-shrink:0;margin-top:5px}
+.fac-map{margin-top:28px;overflow:hidden;border:1px solid var(--border-dark)}
+.fac-map img{width:100%;object-fit:cover}
+.fac-skypool{margin-top:28px;position:relative;overflow:hidden;border:1px solid var(--border-dark)}
+.fac-skypool img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.fac-skypool__label{position:absolute;bottom:16px;left:20px;font-family:'DM Serif Display',Georgia,serif;font-size:22px;color:var(--white);font-style:italic}
+.fac-count{background:var(--mid);border:1px solid var(--border-dark);padding:24px 28px;margin-top:28px;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.fac-count__val{font-family:'DM Serif Display',Georgia,serif;font-size:56px;font-weight:400;color:var(--amber);line-height:1}
+.fac-count__text{flex:1;min-width:180px}
+.fac-count__title{font-weight:600;font-size:15px;color:var(--white);margin-bottom:6px}
+.fac-count__sub{font-size:13px;color:var(--muted-on-dark);line-height:1.6}
+
+/* panorama */
+.panorama{background:var(--paper);padding:96px 0}
+.panorama__img{margin-top:36px;overflow:hidden;border:1px solid var(--border-light);position:relative}
+.panorama__img img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.panorama__caption{position:absolute;bottom:0;left:0;right:0;padding:20px 28px;background:linear-gradient(transparent,rgba(10,13,22,.85));font-size:12px;color:var(--text-on-dark)}
+
+/* developer */
+.developer{background:var(--slate);padding:96px 0}
+.dev-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.dev-name{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(24px,3.5vw,38px);font-weight:400;color:var(--white);margin-top:14px;line-height:1.2}
+.dev-body{font-size:14px;line-height:1.8;color:var(--muted-on-dark);margin-top:18px}
+.dev-body p+p{margin-top:14px}
+.dev-certs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.dev-cert{background:var(--depth);border:1px solid var(--border-dark);padding:14px 16px;text-align:center}
+.dev-cert__icon{font-size:20px;margin-bottom:6px}
+.dev-cert__label{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-on-dark);line-height:1.4}
+.dev-img{overflow:hidden;border:1px solid var(--border-dark)}
+.dev-img img{width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* faq */
+.faq{background:var(--paper);padding:96px 0}
+.faq-list{display:grid;gap:10px;max-width:800px;margin-top:40px}
+.faq-item{border:1px solid var(--border-light);background:var(--white);overflow:hidden}
+.faq-item summary{list-style:none;padding:18px 22px;font-weight:500;font-size:14px;color:var(--text-on-light);cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px;user-select:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:20px;font-weight:300;color:var(--amber);flex-shrink:0;transition:transform .2s}
+details[open].faq-item summary::after{transform:rotate(45deg)}
+.faq-item__body{padding:0 22px 18px;font-size:13px;color:var(--muted-on-light);line-height:1.75}
+
+/* cta */
+.cta-section{background:var(--ink);padding:96px 0;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;top:-100px;right:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(200,120,10,.07) 0%,transparent 70%);pointer-events:none}
+.cta-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative}
+.cta-headline{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(28px,4vw,46px);font-weight:400;color:var(--white);margin-top:14px;line-height:1.2;text-wrap:balance}
+.cta-sub{font-size:14px;line-height:1.8;color:var(--muted-on-dark);margin-top:18px}
+.cta-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.contact-card{background:var(--slate);border:1px solid var(--border-dark);padding:28px;display:flex;flex-direction:column;gap:18px}
+.contact-card__avatar{width:56px;height:56px;background:var(--amber-faint);border:2px solid rgba(200,120,10,.4);display:flex;align-items:center;justify-content:center;font-family:'DM Serif Display',Georgia,serif;font-size:22px;color:var(--amber)}
+.contact-card__name{font-weight:600;font-size:17px;color:var(--white);margin-bottom:3px}
+.contact-card__role{font-size:11px;color:var(--muted-on-dark)}
+.contact-card__divider{height:1px;background:var(--border-dark)}
+.contact-detail{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text-on-dark)}
+.contact-detail__icon{width:30px;height:30px;background:var(--amber-faint);border:1px solid rgba(200,120,10,.3);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.contact-card__wa{display:flex;align-items:center;justify-content:center;gap:10px;padding:12px;background:var(--amber);font-size:12px;font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:.1em;cursor:pointer;border:none;width:100%;transition:background .2s}
+.contact-card__wa:hover{background:var(--amber-d)}
+.contact-card__license{font-size:10px;color:var(--sub-on-dark);text-align:center;line-height:1.6}
+
+/* register interest form */
+.agent-badge{margin-top:32px;padding:20px 24px;background:rgba(255,255,255,.05);border:1px solid rgba(200,120,10,.25);border-radius:4px}
+.agent-badge__ren{font-family:'DM Serif Display',Georgia,serif;font-size:22px;font-weight:400;color:var(--amber);letter-spacing:.06em}
+.agent-badge__company{font-size:13px;color:var(--text-on-dark);margin-top:4px}
+.agent-badge__license{font-size:11px;color:var(--muted-on-dark);margin-top:3px}
+.interest-form{background:var(--slate);border:1px solid var(--border-dark);border-radius:4px;padding:32px;display:grid;gap:18px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{display:grid;gap:7px}
+.form-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-on-dark)}
+.form-input{width:100%;padding:11px 14px;background:var(--mid);border:1px solid var(--border-dark);color:var(--text-on-dark);font-family:'Inter',sans-serif;font-size:14px;outline:none;transition:border-color .2s;border-radius:2px;box-sizing:border-box}
+.form-input:focus{border-color:var(--amber)}
+.form-textarea{min-height:80px;resize:vertical}
+.form-submit{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:14px;background:var(--amber);color:var(--ink);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:none;cursor:pointer;transition:background .2s;border-radius:2px}
+.form-submit:hover{background:var(--amber-d)}
+.form-note{font-size:11px;color:var(--sub-on-dark);line-height:1.6;text-align:center}
+@media(max-width:600px){.form-row{grid-template-columns:1fr}}
+
+/* lightbox */
+.lightbox{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.93);align-items:center;justify-content:center;padding:20px}
+.lightbox.open{display:flex}
+.lightbox__img{max-width:90vw;max-height:90vh;object-fit:contain}
+.lightbox__close{position:fixed;top:20px;right:24px;font-size:30px;color:var(--white);cursor:pointer;opacity:.7;transition:opacity .2s}
+.lightbox__close:hover{opacity:1}
+.lightbox__nav{position:fixed;top:50%;transform:translateY(-50%);font-size:26px;color:var(--white);cursor:pointer;opacity:.5;transition:opacity .2s;padding:12px;background:rgba(255,255,255,.08)}
+.lightbox__nav:hover{opacity:1}
+.lightbox__prev{left:16px}
+.lightbox__next{right:16px}
+
+/* footer */
+.footer{background:var(--depth);padding:36px 0;border-top:1px solid var(--border-dark)}
+.footer__inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
+.footer__brand{font-family:'DM Serif Display',Georgia,serif;font-size:15px;color:var(--white)}
+.footer__brand em{color:var(--amber);font-style:normal}
+.footer__links{display:flex;flex-wrap:wrap;gap:20px}
+.footer__links a{font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--sub-on-dark);transition:color .2s}
+.footer__links a:hover{color:var(--amber)}
+.footer__disclaimer{width:100%;font-size:11px;color:var(--sub-on-dark);line-height:1.75;border-top:1px solid var(--border-dark);padding-top:20px;margin-top:8px}
+
+@media(max-width:860px){
+  .units-layout{grid-template-columns:1fr}
+  .location-layout,.fac-layout,.dev-layout,.cta-inner{grid-template-columns:1fr}
+  .gallery__grid{grid-template-columns:1fr 1fr}
+  .gallery__grid .gal-item--wide,.gallery__grid .gal-item--tall{grid-column:span 1;grid-row:span 1;aspect-ratio:16/9}
+  .certs__grid{grid-template-columns:1fr}
+  .fac-block__items{grid-template-columns:1fr}
+  .location-stats{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .hero__stats{gap:20px}
+  .gallery__grid{grid-template-columns:1fr}
+  .dev-certs{grid-template-columns:1fr 1fr}
+  .location-stats{grid-template-columns:1fr}
+  .certs,.location,.units,.gallery,.facilities,.panorama,.developer,.faq,.cta-section{padding:72px 0}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="/" class="nav__brand">
+        <img src="/logo.png" alt="CIQ Property Hub" style="width:40px;height:40px;object-fit:contain;border-radius:9px;flex-shrink:0">
+        <div class="nav__brand-text">
+          <span class="nav__brand-name">CIQ Property Hub</span>
+          <span class="nav__brand-sub">Johor Bahru</span>
+        </div>
+      </a>
+      <a href="#contact" class="nav__cta">Register Interest</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__bg"></div>
+  <div class="hero__overlay"></div>
+  <div class="container hero__inner">
+    <div class="hero__tag">The Address Johor Bahru · Maxim Pelangi</div>
+    <h1 class="hero__title">
+      The
+      <em>Address</em>
+    </h1>
+    <p class="hero__strapline">Your Urban Signature · Your New Address</p>
+    <div class="hero__badges">
+      <span class="hero__badge hero__badge--amber">GreenRE Certified</span>
+      <span class="hero__badge">40+ Amenities</span>
+      <span class="hero__badge">EV Charging</span>
+      <span class="hero__badge">Multi-Tier Security</span>
+      <span class="hero__badge">3D Virtual Tours</span>
+    </div>
+    <div class="hero__actions">
+      <a href="#contact" class="btn-amber">Register Interest</a>
+      <a href="#units" class="btn-ghost">View Units</a>
+    </div>
+    <div class="hero__stats">
+      <div><div class="hero__stat-val">3km</div><div class="hero__stat-label">to CIQ Checkpoint</div></div>
+      <div><div class="hero__stat-val">3.2km</div><div class="hero__stat-label">to JB-SG Causeway</div></div>
+      <div><div class="hero__stat-val">40+</div><div class="hero__stat-label">In-house amenities</div></div>
+      <div><div class="hero__stat-val">3</div><div class="hero__stat-label">Unit configurations</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Your Urban Signature</span><span class="dot">·</span>
+    <span>GreenRE Certified</span><span class="dot">·</span>
+    <span>40+ Amenities</span><span class="dot">·</span>
+    <span>3km to CIQ</span><span class="dot">·</span>
+    <span>25m Infinity Pool</span><span class="dot">·</span>
+    <span>EV Charging</span><span class="dot">·</span>
+    <span>Pickleball &amp; Basketball Courts</span><span class="dot">·</span>
+    <span>3D Virtual Tours Available</span><span class="dot">·</span>
+    <span>Maxim Pelangi Sdn Bhd</span><span class="dot">·</span>
+    <span>Your Urban Signature</span><span class="dot">·</span>
+    <span>GreenRE Certified</span><span class="dot">·</span>
+    <span>40+ Amenities</span><span class="dot">·</span>
+    <span>3km to CIQ</span><span class="dot">·</span>
+    <span>25m Infinity Pool</span><span class="dot">·</span>
+    <span>EV Charging</span><span class="dot">·</span>
+    <span>Pickleball &amp; Basketball Courts</span><span class="dot">·</span>
+    <span>3D Virtual Tours Available</span><span class="dot">·</span>
+    <span>Maxim Pelangi Sdn Bhd</span><span class="dot">·</span>
+  </div>
+</div>
+
+<!-- CERTIFICATIONS -->
+<section class="certs">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--amber)">What Sets It Apart</div>
+    <h2 class="section-title section-title--dark" style="margin-top:14px">Built to a higher standard.</h2>
+    <div class="certs__grid">
+      <div class="cert-item">
+        <div class="cert-item__icon">🌿</div>
+        <div>
+          <div class="cert-item__title">GreenRE Certified</div>
+          <div class="cert-item__desc">The Address JB holds GreenRE certification — Malaysia's green building rating system. Designed for energy efficiency, reduced environmental impact, and better indoor quality for residents.</div>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-item__icon">🔒</div>
+        <div>
+          <div class="cert-item__title">Multi-Tier Security</div>
+          <div class="cert-item__desc">Layered access control throughout the building — from vehicle entry to lift lobbies and residential floors. Designed for maximum resident safety without friction.</div>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-item__icon">⚡</div>
+        <div>
+          <div class="cert-item__title">EV Charging Stations</div>
+          <div class="cert-item__desc">Electric vehicle charging infrastructure built into the car park — future-ready infrastructure for residents as EV adoption grows across Malaysia and Singapore.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location">
+  <div class="container">
+    <div class="section-eyebrow">Location</div>
+    <h2 class="section-title section-title--light" style="margin-top:14px">In the heart of it all.</h2>
+    <p class="section-sub section-sub--light" style="margin-top:14px">62, Jalan Serampang, Taman Tebrau Jaya — minutes from the Causeway, surrounded by 9 shopping malls, 7 education centres, and 4 medical facilities.</p>
+    <div class="location-layout">
+      <div class="location-img">
+        <img src="/the-address-jb/location.jpg" alt="The Address JB location map" loading="lazy">
+      </div>
+      <div>
+        <div class="location-stats">
+          <div class="loc-stat"><div class="loc-stat__val">3km</div><div class="loc-stat__label">To CIQ Checkpoint</div></div>
+          <div class="loc-stat"><div class="loc-stat__val">3.2km</div><div class="loc-stat__label">To JB–SG Causeway</div></div>
+          <div class="loc-stat"><div class="loc-stat__val">4km</div><div class="loc-stat__label">To JB Sentral</div></div>
+          <div class="loc-stat"><div class="loc-stat__val">9</div><div class="loc-stat__label">Shopping malls within 2km</div></div>
+        </div>
+        <div class="loc-groups">
+          <div class="loc-group">
+            <div class="loc-group__head">Healthcare · 4 centres within 2km</div>
+            <div class="loc-group__items">
+              <span class="loc-chip">Columbia Asia Hospital</span>
+              <span class="loc-chip">KPJ Puteri Specialist</span>
+              <span class="loc-chip">KPJ Johor Specialist</span>
+              <span class="loc-chip">Sultanah Aminah Hospital</span>
+            </div>
+          </div>
+          <div class="loc-group">
+            <div class="loc-group__head">Shopping · 9 malls within 2km</div>
+            <div class="loc-group__items">
+              <span class="loc-chip">City Square JB</span>
+              <span class="loc-chip">KOMTAR JBCC</span>
+              <span class="loc-chip">Mid Valley Southkey</span>
+              <span class="loc-chip">KSL City</span>
+              <span class="loc-chip">Danga City Mall</span>
+            </div>
+          </div>
+          <div class="loc-group">
+            <div class="loc-group__head">Education · 7 centres within 1.5km</div>
+            <div class="loc-group__items">
+              <span class="loc-chip">Foon Yew School</span>
+              <span class="loc-chip">City University Malaysia</span>
+              <span class="loc-chip">International Schools</span>
+            </div>
+          </div>
+          <div class="loc-group">
+            <div class="loc-group__head">Transport</div>
+            <div class="loc-group__items">
+              <span class="loc-chip">Johor Causeway Link</span>
+              <span class="loc-chip">JB Sentral KTM</span>
+              <span class="loc-chip">Future RTS Link</span>
+              <span class="loc-chip">Larkin Sentral</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNITS -->
+<section class="units" id="units">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--amber)">Unit Types</div>
+    <h2 class="section-title section-title--dark" style="margin-top:14px">Three unit types.<br>One urban address.</h2>
+    <p class="section-sub section-sub--dark" style="margin-top:14px">From the 450 sqft Studio to the 865 sqft three-bedroom Residence — each designed for distinct lifestyles, all with 3D virtual tours for Types A and B.</p>
+    <div class="units-layout">
+      <!-- Type A -->
+      <div class="unit-card">
+        <div class="unit-card__plan"><img src="/the-address-jb/type-a.png" alt="Type A floor plan" loading="lazy"></div>
+        <div class="unit-card__body">
+          <div class="unit-card__type-badge">Type A · The Studio</div>
+          <div class="unit-card__name">The Studio</div>
+          <div class="unit-card__tagline">A streamlined space for independent living. Perfect for young professionals, solo dwellers, or smart investors.</div>
+          <div class="unit-card__size">450 <span>sq ft · 41.8 m²</span></div>
+          <div class="unit-card__config">1 Bedroom + 1 Bathroom · Variants A1 &amp; A2</div>
+          <ul class="unit-card__features">
+            <li>Ideal for professionals &amp; investors</li>
+            <li>High investment yield potential</li>
+            <li>Variant A1 &amp; A2 available</li>
+          </ul>
+          <div class="unit-card__actions">
+            <button class="unit-card__wa" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Register Interest</button>
+          </div>
+        </div>
+      </div>
+      <!-- Type B -->
+      <div class="unit-card">
+        <div class="unit-card__plan"><img src="/the-address-jb/type-b.png" alt="Type B floor plan" loading="lazy"></div>
+        <div class="unit-card__body">
+          <div class="unit-card__type-badge">Type B · The Edge</div>
+          <div class="unit-card__name">The Edge</div>
+          <div class="unit-card__tagline">Flexible and thoughtfully designed for couples or small families. Balanced for comfort and modern city living.</div>
+          <div class="unit-card__size">660 <span>sq ft · 61.3 m²</span></div>
+          <div class="unit-card__config">2 Bedrooms + 2 Bathrooms · Variants B1 &amp; B2</div>
+          <ul class="unit-card__features">
+            <li>Perfect for couples &amp; small families</li>
+            <li>Modern city living layout</li>
+            <li>Variant B1 &amp; B2 available</li>
+          </ul>
+          <div class="unit-card__actions">
+            <button class="unit-card__wa" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Register Interest</button>
+          </div>
+        </div>
+      </div>
+      <!-- Type C -->
+      <div class="unit-card">
+        <div class="unit-card__plan"><img src="/the-address-jb/type-c.png" alt="Type C floor plan" loading="lazy"></div>
+        <div class="unit-card__body">
+          <div class="unit-card__type-badge">Type C · The Residence</div>
+          <div class="unit-card__name">The Residence</div>
+          <div class="unit-card__tagline">Spacious and connected. Ideal for families who value room to grow, gather, and unwind in their own sanctuary.</div>
+          <div class="unit-card__size">865 <span>sq ft · 80.4 m²</span></div>
+          <div class="unit-card__config">3 Bedrooms + 2 Bathrooms</div>
+          <ul class="unit-card__features">
+            <li>Family-centric design</li>
+            <li>Dual-key concept</li>
+            <li>Spacious living hall</li>
+            <li>Private sanctuary</li>
+          </ul>
+          <div class="unit-card__actions">
+            <button class="unit-card__wa" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" style="border-color:rgba(200,120,10,.3);color:var(--amber)">Register Interest</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="units__note">Unit sizes are approximate built-up from developer materials. Pricing upon enquiry — register interest below for current availability and floor selection. 3D virtual tours sourced from developer's Lapentor platform.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--amber)">Gallery</div>
+    <h2 class="section-title section-title--dark" style="margin-top:14px">Life at The Address.</h2>
+    <p class="section-sub section-sub--dark" style="margin-top:14px">From the iconic facade to the social kitchen and co-working library — see what daily life looks like here.</p>
+  </div>
+  <div class="container" style="margin-top:40px">
+    <div class="gallery__grid">
+      <div class="gal-item gal-item--wide gal-item--tall" onclick="openLb(0)"><img src="/the-address-jb/facade.jpg" alt="Iconic Facade" loading="lazy"><div class="gal-item__caption">Iconic Facade</div></div>
+      <div class="gal-item" onclick="openLb(1)"><img src="/the-address-jb/drop-off.jpg" alt="Exclusive Drop-Off" loading="lazy"><div class="gal-item__caption">Exclusive Drop-Off</div></div>
+      <div class="gal-item" onclick="openLb(2)"><img src="/the-address-jb/waiting-lounge.jpg" alt="Grand Lobby" loading="lazy"><div class="gal-item__caption">Grand Lobby</div></div>
+      <div class="gal-item" onclick="openLb(3)"><img src="/the-address-jb/residence-lounge.jpg" alt="Residence Lounge" loading="lazy"><div class="gal-item__caption">Residence Lounge</div></div>
+      <div class="gal-item" onclick="openLb(4)"><img src="/the-address-jb/social-kitchen.jpg" alt="Social Kitchen" loading="lazy"><div class="gal-item__caption">Social Kitchen</div></div>
+      <div class="gal-item" onclick="openLb(5)"><img src="/the-address-jb/library.jpg" alt="Co-Working Library" loading="lazy"><div class="gal-item__caption">Co-Working Library</div></div>
+      <div class="gal-item" onclick="openLb(6)"><img src="/the-address-jb/outdoor-lounge.jpg" alt="Alfresco Lounge" loading="lazy"><div class="gal-item__caption">Alfresco Lounge</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="facilities" id="facilities">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--amber)">Amenities</div>
+    <h2 class="section-title section-title--dark" style="margin-top:14px">Over 40 amenities.<br>Soak in the sky.</h2>
+    <p class="section-sub section-sub--dark" style="margin-top:14px">Two amenity zones — a comprehensive Level 6 lifestyle podium and a Level 11 Sky Park with a 25m infinity pool above the city.</p>
+    <div class="fac-layout">
+      <div class="fac-block">
+        <div class="fac-block__header">
+          <div class="fac-block__level"><span>L6</span></div>
+          <div>
+            <div class="fac-block__title">Level 6 Facilities Podium</div>
+            <div class="fac-block__sub">Indoor &amp; outdoor lifestyle amenities</div>
+          </div>
+        </div>
+        <div class="fac-block__items">
+          <div class="fac-item">Gymnasium</div>
+          <div class="fac-item">Outdoor Gym</div>
+          <div class="fac-item">Open Studio</div>
+          <div class="fac-item">Games Room</div>
+          <div class="fac-item">Sauna &amp; Locker</div>
+          <div class="fac-item">Study Lounge</div>
+          <div class="fac-item">Working Area</div>
+          <div class="fac-item">Social Kitchen</div>
+          <div class="fac-item">Residence Lounge</div>
+          <div class="fac-item">Multipurpose Hall</div>
+          <div class="fac-item">Laundry</div>
+          <div class="fac-item">Surau</div>
+          <div class="fac-item">BBQ Area</div>
+          <div class="fac-item">Forest Garden</div>
+          <div class="fac-item">Jogging Path</div>
+          <div class="fac-item">Children's Playground</div>
+          <div class="fac-item">Fitness Station</div>
+          <div class="fac-item">Quiet Garden</div>
+          <div class="fac-item">Terrace</div>
+          <div class="fac-item">Outdoor Lounge</div>
+        </div>
+      </div>
+      <div class="fac-block fac-block--highlight">
+        <div class="fac-block__header">
+          <div class="fac-block__level"><span>L11</span></div>
+          <div>
+            <div class="fac-block__title">Level 11 Sky Amenities</div>
+            <div class="fac-block__sub">Float above the city</div>
+          </div>
+        </div>
+        <div class="fac-block__items">
+          <div class="fac-item">25m Infinity Pool</div>
+          <div class="fac-item">Water Cocoon</div>
+          <div class="fac-item">Aqua Gym</div>
+          <div class="fac-item">Pool Deck</div>
+          <div class="fac-item">Children's Pool</div>
+          <div class="fac-item">Sunken Lounger</div>
+          <div class="fac-item">Multipurpose Lawn</div>
+          <div class="fac-item">Terraced Seating</div>
+          <div class="fac-item">Basketball Court</div>
+          <div class="fac-item">Pickleball Court</div>
+          <div class="fac-item">Garden Lawn</div>
+          <div class="fac-item">Pergola Seating</div>
+        </div>
+      </div>
+    </div>
+    <div class="fac-skypool">
+      <img src="/the-address-jb/skypool.png" alt="25m Sky Infinity Pool" loading="lazy">
+      <div class="fac-skypool__label">Sky Infinity Pool · Level 11</div>
+    </div>
+    <div class="fac-count">
+      <div class="fac-count__val">40+</div>
+      <div class="fac-count__text">
+        <div class="fac-count__title">Over 40 in-house amenities</div>
+        <div class="fac-count__sub">From the 25m infinity pool and pickleball courts to the co-working library and social kitchen — The Address delivers a fully loaded lifestyle without leaving the building.</div>
+      </div>
+    </div>
+    <div class="fac-map">
+      <img src="/the-address-jb/facilities-map.jpg" alt="Facilities floor plan" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- PANORAMA -->
+<section class="panorama">
+  <div class="container">
+    <div class="section-eyebrow">Skyline View</div>
+    <h2 class="section-title section-title--light" style="margin-top:14px">Johor Bahru and Singapore,<br>visible from the heights.</h2>
+    <p class="section-sub section-sub--light" style="margin-top:14px">The Address commands sweeping panoramic views of the JB skyline and across the Strait of Johor to Singapore.</p>
+    <div class="panorama__img">
+      <img src="/the-address-jb/panorama.jpg" alt="Panoramic view from The Address JB" loading="lazy">
+      <div class="panorama__caption">Interactive 360° panoramic view available on the developer website</div>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOPER -->
+<section class="developer" id="developer">
+  <div class="container">
+    <div class="dev-layout">
+      <div>
+        <div class="section-eyebrow" style="color:var(--amber)">Developer</div>
+        <h2 class="dev-name">Maxim Pelangi<br>Sdn Bhd</h2>
+        <div class="dev-body">
+          <p>Maxim Pelangi is the developer behind The Address Johor Bahru — a high-rise residential project that positions itself at the intersection of urban convenience, green living, and modern design in the JB City district.</p>
+          <p>The Address carries GreenRE certification — a commitment to sustainable building design that reduces environmental impact while improving indoor quality and long-term operational efficiency for residents.</p>
+        </div>
+        <div class="dev-certs">
+          <div class="dev-cert"><div class="dev-cert__icon">🌿</div><div class="dev-cert__label">GreenRE Certified Building</div></div>
+          <div class="dev-cert"><div class="dev-cert__icon">🔒</div><div class="dev-cert__label">Multi-Tier Security System</div></div>
+          <div class="dev-cert"><div class="dev-cert__icon">⚡</div><div class="dev-cert__label">EV Charging Infrastructure</div></div>
+        </div>
+        <div style="margin-top:20px;padding:16px 18px;background:var(--depth);border:1px solid var(--border-dark)">
+          <div style="font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-on-dark);margin-bottom:8px">Site Address</div>
+          <div style="font-size:13px;color:var(--text-on-dark)">62, Jalan Serampang, Taman Tebrau Jaya, 80050 Johor Bahru</div>
+        </div>
+      </div>
+      <div class="dev-img">
+        <img src="/the-address-jb/facade.jpg" alt="The Address JB facade" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-eyebrow">FAQ</div>
+    <h2 class="section-title section-title--light" style="margin-top:14px">Questions, answered.</h2>
+    <div class="faq-list">
+      <details class="faq-item"><summary>What unit types are available at The Address JB?</summary><div class="faq-item__body">Three unit types: Type A — The Studio (450 sq ft, 1BR+1BA), Type B — The Edge (660 sq ft, 2BR+2BA, Variants B1 &amp; B2), and Type C — The Residence (865 sq ft, 3BR+2BA, Dual-Key concept). 3D virtual tours are available for Type A and Type B via Lapentor.</div></details>
+      <details class="faq-item"><summary>What does GreenRE certified mean for residents?</summary><div class="faq-item__body">GreenRE is Malaysia's green building certification — it means The Address was designed and built to meet standards for energy efficiency, water conservation, indoor air quality, and sustainable materials. In practice this translates to lower utility bills, better air quality, and a reduced environmental footprint compared to conventional high-rises.</div></details>
+      <details class="faq-item"><summary>How close is The Address to Singapore?</summary><div class="faq-item__body">The Address is approximately 3km from the CIQ checkpoint and 3.2km from the JB-Singapore Causeway. JB Sentral (the main transit hub for cross-border buses and KTM) is 4km away. The future RTS Link will further improve cross-border connectivity.</div></details>
+      <details class="faq-item"><summary>What amenities are on Level 11?</summary><div class="faq-item__body">Level 11 hosts the Sky Amenities: 25m Infinity Pool, Water Cocoon, Aqua Gym, Pool Deck, Children's Pool, Sunken Lounger, Multipurpose Lawn, Terraced Seating, Basketball Court, Pickleball Court, Garden Lawn, and Pergola Seating — with elevated city and skyline views.</div></details>
+      <details class="faq-item"><summary>What is the Dual-Key concept in Type C?</summary><div class="faq-item__body">The Dual-Key concept in Type C (The Residence) allows the unit to function as two separate living spaces — typically a main home and a smaller studio or bedroom with its own entrance. This enables flexible uses: live in one and rent out the other, or house extended family with privacy. Confirm the exact specification via the Register Interest form below.</div></details>
+      <details class="faq-item"><summary>Can I do a virtual tour before deciding?</summary><div class="faq-item__body">Yes — The Address provides fully navigable 3D virtual tours for Type A (Studio) and Type B (The Edge) via Lapentor. You can explore the space from any device, at any time. Type C does not currently have a virtual tour — register interest below to arrange a physical showroom visit.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / REGISTER INTEREST -->
+<section class="cta-section" id="contact">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <div class="section-eyebrow" style="color:var(--amber)">Register Interest</div>
+        <h2 class="cta-headline">Your urban signature<br>starts here.</h2>
+        <p class="cta-sub">Submit your details and we will share current unit availability, pricing across all three types, and honest guidance on whether The Address JB fits your lifestyle or investment goals — via WhatsApp.</p>
+        <div class="agent-badge">
+          <div class="agent-badge__ren">REN 84844</div>
+          <div class="agent-badge__company">GT Nelson Realty Sdn Bhd</div>
+          <div class="agent-badge__license">Licensed under BOVAEA · Independent Marketing Negotiator</div>
+        </div>
+      </div>
+      <form class="interest-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="formName">Your Name *</label>
+            <input class="form-input" id="formName" type="text" placeholder="e.g. Lee Wei Ming" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="formPhone">WhatsApp / Phone *</label>
+            <input class="form-input" id="formPhone" type="tel" placeholder="+60 12-XXX XXXX" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="formUnit">Unit Type Interest</label>
+          <select class="form-input" id="formUnit">
+            <option value="">-- Select (optional) --</option>
+            <option>Type A · Studio · 450 sq ft</option>
+            <option>Type B · The Edge · 660 sq ft</option>
+            <option>Type C · The Residence · 865 sq ft</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="formMsg">Message (optional)</label>
+          <textarea class="form-input form-textarea" id="formMsg" placeholder="e.g. budget range, floor preference, investor or own-stay…"></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
+          Send via WhatsApp
+        </button>
+        <p class="form-note">Your details will be sent to REN 84844 · GT Nelson Realty Sdn Bhd via WhatsApp. No data is stored on this website.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">CIQ <em>Property Hub</em></div>
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="/the-iconic-pgb.html">The Iconic PGB</a>
+        <a href="/paragon-gateway.html">Paragon Gateway</a>
+        <a href="/rf-princess-cove-phase3.html">R&F Phase 3</a>
+        <a href="/calia-residences.html">Calia</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__disclaimer">
+      Information prepared by REN 84844, GT Nelson Realty Sdn Bhd, for general reference only. Data sourced from maxim-theaddressjb.com and developer project brief materials. Unit sizes, configurations, facilities, and amenities are subject to change and the Sale &amp; Purchase Agreement governs all transactions. Artist's impressions and floor plans are indicative only. GreenRE certification status as published by the developer. Pricing upon enquiry. Images sourced from maxim-theaddressjb.com for reference purposes. All rights in developer imagery remain with Maxim Pelangi Sdn Bhd. &copy; 2025 CIQ Property Hub · REN 84844.
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLb()">
+  <span class="lightbox__close" onclick="closeLb()">×</span>
+  <span class="lightbox__nav lightbox__prev" onclick="changeLb(-1)">‹</span>
+  <img class="lightbox__img" id="lbImg" src="" alt="">
+  <span class="lightbox__nav lightbox__next" onclick="changeLb(1)">›</span>
+</div>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60), {passive:true});
+
+const galleryImgs = [
+  '/the-address-jb/facade.jpg',
+  '/the-address-jb/drop-off.jpg',
+  '/the-address-jb/waiting-lounge.jpg',
+  '/the-address-jb/residence-lounge.jpg',
+  '/the-address-jb/social-kitchen.jpg',
+  '/the-address-jb/library.jpg',
+  '/the-address-jb/outdoor-lounge.jpg'
+];
+let curIdx = 0;
+function openLb(i) { curIdx=i; document.getElementById('lbImg').src=galleryImgs[i]; document.getElementById('lightbox').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeLb() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow=''; }
+function changeLb(d) { curIdx=(curIdx+d+galleryImgs.length)%galleryImgs.length; document.getElementById('lbImg').src=galleryImgs[curIdx]; }
+document.addEventListener('keydown', e => { if(e.key==='Escape')closeLb(); if(e.key==='ArrowLeft')changeLb(-1); if(e.key==='ArrowRight')changeLb(1); });
+
+function submitForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('formName').value.trim();
+  const phone = document.getElementById('formPhone').value.trim();
+  const unit = document.getElementById('formUnit').value;
+  const msg = document.getElementById('formMsg').value.trim();
+  if (!name || !phone) return;
+  let text = `Hi, I'd like to register my interest in The Address Johor Bahru.\n\nName: ${name}\nContact: ${phone}`;
+  if (unit) text += `\nUnit Preference: ${unit}`;
+  if (msg) text += `\nMessage: ${msg}`;
+  window.open('https://wa.me/60128742687?text=' + encodeURIComponent(text), '_blank');
+}
+</script>
+</body>
+</html>

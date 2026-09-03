@@ -39,6 +39,7 @@ export type Project = {
   foreignerFriendly: boolean;
   bumiPackage: boolean;
   heroGradient: string;
+  listingImage?: string;
   status: "Now Selling" | "Coming Soon" | "Under Construction" | "Completed";
   highlights: string[];
   facilities: string[];
@@ -78,6 +79,7 @@ export const projects: Project[] = [
     foreignerFriendly: true,
     bumiPackage: false,
     heroGradient: "from-stone-900 via-stone-800 to-amber-900",
+    listingImage: "/listing-cards/richmond.png",
     status: "Under Construction",
     highlights: [
       "Freehold title — rare freehold hotel suites in JB City Centre, a distinct tenure advantage",
@@ -187,7 +189,7 @@ export const projects: Project[] = [
       "Located in the Danga Bay waterfront area, part of the broader Johor Bahru development corridor. Within the greater JB city zone with access to CIQ via the city road network.",
     developer: "R&F Group",
     propertyType: "Commercial Title (HDA)",
-    tenure: "[Please contact us for tenure details]",
+    tenure: "TBC",
     completion: "2028",
     totalUnits: "3,224",
     floors: "49",
@@ -197,6 +199,7 @@ export const projects: Project[] = [
     foreignerFriendly: true,
     bumiPackage: false,
     heroGradient: "from-blue-950 via-slate-900 to-blue-900",
+    listingImage: "/listing-cards/rf-princess-cove.png",
     status: "Under Construction",
     highlights: [
       "Large-scale waterfront development in Danga Bay",
@@ -268,7 +271,7 @@ export const projects: Project[] = [
       "Located within the Johor Bahru city area with access to the broader JB city centre and CIQ connectivity corridor.",
     developer: "PGB",
     propertyType: "Commercial Title (HDA)",
-    tenure: "[Please contact us for tenure details]",
+    tenure: "Freehold",
     completion: "2029",
     totalUnits: "637",
     floors: "36",
@@ -278,6 +281,7 @@ export const projects: Project[] = [
     foreignerFriendly: true,
     bumiPackage: true,
     heroGradient: "from-emerald-950 via-slate-900 to-emerald-900",
+    listingImage: "/listing-cards/calia-residences.webp",
     status: "Under Construction",
     highlights: [
       "Accessible price point from RM 343,000 — among the more affordable in the JB CIQ area",
@@ -346,7 +350,7 @@ export const projects: Project[] = [
       "Located within the Johor Bahru city area, part of the growing development corridor with access to JB city centre and CIQ.",
     developer: "Majestic Gen",
     propertyType: "Commercial Title (HDA)",
-    tenure: "[Please contact us for tenure details]",
+    tenure: "Freehold",
     completion: "2030",
     totalUnits: "637",
     floors: "48",
@@ -356,6 +360,7 @@ export const projects: Project[] = [
     foreignerFriendly: true,
     bumiPackage: false,
     heroGradient: "from-indigo-950 via-purple-950 to-slate-900",
+    listingImage: "/listing-cards/gensphere.webp",
     status: "Under Construction",
     highlights: [
       "48-level high-rise delivering strong city views",
@@ -421,7 +426,7 @@ export const projects: Project[] = [
       "Located in Johor Bahru, part of the JB city development zone with connectivity to the CIQ area.",
     developer: "CTC Development",
     propertyType: "Commercial Title (HDA)",
-    tenure: "[Please contact us for tenure details]",
+    tenure: "Freehold",
     completion: "2030",
     totalUnits: "1,605",
     floors: "57",
@@ -431,6 +436,7 @@ export const projects: Project[] = [
     foreignerFriendly: true,
     bumiPackage: false,
     heroGradient: "from-cyan-950 via-slate-900 to-blue-950",
+    listingImage: "/listing-cards/ctc-skyone.jpg",
     status: "Under Construction",
     highlights: [
       "Iconic 57-level tower — one of the taller developments in JB",
@@ -489,87 +495,6 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "country-garden-danga-bay",
-    name: "Country Garden @ Danga Bay",
-    tagline: "Ready to Move In — Established Waterfront Development in Danga Bay",
-    location: "Danga Bay, Johor Bahru",
-    ciqRelationship:
-      "Located in Danga Bay, a waterfront development area within the greater Johor Bahru city zone, with access to JB city centre and the CIQ corridor.",
-    developer: "Country Garden",
-    propertyType: "Commercial Title (HDA)",
-    tenure: "[Please contact us for tenure details]",
-    completion: "Ready — Completed Project",
-    totalUnits: "Multiple towers (17 towers)",
-    floors: "[Please contact us for tower details]",
-    priceRange: "RM 544,000 – RM 890,000",
-    pricePerSqft: "RM 1,201 per sq ft (indicative)",
-    estimatedMonthly: "From RM 2,409/mo (indicative, subject to loan approval and interest rate)",
-    foreignerFriendly: true,
-    bumiPackage: false,
-    heroGradient: "from-teal-950 via-slate-900 to-teal-900",
-    status: "Completed",
-    highlights: [
-      "Ready project — move in or rent out immediately",
-      "Large-scale development by Country Garden — 17 towers in Danga Bay",
-      "Waterfront living in the Danga Bay precinct",
-      "Built-up from 453 to 984 sq ft",
-      "Completed development — no construction risk",
-      "Foreigner Friendly — open to international buyers",
-    ],
-    facilities: [
-      "Swimming Pool",
-      "Gymnasium",
-      "Waterfront Promenade",
-      "Clubhouse",
-      "Retail Mall",
-      "Function Rooms",
-      "Landscaped Gardens",
-      "24-hour Security",
-      "Multi-level Carpark",
-    ],
-    unitTypes: [
-      { type: "Type A", size: "453 sq ft", bedrooms: "1", bathrooms: "1" },
-      { type: "Type B", size: "From 600 sq ft", bedrooms: "2", bathrooms: "1" },
-      { type: "Type C", size: "Up to 984 sq ft", bedrooms: "3", bathrooms: "2" },
-    ],
-    nearbyPlaces: [
-      { category: "Transport", name: "JB CIQ Complex", distance: "[Please contact us for verified distance]" },
-      { category: "Lifestyle", name: "Danga Bay Waterfront", distance: "Adjacent" },
-      { category: "Shopping", name: "AEON Mall Tebrau City", distance: "Within JB City area" },
-    ],
-    faq: [
-      {
-        question: "Is Country Garden @ Danga Bay a ready project?",
-        answer: "Yes, this is a completed development — units are ready to occupy or lease. This eliminates construction-period risk for buyers.",
-      },
-      {
-        question: "What is the price range?",
-        answer: "Indicative pricing is from RM 544,000 to RM 890,000 for available secondary market or developer units. Contact us for current availability.",
-      },
-      {
-        question: "Is it suitable for Singapore buyers?",
-        answer: "Country Garden @ Danga Bay is listed as Foreigner Friendly. Contact us for eligibility requirements and procedures for Singapore citizens and PRs.",
-      },
-      {
-        question: "Who operates this website?",
-        answer: "This website is operated by an independent property consultant and is not the official website of Country Garden.",
-      },
-    ],
-    mapsQuery: "Country Garden Danga Bay Johor Bahru",
-    lat: 1.4640784625862628,
-    lng: 103.72694993677663,
-    ciqDistance: "8.0 km",
-    rtsDistance: "TBC",
-    shuttleService: "No",
-    coveredWalkway: "No",
-    whatsappMessage:
-      "Hi, I found your website and I'm interested in Country Garden @ Danga Bay in JB. Could you share the latest unit availability and current package?",
-    metaTitle: "Country Garden @ Danga Bay | Ready JB Property | CIQ Property Hub",
-    metaDescription:
-      "Explore Country Garden @ Danga Bay — ready completed waterfront development in Danga Bay, JB. From RM 544,000. Foreigner Friendly. Independent consultant.",
-  },
-
-  {
     slug: "the-address",
     name: "The Address",
     tagline: "58–69 Levels — A Premium High-Rise Address in Johor Bahru",
@@ -578,7 +503,7 @@ export const projects: Project[] = [
       "Located within Johor Bahru, part of the JB city development corridor with connectivity to the CIQ area.",
     developer: "Maxim & Majestic Gen",
     propertyType: "Commercial Title (HDA)",
-    tenure: "[Please contact us for tenure details]",
+    tenure: "TBC",
     completion: "2030",
     totalUnits: "2,743",
     floors: "58–69",
@@ -588,6 +513,7 @@ export const projects: Project[] = [
     foreignerFriendly: true,
     bumiPackage: false,
     heroGradient: "from-zinc-900 via-neutral-800 to-amber-950",
+    listingImage: "/listing-cards/the-address.webp",
     status: "Under Construction",
     highlights: [
       "Largest project in this selection — 2,743 units across 58–69 levels",
@@ -654,7 +580,7 @@ export const projects: Project[] = [
       "Located within Johor Bahru, part of the JB city development corridor with access to CIQ and city-centre connectivity.",
     developer: "Joland",
     propertyType: "Commercial Title (HDA)",
-    tenure: "[Please contact us for tenure details]",
+    tenure: "Freehold",
     completion: "2028",
     totalUnits: "2,136",
     floors: "37",
@@ -664,6 +590,7 @@ export const projects: Project[] = [
     foreignerFriendly: true,
     bumiPackage: false,
     heroGradient: "from-rose-950 via-slate-900 to-zinc-900",
+    listingImage: "/listing-cards/paragon-gateway.jpg",
     status: "Under Construction",
     highlights: [
       "One of the earlier completion targets in this selection — 2028",
@@ -740,6 +667,7 @@ export const projects: Project[] = [
     foreignerFriendly: true,
     bumiPackage: false,
     heroGradient: "from-slate-950 via-indigo-950 to-slate-900",
+    listingImage: "/listing-cards/the-iconic.png",
     status: "Under Construction",
     highlights: [
       "Freehold twin towers — rare freehold commercial title on the RTS/CIQ corridor in Stulang Darat",
@@ -843,6 +771,88 @@ export const projects: Project[] = [
     metaTitle: "The Iconic by PGB | Freehold Twin Towers JB RTS Corridor | CIQ Property Hub",
     metaDescription:
       "The Iconic by PGB — 1,510 freehold serviced apartments in Stulang Darat, JB. ~2km to RTS & CIQ. From RM 578,600. Independent consultant information.",
+  },
+  {
+    slug: "summer-suites",
+    name: "Summer Suites",
+    tagline: "Freehold Serviced Apartments 850m from JB CIQ and Bukit Chagar RTS Station",
+    developer: "Connoisseur Properties Sdn. Bhd.",
+    location: "JB City Centre",
+    propertyType: "Serviced Apartment (Commercial Title / HDA)",
+    tenure: "Freehold",
+    completion: "Q2 2029",
+    totalUnits: "748 units · 44 storeys",
+    floors: "44",
+    priceRange: "From RM 620,000",
+    pricePerSqft: "[Please contact us]",
+    estimatedMonthly: "[Please contact us]",
+    foreignerFriendly: true,
+    bumiPackage: false,
+    ciqRelationship: "850m from JB CIQ checkpoint and Bukit Chagar RTS Station — within walking distance of both.",
+    heroGradient: "from-teal-950 via-slate-900 to-teal-900",
+    listingImage: "/listing-cards/summer-suites.webp",
+    status: "Under Construction",
+    highlights: [
+      "Freehold commercial title under HDA",
+      "850m walk to JB CIQ and Bukit Chagar RTS",
+      "Dual-key, 2BR and 3BR configurations",
+      "748 units across 44 storeys",
+      "From RM 620,000",
+    ],
+    facilities: [
+      "Swimming Pool",
+      "Gymnasium",
+      "Grand Entrance Lobby",
+      "Lounge",
+      "Media Room",
+      "Co-working Space",
+    ],
+    nearbyPlaces: [
+      { category: "Transport", name: "Sultan Iskandar CIQ Complex", distance: "850m" },
+      { category: "Transport", name: "Bukit Chagar RTS Station (Future)", distance: "850m" },
+      { category: "Transport", name: "JB Sentral Bus & Railway Terminal", distance: "[Please contact us for verified distance]" },
+      { category: "Shopping", name: "Komtar JBCC", distance: "Within JB City area" },
+      { category: "Shopping", name: "JB City Square", distance: "Within JB City area" },
+    ],
+    unitTypes: [
+      { type: "Type A", bedrooms: "3 Bedrooms", bathrooms: "3", size: "912 sq ft" },
+      { type: "Type B", bedrooms: "2+1 Bedrooms", bathrooms: "2", size: "808 sq ft" },
+      { type: "Type C (Dual-Key)", bedrooms: "Studio + Studio", bathrooms: "2", size: "599 sq ft" },
+    ],
+    faq: [
+      {
+        question: "What is Summer Suites?",
+        answer: "Summer Suites is a 44-storey freehold serviced apartment development by Connoisseur Properties Sdn. Bhd. at Jalan Bukit Meldrum, JB City Centre. It comprises 748 units across three configurations — dual-key studio (Type C, 599 sq ft), 2+1 bedroom (Type B, 808 sq ft) and 3-bedroom (Type A, 912 sq ft) — from RM 620,000.",
+      },
+      {
+        question: "How far is Summer Suites from CIQ and the RTS station?",
+        answer: "Summer Suites is approximately 850m from both the Sultan Iskandar CIQ checkpoint and the future Bukit Chagar RTS Station — within comfortable walking distance. Always verify distances using mapping applications.",
+      },
+      {
+        question: "What is a dual-key unit?",
+        answer: "Type C (599 sq ft) is a dual-key unit containing two separate lockable sections under one freehold title. You can live in one side and rent the other, rent both independently, or use one for short-term rental. This flexibility is particularly suited to investors along the high-commuter JB CIQ corridor.",
+      },
+      {
+        question: "Who is the developer of Summer Suites?",
+        answer: "Summer Suites is developed by Connoisseur Properties Sdn. Bhd., part of the Connoisseur Group of Companies — a developer active in Johor Bahru and Iskandar Malaysia since 2005. The Group's shareholders are founding members and major shareholders of Country View Berhad, a Bursa Malaysia Main Board-listed company.",
+      },
+      {
+        question: "Who operates this website — is this the official Summer Suites site?",
+        answer: "No. This page is operated by an independent property marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844). This is NOT the official website of Connoisseur Properties or Summer Suites. All information here is for general reference and should be verified directly with the developer.",
+      },
+    ],
+    mapsQuery: "Summer Suites Jalan Bukit Meldrum Johor Bahru",
+    lat: 1.4627,
+    lng: 103.7614,
+    ciqDistance: "850m",
+    rtsDistance: "850m",
+    shuttleService: "TBC",
+    coveredWalkway: "TBC",
+    whatsappMessage:
+      "Hi, I found your website and I'm interested in Summer Suites JB CIQ by Connoisseur Properties. Could you share the latest unit availability, floor plans and pricing?",
+    metaTitle: "Summer Suites JB CIQ | Freehold 850m to CIQ & RTS | CIQ Property Hub",
+    metaDescription:
+      "Summer Suites by Connoisseur Properties — 748 freehold serviced apartments 850m from JB CIQ and Bukit Chagar RTS. Dual-key, 2BR & 3BR. From RM 620,000.",
   },
 ];
 

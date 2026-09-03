@@ -1,324 +1,453 @@
 import Link from "next/link";
 import { projects } from "@/lib/projects";
 import { siteConfig } from "@/lib/siteConfig";
-import PropertyCard from "@/components/PropertyCard";
-import WhatsAppCTA from "@/components/WhatsAppCTA";
+import HomePremiumCard from "@/components/HomePremiumCard";
 import ProjectMap from "@/components/ProjectMap";
+import LeadForm from "@/components/LeadForm";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
 
+/* ─────────────────────────────────────────────────────────────────
+   HERO
+───────────────────────────────────────────────────────────────── */
+function Hero() {
+  return (
+    <section className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-[#0D1117]">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/hero-jb-night.jpg"
+          alt="Johor Bahru cityscape at night — aerial view"
+          className="w-full h-full object-cover opacity-65"
+        />
+        {/* Multi-layer overlay for cinematic depth */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117] via-[#0D1117]/55 to-[#0D1117]/15" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0D1117]/60 via-transparent to-transparent" />
+      </div>
+
+      {/* Content anchored to bottom */}
+      <div className="relative z-10 max-w-[1120px] mx-auto px-6 sm:px-8 pb-16 md:pb-24 pt-32 w-full">
+        <span className="block text-[10px] font-semibold tracking-[.18em] uppercase text-[var(--accent)] mb-6">
+          Johor Bahru Property Collection
+        </span>
+
+        <h1
+          className="font-serif text-[clamp(2.8rem,7vw,5.2rem)] font-bold text-white leading-[1.05] tracking-[-0.02em] mb-6 max-w-3xl"
+        >
+          Johor Bahru&apos;s<br className="hidden sm:block" /> Prime Addresses.
+        </h1>
+
+        <p className="text-white/60 text-base md:text-lg max-w-lg mb-10 leading-[1.75]">
+          A curated collection of residences around CIQ, RTS and Johor Bahru&apos;s most connected districts.
+        </p>
+
+        {/* Compact stats strip */}
+        <div className="flex w-fit mb-10 border border-[rgba(201,168,76,0.3)] overflow-hidden">
+          {[
+            { val: String(projects.length), lbl: "Projects" },
+            { val: "CIQ · RTS", lbl: "Corridor" },
+            { val: "Freehold", lbl: "Options" },
+          ].map((s, i) => (
+            <div
+              key={s.lbl}
+              className={`px-5 py-3 text-center bg-white/[0.05] backdrop-blur-sm${i > 0 ? " border-l border-[rgba(201,168,76,0.2)]" : ""}`}
+            >
+              <div className="font-serif text-lg font-semibold text-white leading-none mb-1">{s.val}</div>
+              <div className="text-[9px] font-medium text-[var(--accent)] tracking-[.1em] uppercase">{s.lbl}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row gap-3">
+          <Link
+            href="#collection"
+            className="inline-flex items-center justify-center bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-semibold px-7 py-3.5 text-[13px] tracking-[.04em] uppercase transition-colors duration-200"
+          >
+            Explore Properties
+          </Link>
+          <Link
+            href="#compare"
+            className="inline-flex items-center justify-center border border-white/25 hover:border-white/50 text-white/90 font-medium px-7 py-3.5 text-[13px] tracking-[.04em] uppercase transition-colors duration-200"
+          >
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+
+      {/* Scroll cue */}
+      <div className="absolute bottom-8 right-8 hidden lg:flex flex-col items-center gap-3 opacity-30">
+        <span className="text-[9px] tracking-[.25em] uppercase text-white [writing-mode:vertical-rl]">Scroll</span>
+        <div className="w-px h-10 bg-white/50" />
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   LOCATION STORY
+───────────────────────────────────────────────────────────────── */
+function LocationStory() {
+  const points = [
+    {
+      eyebrow: "CIQ Checkpoint",
+      title: "Sultan Iskandar Complex",
+      desc: "The primary land crossing between Malaysia and Singapore, processing hundreds of thousands of daily crossings. Properties within walking distance occupy a rare commuter premium.",
+    },
+    {
+      eyebrow: "RTS Link",
+      title: "Bukit Chagar · Woodlands",
+      desc: "The JB–Singapore Rapid Transit System links Bukit Chagar directly to Woodlands North MRT — opening a new rail option across the Causeway.",
+    },
+    {
+      eyebrow: "Iskandar Malaysia",
+      title: "JB City Centre",
+      desc: "Johor Bahru City Centre is undergoing significant urban transformation — infrastructure, retail and lifestyle amenities anchoring a growing residential market.",
+    },
+  ];
+
+  return (
+    <section className="bg-[var(--bg-dark)] py-20 md:py-28">
+      <div className="max-w-[1120px] mx-auto px-6 sm:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-20 items-start">
+          {/* Left — editorial headline */}
+          <div className="lg:sticky lg:top-28">
+            <span className="block text-[10px] font-semibold tracking-[.18em] uppercase text-[var(--accent)] mb-5">
+              Location &amp; Connectivity
+            </span>
+            <h2 className="font-serif text-[clamp(2.2rem,5vw,3.6rem)] font-bold text-white leading-[1.08] tracking-[-0.02em] mb-6">
+              The corridor<br />that connects<br />two cities.
+            </h2>
+            <p className="text-white/50 leading-[1.8] max-w-sm text-[15px]">
+              Properties along the JB CIQ–RTS corridor occupy one of Southeast Asia&apos;s most strategically significant urban seams — where Johor Bahru&apos;s emerging city meets Singapore&apos;s proven economy.
+            </p>
+            <div className="mt-8">
+              <Link
+                href="/locations/ciq"
+                className="inline-flex items-center gap-2 text-[var(--accent)] text-sm font-medium hover:gap-3 transition-all duration-200"
+              >
+                Learn about the CIQ area
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+
+          {/* Right — connectivity facts */}
+          <div className="border-t border-white/10">
+            {points.map((item) => (
+              <div key={item.eyebrow} className="border-b border-white/10 py-8">
+                <span className="block text-[10px] font-semibold tracking-[.14em] uppercase text-[var(--accent)] mb-2">
+                  {item.eyebrow}
+                </span>
+                <h3 className="font-serif text-xl font-semibold text-white mb-2.5 leading-snug">
+                  {item.title}
+                </h3>
+                <p className="text-white/45 text-[14px] leading-[1.75]">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   PROPERTY COLLECTION
+───────────────────────────────────────────────────────────────── */
+function PropertyCollection() {
+  return (
+    <section id="collection" className="bg-[var(--bg-primary)] py-20 md:py-28">
+      <div className="max-w-[1120px] mx-auto px-6 sm:px-8">
+        {/* Section header */}
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12 pb-8 border-b border-[var(--border)]">
+          <div>
+            <span className="block text-[10px] font-semibold tracking-[.18em] uppercase text-[var(--accent)] mb-4">
+              Curated Collection
+            </span>
+            <h2 className="font-serif text-[clamp(2.2rem,5vw,3.4rem)] font-bold text-[var(--text-primary)] leading-[1.08] tracking-[-0.02em]">
+              The Properties.
+            </h2>
+          </div>
+          <Link
+            href="/projects"
+            className="flex-shrink-0 inline-flex items-center gap-1.5 text-[13px] font-medium text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors duration-200 pb-1"
+          >
+            View all projects
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+
+        {/* Premium 3-column card grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {projects.map((project) => (
+            <HomePremiumCard key={project.slug} project={project} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   MAP SECTION
+───────────────────────────────────────────────────────────────── */
+function MapSection() {
+  return (
+    <section className="bg-[var(--bg-secondary)] py-20 md:py-28">
+      <div className="max-w-[1120px] mx-auto px-6 sm:px-8">
+        <div className="mb-12">
+          <span className="block text-[10px] font-semibold tracking-[.18em] uppercase text-[var(--accent)] mb-4">
+            Location Intelligence
+          </span>
+          <h2 className="font-serif text-[clamp(2.2rem,5vw,3.4rem)] font-bold text-[var(--text-primary)] leading-[1.08] tracking-[-0.02em]">
+            Everything within reach.
+          </h2>
+          <p className="text-[var(--text-secondary)] mt-4 max-w-lg text-[15px] leading-[1.75]">
+            All {projects.length} projects sit within the JB CIQ and RTS corridor.
+          </p>
+        </div>
+
+        {/* Map — no rounded corners, just border */}
+        <div className="border border-[var(--border)] overflow-hidden mb-8">
+          <ProjectMap />
+        </div>
+
+        {/* Distance reference grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+          {projects.map((p) => (
+            <div key={p.slug} className="border border-[var(--border)] bg-[var(--bg-primary)] px-4 py-3">
+              <p className="text-[10px] font-semibold uppercase tracking-[.08em] text-[var(--accent)] mb-1.5 truncate">
+                {p.name}
+              </p>
+              <p className="text-[11px] text-[var(--text-secondary)]">
+                CIQ&nbsp;
+                <span className="font-semibold text-[var(--text-primary)]">
+                  {p.ciqDistance ?? "TBC"}
+                </span>
+              </p>
+              <p className="text-[11px] text-[var(--text-secondary)]">
+                RTS&nbsp;
+                <span className="font-semibold text-[var(--text-primary)]">
+                  {p.rtsDistance ?? "TBC"}
+                </span>
+              </p>
+            </div>
+          ))}
+        </div>
+        <p className="text-[var(--text-muted)] text-[11px] mt-4">
+          Distances marked TBC are indicative — enquire for verified figures.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   COMPARISON TABLE
+───────────────────────────────────────────────────────────────── */
+function ComparisonTable() {
+  return (
+    <section id="compare" className="bg-[var(--bg-dark)] py-20 md:py-28">
+      <div className="max-w-[1120px] mx-auto px-6 sm:px-8">
+        <div className="mb-12">
+          <span className="block text-[10px] font-semibold tracking-[.18em] uppercase text-[var(--accent)] mb-4">
+            Side by Side
+          </span>
+          <h2 className="font-serif text-[clamp(2.2rem,5vw,3.4rem)] font-bold text-white leading-[1.08] tracking-[-0.02em]">
+            Compare the collection.
+          </h2>
+        </div>
+
+        <div className="overflow-x-auto border border-white/10">
+          <table className="w-full text-sm" style={{ fontVariantNumeric: "tabular-nums" }}>
+            <thead>
+              <tr className="border-b border-white/10">
+                {["Project", "From", "PSF", "CIQ", "RTS", "Shuttle", "Covered Walk"].map((h) => (
+                  <th
+                    key={h}
+                    className="text-left px-5 py-4 text-[10px] font-semibold uppercase tracking-[.12em] text-[var(--accent)] whitespace-nowrap first:text-[var(--accent)] [&:not(:first-child)]:text-white/35"
+                  >
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {projects.map((p, i) => (
+                <tr
+                  key={p.slug}
+                  className={`border-b border-white/[0.05] hover:bg-white/[0.03] transition-colors${
+                    i % 2 === 1 ? " bg-white/[0.02]" : ""
+                  }`}
+                >
+                  <td className="px-5 py-4 font-medium text-white whitespace-nowrap">
+                    <Link
+                      href={`/projects/${p.slug}`}
+                      className="hover:text-[var(--accent)] transition-colors duration-150"
+                    >
+                      {p.name}
+                    </Link>
+                  </td>
+                  <td className="px-5 py-4 text-white/45 whitespace-nowrap">{p.priceRange ?? "—"}</td>
+                  <td className="px-5 py-4 text-white/45 whitespace-nowrap">{p.pricePerSqft ?? "—"}</td>
+                  <td className="px-5 py-4 text-white/70 font-medium whitespace-nowrap">{p.ciqDistance ?? "TBC"}</td>
+                  <td className="px-5 py-4 text-white/70 font-medium whitespace-nowrap">{p.rtsDistance ?? "TBC"}</td>
+                  <td className="px-5 py-4 text-white/45 whitespace-nowrap">{p.shuttleService ?? "TBC"}</td>
+                  <td className="px-5 py-4 text-white/45 whitespace-nowrap">{p.coveredWalkway ?? "TBC"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-white/20 text-[11px] mt-4">
+          TBC = To Be Confirmed. Prices subject to change without notice. Enquire for up-to-date verified figures.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   WHY THIS COLLECTION
+───────────────────────────────────────────────────────────────── */
+function WhyThisCollection() {
+  const pillars = [
+    {
+      num: "01",
+      title: "CIQ & RTS Corridor",
+      desc: "Every property in this collection sits within the JB CIQ and Bukit Chagar RTS corridor — selected specifically for Singapore commuters and cross-border buyers.",
+    },
+    {
+      num: "02",
+      title: "Multiple Price Points",
+      desc: "From compact investment units to larger residences — the collection spans different budgets, tenure types and lifestyle propositions, allowing genuine comparison.",
+    },
+    {
+      num: "03",
+      title: "Independent Guidance",
+      desc: "This is not a developer portal. We are a registered independent property consultant presenting information clearly so you can make a better-informed decision.",
+    },
+  ];
+
+  return (
+    <section className="bg-[var(--bg-primary)] py-20 md:py-28">
+      <div className="max-w-[1120px] mx-auto px-6 sm:px-8">
+        <div className="mb-14 pb-10 border-b border-[var(--border)]">
+          <span className="block text-[10px] font-semibold tracking-[.18em] uppercase text-[var(--accent)] mb-4">
+            About This Collection
+          </span>
+          <h2 className="font-serif text-[clamp(2rem,5vw,3.2rem)] font-bold text-[var(--text-primary)] leading-[1.1] tracking-[-0.02em] max-w-xl">
+            A curated selection,<br className="hidden sm:block" /> not a complete listing.
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+          {pillars.map((item, i) => (
+            <div
+              key={item.num}
+              className={`py-8 md:py-0 md:pr-10${i < pillars.length - 1 ? " border-b md:border-b-0 md:border-r border-[var(--border)]" : ""}${i > 0 ? " md:pl-10" : ""}`}
+            >
+              <div className="font-serif text-[3.5rem] font-bold text-[var(--border)] leading-none mb-6 select-none">
+                {item.num}
+              </div>
+              <h3 className="font-serif text-xl font-semibold text-[var(--text-primary)] mb-3">
+                {item.title}
+              </h3>
+              <p className="text-[var(--text-secondary)] text-[14px] leading-[1.8]">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Consultant identity strip */}
+        <div className="mt-14 pt-10 border-t border-[var(--border)] flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+          <p className="text-[var(--text-secondary)] text-[14px] leading-[1.75] max-w-lg">
+            CIQ Property Hub is an independent consultant website operated under{" "}
+            <strong className="text-[var(--text-primary)] font-semibold">
+              {siteConfig.consultant.company}
+            </strong>{" "}
+            ({siteConfig.consultant.ren}). We are not the official website of any developer.
+          </p>
+          <Link
+            href="/about"
+            className="flex-shrink-0 inline-flex items-center gap-1.5 text-[13px] font-medium text-[var(--accent)] hover:gap-2.5 transition-all duration-200"
+          >
+            About Us
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   REGISTER INTEREST
+───────────────────────────────────────────────────────────────── */
+function RegisterInterest() {
+  return (
+    <section id="register" className="bg-[var(--bg-dark)] py-20 md:py-28">
+      <div className="max-w-[1120px] mx-auto px-6 sm:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-14 lg:gap-20 items-start">
+          {/* Left — editorial CTA copy */}
+          <div className="lg:pt-2">
+            <span className="block text-[10px] font-semibold tracking-[.18em] uppercase text-[var(--accent)] mb-5">
+              Register Interest
+            </span>
+            <h2 className="font-serif text-[clamp(2.2rem,5vw,3.4rem)] font-bold text-white leading-[1.08] tracking-[-0.02em] mb-6">
+              Find your next<br className="hidden sm:block" /> address.
+            </h2>
+            <p className="text-white/50 text-[15px] leading-[1.8] mb-8 max-w-sm">
+              Tell us what you&apos;re looking for and our registered independent property consultant will help you shortlist the properties that fit.
+            </p>
+
+            <ul className="space-y-4 mb-10">
+              {[
+                "No obligation — just honest information",
+                "Direct access to developer pricing and availability",
+                "Independent guidance across all properties",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <div className="w-1 h-1 rounded-full bg-[var(--accent)] mt-2.5 flex-shrink-0" />
+                  <span className="text-white/45 text-sm leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <p className="text-white/20 text-xs tracking-[.04em]">
+              {siteConfig.consultant.ren} · {siteConfig.consultant.company}
+            </p>
+          </div>
+
+          {/* Right — lead form */}
+          <div>
+            <LeadForm />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   PAGE ROOT
+───────────────────────────────────────────────────────────────── */
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <div className="h-1 bg-[var(--accent)]" />
-      <section className="bg-[var(--bg-primary)] border-b border-[var(--border)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-          <div className="max-w-3xl">
-            <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-4">
-              JB CIQ · RTS · Bukit Chagar · City Centre
-            </p>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--text-primary)] leading-tight mb-6">
-              Discover Property Around Johor Bahru CIQ
-            </h1>
-            <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-8 max-w-2xl">
-              Explore selected residential developments around JB CIQ, RTS and the city centre,
-              with clear project information and guidance from an independent property consultant.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                href="/projects"
-                className="inline-flex items-center justify-center bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-semibold px-6 py-3.5 rounded transition-colors duration-200"
-              >
-                Explore CIQ Properties
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center border border-[var(--border)] hover:border-[var(--accent)] text-[var(--text-primary)] font-semibold px-6 py-3.5 rounded transition-colors duration-200"
-              >
-                Register Interest
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* Why CIQ */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-2">
-              Why JB CIQ
-            </p>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[var(--text-primary)]">
-              The Singapore–JB Connectivity Corridor
-            </h2>
-            <p className="mt-4 text-[var(--text-secondary)] max-w-2xl mx-auto">
-              JB CIQ and the upcoming RTS Link represent one of the most significant infrastructure
-              developments connecting Johor Bahru and Singapore. Properties in this corridor are
-              positioned in a zone of growing connectivity.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                icon: "🚉",
-                title: "RTS Link",
-                desc: "The Johor Bahru–Singapore Rapid Transit System connects Bukit Chagar (JB) to Woodlands (Singapore), offering a new rail option across the Causeway.",
-              },
-              {
-                icon: "🏙️",
-                title: "JB City Centre",
-                desc: "Johor Bahru City Centre is undergoing significant transformation with new mixed-use developments, improved infrastructure and expanding lifestyle amenities.",
-              },
-              {
-                icon: "🌉",
-                title: "Singapore Proximity",
-                desc: "Properties near CIQ are well-positioned for Singapore commuters, cross-border business professionals and buyers seeking convenient Causeway access.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="bg-[var(--bg-secondary)] rounded p-6">
-                <div className="text-3xl mb-3">{item.icon}</div>
-                <h3 className="font-serif text-lg font-bold text-[var(--text-primary)] mb-2">{item.title}</h3>
-                <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-6 text-center">
-            <Link
-              href="/locations/ciq"
-              className="inline-flex items-center gap-1 text-sm text-[var(--accent)] font-semibold hover:underline"
-            >
-              Learn more about the CIQ area
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Projects Grid */}
-      <section className="py-16 bg-[var(--bg-secondary)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
-            <div>
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-2">
-                CIQ Area Properties
-              </p>
-              <h2 className="font-serif text-3xl font-bold text-[var(--text-primary)]">
-                Selected Developments
-              </h2>
-              <p className="mt-2 text-[var(--text-secondary)] text-sm max-w-xl">
-                Properties selected for their CIQ relevance, city-centre positioning and Singapore connectivity.
-              </p>
-            </div>
-            <Link
-              href="/projects"
-              className="flex-shrink-0 text-sm font-semibold text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors duration-200"
-            >
-              View all projects →
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project) => (
-              <PropertyCard key={project.slug} project={project} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Project Locations Map */}
-      <section className="py-16 bg-[var(--bg-secondary)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-2">
-              Location Intelligence
-            </p>
-            <h2 className="font-serif text-3xl font-bold text-[var(--text-primary)] mb-3">
-              Project Locations & CIQ Distance
-            </h2>
-            <p className="text-[var(--text-secondary)] text-sm max-w-xl mx-auto">
-              All featured projects are within the JB CIQ / RTS corridor — ideal for Singapore commuters.
-            </p>
-          </div>
-
-          {/* Map embed */}
-          <div className="rounded-xl overflow-hidden border border-[var(--border)] mb-8 shadow-sm">
-            <ProjectMap />
-          </div>
-
-          {/* Project distance cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {projects.map((p) => (
-              <div
-                key={p.slug}
-                className="bg-[var(--bg-primary)] border border-[var(--border)] rounded-lg p-4"
-              >
-                <p className="text-xs font-semibold text-[var(--accent)] uppercase tracking-wide mb-1">
-                  {p.name}
-                </p>
-                <p className="text-[var(--text-secondary)] text-xs leading-relaxed">
-                  CIQ: <span className="font-medium text-[var(--text-primary)]">{p.ciqDistance ?? "TBC"}</span>
-                  {" · "}
-                  RTS: <span className="font-medium text-[var(--text-primary)]">{p.rtsDistance ?? "TBC"}</span>
-                </p>
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-xs text-[var(--text-muted)] mt-4">
-            Distances marked TBC are indicative — enquire for verified figures.
-          </p>
-        </div>
-      </section>
-
-      {/* Project Comparison Table */}
-      <section className="py-16 bg-[var(--bg-primary)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-2">
-              Side-by-Side
-            </p>
-            <h2 className="font-serif text-3xl font-bold text-[var(--text-primary)] mb-3">
-              Compare Projects
-            </h2>
-            <p className="text-[var(--text-secondary)] text-sm max-w-xl mx-auto">
-              Key commuter metrics across all listed projects at a glance.
-            </p>
-          </div>
-
-          <div className="overflow-x-auto rounded-xl border border-[var(--border)] shadow-sm">
-            <table className="w-full text-sm" style={{ fontVariantNumeric: "tabular-nums" }}>
-              <thead>
-                <tr className="bg-[var(--bg-dark)] text-white">
-                  <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider whitespace-nowrap">Project</th>
-                  <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider whitespace-nowrap">From</th>
-                  <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider whitespace-nowrap">PSF</th>
-                  <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider whitespace-nowrap">CIQ Dist.</th>
-                  <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider whitespace-nowrap">RTS Dist.</th>
-                  <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider whitespace-nowrap">Shuttle</th>
-                  <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wider whitespace-nowrap">Covered Walk</th>
-                </tr>
-              </thead>
-              <tbody>
-                {projects.map((p, i) => (
-                  <tr
-                    key={p.slug}
-                    className={`border-t border-[var(--border)] ${i % 2 === 0 ? "bg-[var(--bg-primary)]" : "bg-[var(--bg-secondary)]"} hover:bg-[var(--accent)]/5 transition-colors`}
-                  >
-                    <td className="px-4 py-3 font-medium text-[var(--text-primary)] whitespace-nowrap">
-                      <Link href={`/projects/${p.slug}`} className="hover:text-[var(--accent)] hover:underline">
-                        {p.name}
-                      </Link>
-                    </td>
-                    <td className="px-4 py-3 text-[var(--text-secondary)] whitespace-nowrap">
-                      {p.priceRange ?? "—"}
-                    </td>
-                    <td className="px-4 py-3 text-[var(--text-secondary)] whitespace-nowrap">
-                      {p.pricePerSqft ?? "—"}
-                    </td>
-                    <td className="px-4 py-3 whitespace-nowrap">
-                      <span className={`inline-block text-xs font-medium px-2 py-0.5 rounded-full ${p.ciqDistance && p.ciqDistance !== "TBC" ? "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300" : "bg-[var(--bg-secondary)] text-[var(--text-muted)]"}`}>
-                        {p.ciqDistance ?? "TBC"}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 whitespace-nowrap">
-                      <span className={`inline-block text-xs font-medium px-2 py-0.5 rounded-full ${p.rtsDistance && p.rtsDistance !== "TBC" ? "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300" : "bg-[var(--bg-secondary)] text-[var(--text-muted)]"}`}>
-                        {p.rtsDistance ?? "TBC"}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 text-[var(--text-secondary)] whitespace-nowrap">
-                      {p.shuttleService ?? "TBC"}
-                    </td>
-                    <td className="px-4 py-3 text-[var(--text-secondary)] whitespace-nowrap">
-                      {p.coveredWalkway ?? "TBC"}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-center text-xs text-[var(--text-muted)] mt-3">
-            TBC = To Be Confirmed. Enquire for up-to-date verified figures. Prices subject to change without notice.
-          </p>
-        </div>
-      </section>
-
-      {/* Who Are We */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-2">
-              About This Website
-            </p>
-            <h2 className="font-serif text-3xl font-bold text-[var(--text-primary)] mb-4">
-              An Independent Property Consultant
-            </h2>
-            <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-              CIQ Property Hub is an independent property consultant website registered under{" "}
-              <strong>{siteConfig.consultant.company}</strong> ({siteConfig.consultant.ren}).
-              Focused exclusively on properties around JB CIQ, RTS and Johor Bahru City Centre.
-            </p>
-            <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
-              We are <strong>not</strong> the official website of any developer. Our purpose is to
-              provide clear, honest project information and connect interested buyers with a
-              professional consultant who specialises in this area.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link
-                href="/about"
-                className="inline-flex items-center justify-center border border-[var(--border)] hover:border-[var(--accent)] text-[var(--text-primary)] font-semibold px-5 py-2.5 rounded transition-colors duration-200 text-sm"
-              >
-                About Us
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center bg-[var(--text-primary)] hover:bg-[var(--accent)] text-white font-semibold px-5 py-2.5 rounded transition-colors duration-200 text-sm"
-              >
-                Contact
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Buyer Guide Teaser */}
-      <section className="py-16 bg-[var(--bg-dark)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
-            <div>
-              <p className="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-2">
-                Buyer Resources
-              </p>
-              <h2 className="font-serif text-3xl font-bold text-white mb-3">
-                Guides for CIQ Property Buyers
-              </h2>
-              <p className="text-white/60 max-w-xl">
-                Understand the JB CIQ property market, the RTS impact, buying process and
-                considerations for Singapore buyers — written to help you make an informed decision.
-              </p>
-            </div>
-            <div className="flex-shrink-0">
-              <Link
-                href="/guides"
-                className="inline-flex items-center gap-2 bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-semibold px-6 py-3 rounded transition-colors duration-200"
-              >
-                Read the Guides
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Register Interest CTA */}
-      <section className="py-10 bg-[var(--bg-secondary)]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <WhatsAppCTA />
-        </div>
-      </section>
-
+      <Hero />
+      <LocationStory />
+      <PropertyCollection />
+      <MapSection />
+      <ComparisonTable />
+      <WhyThisCollection />
+      <RegisterInterest />
       <WhatsAppCTA variant="floating" />
     </>
   );

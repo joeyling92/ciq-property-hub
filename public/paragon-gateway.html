@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Paragon Gateway — Freehold From RM410,000 | JB Urban Living</title>
 <meta name="description" content="Paragon Gateway — Johor Bahru's freehold high-rise serviced apartments. From RM410,000. 32+ facilities including Sky Bar at Level 54, 50m lap pool, and free shuttle to CIQ. Type A–E units from 645–880 sqft.">
+<link rel="icon" type="image/png" href="/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap">
@@ -229,6 +230,23 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
 .contact-card__wa:hover{background:var(--bronze-d)}
 .contact-card__license{font-size:10px;color:var(--sub-on-dark);text-align:center;line-height:1.6}
 
+/* register interest form */
+.agent-badge{margin-top:32px;padding:20px 24px;background:rgba(255,255,255,.05);border:1px solid rgba(184,135,74,.25);border-radius:var(--r)}
+.agent-badge__ren{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:600;color:var(--bronze);letter-spacing:.06em}
+.agent-badge__company{font-size:13px;color:var(--text-on-dark);margin-top:4px}
+.agent-badge__license{font-size:11px;color:var(--muted-on-dark);margin-top:3px}
+.interest-form{background:var(--charcoal);border:1px solid var(--border-dark);border-radius:var(--r);padding:32px;display:grid;gap:18px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{display:grid;gap:7px}
+.form-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-on-dark)}
+.form-input{width:100%;padding:11px 14px;background:var(--slate);border:1px solid var(--border-dark);color:var(--text-on-dark);font-family:'Inter',sans-serif;font-size:14px;outline:none;transition:border-color .2s;border-radius:2px;box-sizing:border-box}
+.form-input:focus{border-color:var(--bronze)}
+.form-textarea{min-height:80px;resize:vertical}
+.form-submit{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:14px;background:var(--bronze);color:var(--ink);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:none;cursor:pointer;transition:background .2s;border-radius:2px}
+.form-submit:hover{background:var(--bronze-d)}
+.form-note{font-size:11px;color:var(--sub-on-dark);line-height:1.6;text-align:center}
+@media(max-width:600px){.form-row{grid-template-columns:1fr}}
+
 /* lightbox */
 .lightbox{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.93);align-items:center;justify-content:center;padding:20px}
 .lightbox.open{display:flex}
@@ -276,13 +294,13 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
   <div class="container">
     <div class="nav__inner">
       <a href="/" class="nav__brand">
-        <div class="nav__logo-sq"></div>
+        <img src="/logo.png" alt="CIQ Property Hub" style="width:40px;height:40px;object-fit:contain;border-radius:9px;flex-shrink:0">
         <div class="nav__brand-text">
           <span class="nav__brand-name">CIQ Property Hub</span>
           <span class="nav__brand-sub">Johor Bahru</span>
         </div>
       </a>
-      <a href="https://wa.me/60126672669?text=Hi%20Terry%2C%20I%27m%20interested%20in%20Paragon%20Gateway." class="nav__cta" target="_blank" rel="noopener">Enquire Now</a>
+      <a href="#contact" class="nav__cta">Register Interest</a>
     </div>
   </div>
 </nav>
@@ -306,10 +324,7 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
       <span class="hero__badge">3 Min to Giant Hypermarket</span>
     </div>
     <div class="hero__actions">
-      <a href="https://wa.me/60126672669?text=Hi%20Terry%2C%20I%27m%20interested%20in%20Paragon%20Gateway.%20Please%20share%20more%20details." class="btn-bronze" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
-        WhatsApp Terry
-      </a>
+      <a href="#contact" class="btn-bronze">Register Interest</a>
       <a href="#units" class="btn-ghost">View Unit Types</a>
     </div>
     <div class="hero__scroll">
@@ -409,7 +424,7 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
             <div class="unit-card__detail">Partially furnished</div>
             <div class="unit-card__detail">Freehold title</div>
           </div>
-          <a href="https://wa.me/60126672669?text=Hi%20Terry%2C%20I%27m%20interested%20in%20Paragon%20Gateway%20Type%20A%20(645sqft%201BR)." class="unit-card__cta" target="_blank" rel="noopener">Enquire on Type A</a>
+          <button class="unit-card__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Register Interest</button>
         </div>
       </div>
       <div class="unit-card">
@@ -426,7 +441,7 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
             <div class="unit-card__detail">Partially furnished</div>
             <div class="unit-card__detail">Freehold title</div>
           </div>
-          <a href="https://wa.me/60126672669?text=Hi%20Terry%2C%20I%27m%20interested%20in%20Paragon%20Gateway%20Type%20B%2FC%20(2BR)." class="unit-card__cta" target="_blank" rel="noopener">Enquire on Type B/C</a>
+          <button class="unit-card__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Register Interest</button>
         </div>
       </div>
       <div class="unit-card">
@@ -443,11 +458,11 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
             <div class="unit-card__detail">Partially furnished</div>
             <div class="unit-card__detail">Freehold title</div>
           </div>
-          <a href="https://wa.me/60126672669?text=Hi%20Terry%2C%20I%27m%20interested%20in%20Paragon%20Gateway%20Type%20D%2FE%20(3BR)." class="unit-card__cta" target="_blank" rel="noopener">Enquire on Type D/E</a>
+          <button class="unit-card__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Register Interest</button>
         </div>
       </div>
     </div>
-    <p class="units__note">Unit sizes are approximate nett built-up from developer materials. Pricing from RM410,000 — contact Terry for current pricing and availability by floor and type. Furniture package subject to developer's specifications.</p>
+    <p class="units__note">Unit sizes are approximate nett built-up from developer materials. Pricing from RM410,000 — register interest below for current pricing and availability by floor and type.</p>
   </div>
 </section>
 
@@ -652,7 +667,7 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
   <div class="container">
     <div class="section-eyebrow" style="color:var(--bronze)">Floor Plans</div>
     <h2 class="section-title section-title--dark" style="margin-top:14px">Every layout,<br>every configuration.</h2>
-    <p class="section-sub section-sub--dark" style="margin-top:14px">Browse floor plans for all unit types — or request a full set from Terry.</p>
+    <p class="section-sub section-sub--dark" style="margin-top:14px">Browse floor plans for all unit types — or register interest below for a full set.</p>
     <div class="fp-tabs">
       <button class="fp-tab active" onclick="switchFp('1br',this)">1 Bedroom</button>
       <button class="fp-tab" onclick="switchFp('2br',this)">2 Bedrooms</button>
@@ -708,46 +723,59 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
     <h2 class="section-title section-title--light" style="margin-top:14px">Questions answered<br>plainly.</h2>
     <div class="faq-list">
       <details class="faq-item"><summary>Is Paragon Gateway freehold or leasehold?</summary><div class="faq-item__body">Paragon Gateway holds a freehold title — permanent land ownership with no expiry date. This is a meaningful distinction in Johor's property market, where freehold titles are increasingly rare in newer developments and command long-term value retention.</div></details>
-      <details class="faq-item"><summary>What does "partially furnished" mean?</summary><div class="faq-item__body">Paragon Gateway units are delivered with key furniture and fittings included in the purchase price. This reduces the cost and delay between vacant possession and being move-in or rental-ready. The exact specification is confirmed in the Sale &amp; Purchase Agreement — contact Terry for the current furnishing schedule.</div></details>
-      <details class="faq-item"><summary>What is the free shuttle bus service?</summary><div class="faq-item__body">A complimentary shuttle bus is provided for residents to the CIQ (Customs, Immigration and Quarantine) checkpoint, supporting Singapore commuters and cross-border travellers. Operating schedules are managed by building management — confirm current times with Terry.</div></details>
-      <details class="faq-item"><summary>Can foreigners buy Paragon Gateway?</summary><div class="faq-item__body">Yes, subject to the minimum foreign purchase price threshold set by the Johor state government. Contact Terry for current eligibility requirements and financing options for foreign buyers.</div></details>
+      <details class="faq-item"><summary>What does "partially furnished" mean?</summary><div class="faq-item__body">Paragon Gateway units are delivered with key furniture and fittings included in the purchase price. This reduces the cost and delay between vacant possession and being move-in or rental-ready. The exact specification is confirmed in the Sale &amp; Purchase Agreement — register interest below for the current furnishing schedule.</div></details>
+      <details class="faq-item"><summary>What is the free shuttle bus service?</summary><div class="faq-item__body">A complimentary shuttle bus is provided for residents to the CIQ (Customs, Immigration and Quarantine) checkpoint, supporting Singapore commuters and cross-border travellers. Operating schedules are managed by building management — register interest below for current times.</div></details>
+      <details class="faq-item"><summary>Can foreigners buy Paragon Gateway?</summary><div class="faq-item__body">Yes, subject to the minimum foreign purchase price threshold set by the Johor state government. Register interest below for current eligibility requirements and financing options for foreign buyers.</div></details>
       <details class="faq-item"><summary>What are the Sky Facilities at Level 54 &amp; 55?</summary><div class="faq-item__body">Levels 54 and 55 host Paragon Gateway's exclusive Sky Facilities — including a Sky Bar, Sky Cafe, Sky Garden, Sky Terrace, Private Lounge, Private Dining, Lounge &amp; Library, and Sky Gym. These are exclusive to residents and provide elevated panoramic views of Johor Bahru and the Strait of Johor.</div></details>
-      <details class="faq-item"><summary>What unit types and sizes are available?</summary><div class="faq-item__body">Three main configurations: Type A (1 Bedroom, 645 sq ft), Type B/C (2 Bedrooms, 745 sq ft), and Type D/E (3 Bedrooms, 880 sq ft). All types are available for 3D virtual tour via Matterport. Current availability and pricing upon enquiry with Terry.</div></details>
+      <details class="faq-item"><summary>What unit types and sizes are available?</summary><div class="faq-item__body">Three main configurations: Type A (1 Bedroom, 645 sq ft), Type B/C (2 Bedrooms, 745 sq ft), and Type D/E (3 Bedrooms, 880 sq ft). All types are available for 3D virtual tour via Matterport. Current availability and pricing upon enquiry — register interest below.</div></details>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+<!-- CTA / REGISTER INTEREST -->
 <section class="cta-section" id="contact">
   <div class="container">
     <div class="cta-inner">
       <div>
-        <div class="section-eyebrow" style="color:var(--bronze)">Get In Touch</div>
+        <div class="section-eyebrow" style="color:var(--bronze)">Register Interest</div>
         <h2 class="cta-headline">Freehold. Furnished.<br>From RM410,000.</h2>
-        <p class="cta-sub">Terry provides direct developer pricing on Paragon Gateway, current unit availability by floor and type, and honest guidance on whether this development fits your investment or lifestyle goals.</p>
-        <div class="cta-actions">
-          <a href="https://wa.me/60126672669?text=Hi%20Terry%2C%20I%27d%20like%20to%20know%20more%20about%20Paragon%20Gateway.%20Please%20share%20pricing%20and%20availability." class="btn-bronze" target="_blank" rel="noopener">
-            <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
-            WhatsApp Terry Now
-          </a>
-          <a href="tel:+60126672669" class="btn-ghost">📞 +60 12-667 2669</a>
+        <p class="cta-sub">Submit your details and we will send you current unit availability, pricing by floor and type, and honest guidance on whether Paragon Gateway fits your goals — via WhatsApp.</p>
+        <div class="agent-badge">
+          <div class="agent-badge__ren">REN 84844</div>
+          <div class="agent-badge__company">GT Nelson Realty Sdn Bhd</div>
+          <div class="agent-badge__license">Licensed under BOVAEA · Independent Marketing Negotiator</div>
         </div>
       </div>
-      <div class="contact-card">
-        <div class="contact-card__avatar">TT</div>
-        <div>
-          <div class="contact-card__name">Terry Toh</div>
-          <div class="contact-card__role">Licensed Real Estate Negotiator · REN 84844</div>
+      <form class="interest-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="formName">Your Name *</label>
+            <input class="form-input" id="formName" type="text" placeholder="e.g. Lee Wei Ming" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="formPhone">WhatsApp / Phone *</label>
+            <input class="form-input" id="formPhone" type="tel" placeholder="+60 12-XXX XXXX" required>
+          </div>
         </div>
-        <div class="contact-card__divider"></div>
-        <div class="contact-detail"><div class="contact-detail__icon">📱</div>+60 12-667 2669</div>
-        <div class="contact-detail"><div class="contact-detail__icon">🏢</div>GT Nelson Realty Sdn Bhd</div>
-        <div class="contact-detail"><div class="contact-detail__icon">📍</div>Johor Bahru, Malaysia</div>
-        <button class="contact-card__wa" onclick="window.open('https://wa.me/60126672669?text=Hi%20Terry%2C%20I%27d%20like%20to%20know%20more%20about%20Paragon%20Gateway.','_blank')">
-          Open WhatsApp Chat
+        <div class="form-group">
+          <label class="form-label" for="formUnit">Unit Type Interest</label>
+          <select class="form-input" id="formUnit">
+            <option value="">-- Select (optional) --</option>
+            <option>Type A · 1 Bedroom · 645 sq ft</option>
+            <option>Type B/C · 2 Bedrooms · 745 sq ft</option>
+            <option>Type D/E · 3 Bedrooms · 880 sq ft</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="formMsg">Message (optional)</label>
+          <textarea class="form-input form-textarea" id="formMsg" placeholder="e.g. budget range, floor preference, investor or own-stay…"></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
+          Send via WhatsApp
         </button>
-        <div class="contact-card__license">REN 84844 · GT Nelson Realty Sdn Bhd · Licensed under BOVAEA</div>
-      </div>
+        <p class="form-note">Your details will be sent to REN 84844 · GT Nelson Realty Sdn Bhd via WhatsApp. No data is stored on this website.</p>
+      </form>
     </div>
   </div>
 </section>
@@ -766,7 +794,7 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
       </nav>
     </div>
     <div class="footer__disclaimer">
-      Information prepared by Terry Toh (REN 84844), GT Nelson Realty Sdn Bhd, for general reference only. Data sourced from paragongatewaybyrw.com and developer project brief materials. Unit sizes, facilities, pricing, and furnishing packages are subject to change and the Sale &amp; Purchase Agreement governs all transactions. Artist's impressions are indicative only. Pricing from RM410,000 — actual pricing upon enquiry. Facility operational details subject to building management. Foreign buyer eligibility subject to Johor state government thresholds. Images sourced from paragongatewaybyrw.com for reference purposes. &copy; 2025 CIQ Property Hub · Terry Toh REN 84844.
+      Information prepared by REN 84844, GT Nelson Realty Sdn Bhd, for general reference only. Data sourced from paragongatewaybyrw.com and developer project brief materials. Unit sizes, facilities, pricing, and furnishing packages are subject to change and the Sale &amp; Purchase Agreement governs all transactions. Artist's impressions are indicative only. Pricing from RM410,000 — actual pricing upon enquiry. Facility operational details subject to building management. Foreign buyer eligibility subject to Johor state government thresholds. Images sourced from paragongatewaybyrw.com for reference purposes. &copy; 2025 CIQ Property Hub · REN 84844.
     </div>
   </div>
 </footer>
@@ -814,6 +842,19 @@ function openLb(i, g) { curG=g; curI=i; document.getElementById('lbImg').src=gal
 function closeLb() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow=''; }
 function changeLb(d) { const a=galleries[curG]; curI=(curI+d+a.length)%a.length; document.getElementById('lbImg').src=a[curI]; }
 document.addEventListener('keydown', e => { if(e.key==='Escape')closeLb(); if(e.key==='ArrowLeft')changeLb(-1); if(e.key==='ArrowRight')changeLb(1); });
+
+function submitForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('formName').value.trim();
+  const phone = document.getElementById('formPhone').value.trim();
+  const unit = document.getElementById('formUnit').value;
+  const msg = document.getElementById('formMsg').value.trim();
+  if (!name || !phone) return;
+  let text = `Hi, I'd like to register my interest in Paragon Gateway.\n\nName: ${name}\nContact: ${phone}`;
+  if (unit) text += `\nUnit Preference: ${unit}`;
+  if (msg) text += `\nMessage: ${msg}`;
+  window.open('https://wa.me/60128742687?text=' + encodeURIComponent(text), '_blank');
+}
 </script>
 </body>
 </html>

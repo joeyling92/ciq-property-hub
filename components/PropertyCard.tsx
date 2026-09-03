@@ -11,11 +11,18 @@ const statusColors: Record<string, string> = {
 export default function PropertyCard({ project }: { project: Project }) {
   return (
     <div className="group bg-white border border-[var(--border)] rounded overflow-hidden hover:shadow-lg transition-shadow duration-300">
-      {/* Image placeholder */}
+      {/* Card image */}
       <div className={`relative h-56 bg-gradient-to-br ${project.heroGradient} overflow-hidden`}>
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-          <span className="text-white/30 text-xs uppercase tracking-widest mb-2">JB CIQ</span>
-          <span className="font-serif text-2xl font-bold text-white leading-tight">{project.name}</span>
+        {project.listingImage && (
+          <img
+            src={project.listingImage}
+            alt={project.name}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+        <div className="absolute bottom-3 left-4 right-14">
+          <span className="font-serif text-lg font-bold text-white leading-tight drop-shadow">{project.name}</span>
         </div>
         <div className="absolute top-3 right-3">
           <span className={`text-xs font-semibold px-2 py-1 rounded ${statusColors[project.status] ?? "bg-gray-100 text-gray-800"}`}>

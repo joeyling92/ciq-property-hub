@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>R&F Princess Cove Phase 3 — New Casa Suites | JB Border Living</title>
 <meta name="description" content="R&F Princess Cove Phase 3 (New Casa Suites) — the world's nearest condominium to Singapore. 650m to Woodlands Checkpoint. JB's most watched investment address.">
+<link rel="icon" type="image/png" href="/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap">
@@ -279,6 +280,23 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
 .contact-card__wa:hover{background:var(--gold-d)}
 .contact-card__license{font-size:10px;color:var(--sub-on-dark);text-align:center;line-height:1.6}
 
+/* interest form */
+.agent-badge{margin-top:32px;padding:20px 24px;background:rgba(255,255,255,.05);border:1px solid rgba(196,146,42,.25);border-radius:var(--r)}
+.agent-badge__ren{font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;font-weight:600;color:var(--gold);letter-spacing:.06em}
+.agent-badge__company{font-size:13px;color:var(--text-on-dark);margin-top:4px}
+.agent-badge__license{font-size:11px;color:var(--muted-on-dark);margin-top:3px}
+.interest-form{background:var(--charcoal);border:1px solid var(--border-dark);border-radius:var(--r);padding:32px;display:grid;gap:18px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{display:grid;gap:7px}
+.form-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-on-dark)}
+.form-input{width:100%;padding:11px 14px;background:var(--depth);border:1px solid var(--border-dark);color:var(--text-on-dark);font-family:'Cormorant Garamond',Georgia,serif;font-size:14px;outline:none;transition:border-color .2s;border-radius:2px;box-sizing:border-box}
+.form-input:focus{border-color:var(--gold)}
+.form-textarea{min-height:80px;resize:vertical}
+.form-submit{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:14px;background:var(--gold);color:var(--ink);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:none;cursor:pointer;transition:background .2s;border-radius:2px}
+.form-submit:hover{background:var(--gold-d)}
+.form-note{font-size:11px;color:var(--sub-on-dark);line-height:1.6;text-align:center}
+@media(max-width:600px){.form-row{grid-template-columns:1fr}}
+
 /* footer */
 .footer{background:var(--depth);padding:40px 0;border-top:1px solid var(--border-dark)}
 .footer__inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
@@ -315,17 +333,13 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
   <div class="container">
     <div class="nav__inner">
       <a href="/" class="nav__brand">
-        <div class="nav__logo-ring">
-          <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 2L13.5 8.5H20.5L14.5 12.5L17 19L11 15L5 19L7.5 12.5L1.5 8.5H8.5L11 2Z" fill="#C4922A" fill-opacity=".9"/>
-          </svg>
-        </div>
+        <img src="/logo.png" alt="CIQ Property Hub" style="width:40px;height:40px;object-fit:contain;border-radius:9px;flex-shrink:0">
         <div class="nav__brand-text">
           <span class="nav__brand-name">CIQ Property Hub</span>
           <span class="nav__brand-sub">Johor Bahru</span>
         </div>
       </a>
-      <a href="https://wa.me/60126672669?text=Hi%20Terry%2C%20I%27m%20interested%20in%20R%26F%20Princess%20Cove%20Phase%203%20New%20Casa%20Suites." class="nav__cta" target="_blank" rel="noopener">Enquire Now</a>
+      <a href="#contact" class="nav__cta">Register Interest</a>
     </div>
   </div>
 </nav>
@@ -345,13 +359,9 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
       <span class="hero__pill hero__pill--gold">RTS Link 83% Complete</span>
       <span class="hero__pill">4,385 Units · 5 Blocks</span>
       <span class="hero__pill">Up to Level 49</span>
-      <span class="hero__pill">Free Legal &amp; MOT Fees</span>
     </div>
     <div class="hero__actions">
-      <a href="https://wa.me/60126672669?text=Hi%20Terry%2C%20I%27m%20interested%20in%20R%26F%20Princess%20Cove%20Phase%203%20New%20Casa%20Suites." class="btn-gold" target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
-        WhatsApp Terry
-      </a>
+      <a href="#contact" class="btn-gold">Register Interest</a>
       <a href="#units" class="btn-outline">View Unit Types</a>
     </div>
   </div>
@@ -550,7 +560,7 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
         </tbody>
       </table>
     </div>
-    <p class="units__note">Rental figures are 2026 market rates based on current listings and are for reference only — actual rental income may vary by unit, floor, view, and market conditions. Unit sizes are nett built-up from project fact sheets and subject to the Sale &amp; Purchase Agreement. Pricing upon enquiry — contact Terry for current available units.</p>
+    <p class="units__note">Rental figures are 2026 market rates based on current listings and are for reference only — actual rental income may vary by unit, floor, view, and market conditions. Unit sizes are nett built-up from project fact sheets and subject to the Sale &amp; Purchase Agreement. Pricing upon enquiry — register interest below for current available units.</p>
   </div>
 </section>
 
@@ -722,54 +732,6 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
   </div>
 </section>
 
-<!-- SALE PACKAGE -->
-<section class="sale-package" id="package">
-  <div class="container">
-    <div style="margin-bottom:16px"><div class="section-eyebrow" style="color:var(--gold)">Sale Package — Phase 3</div></div>
-    <h2 class="section-title section-title--dark">Everything waived.<br>Just 10% to secure.</h2>
-    <p class="section-sub section-sub--dark" style="margin-top:16px">Phase 3's developer package removes virtually every transaction cost. The savings on legal fees, stamp duty, consent, and MOT represent a significant reduction in effective purchase cost.</p>
-    <div class="package-layout" style="margin-top:48px">
-      <div class="freebies-card">
-        <div class="freebies-card__header">
-          <div class="freebies-card__icon">🎁</div>
-          <div>
-            <div class="freebies-card__title">What's FREE</div>
-            <div class="freebies-card__sub">Developer absorbs all closing costs</div>
-          </div>
-        </div>
-        <ul class="freebies-list">
-          <li>Legal fees on Sale &amp; Purchase Agreement (SPA)</li>
-          <li>Legal fees on Loan Agreement</li>
-          <li>Stamp duty for execution of Loan Agreement</li>
-          <li>Memorandum on Transfer (MOT)</li>
-          <li>Foreigner Consent Fee</li>
-          <li>Fixed car park allocation included</li>
-        </ul>
-      </div>
-      <div class="payment-schemes">
-        <div class="payment-card">
-          <div class="payment-card__badge">Loan Buyer · Progressive</div>
-          <div class="payment-card__title">Standard Loan Payment</div>
-          <div class="payment-card__desc">10% down payment split into two instalments of 5% each. Remaining 90% via bank loan upon SPA signing.</div>
-          <div class="payment-card__highlight">10% <span>down payment (5% + 5%)</span></div>
-        </div>
-        <div class="payment-card">
-          <div class="payment-card__badge">Cash Buyer · Progressive</div>
-          <div class="payment-card__title">Cash — Progressive Billing</div>
-          <div class="payment-card__desc">10% down split 5% + 5%, balance billed progressively as construction milestones are reached.</div>
-          <div class="payment-card__highlight">10% <span>down payment (5% + 5%)</span></div>
-        </div>
-        <div class="payment-card payment-card--highlighted">
-          <div class="payment-card__badge">Cash Buyer · Lump Sum</div>
-          <div class="payment-card__title">Cash — Lump Sum (Best Rate)</div>
-          <div class="payment-card__desc">15% down (5% + 10% lump sum), balance paid in full. Maximum savings and priority unit selection.</div>
-          <div class="payment-card__highlight">15% <span>down for best price</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- LOCATION -->
 <section class="location" id="location">
   <div class="container">
@@ -837,7 +799,6 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
           <li>Malaysia's #1 most-viewed rental condo — proven demand signal</li>
           <li>2026 rentals: Studio RM2,300–2,700 · 2BR RM3,000–3,500</li>
           <li>RTS Link completion will drive further rental uplift</li>
-          <li>Free legal &amp; MOT package reduces effective entry cost</li>
         </ul>
       </div>
       <div class="buyer-card">
@@ -878,7 +839,7 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
       </details>
       <details class="faq-item">
         <summary>Can foreigners buy this property?</summary>
-        <div class="faq-item__body">Yes. R&F Princess Cove New Casa Suites is open to foreign buyers. The Phase 3 sale package includes a waiver of the Foreigner Consent Fee. Contact Terry for current foreign buyer eligibility, minimum price thresholds, and financing options.</div>
+        <div class="faq-item__body">Yes. R&F Princess Cove New Casa Suites is open to foreign buyers. Register interest below for current foreign buyer eligibility requirements, minimum price thresholds, and financing options.</div>
       </details>
       <details class="faq-item">
         <summary>What is the RTS Link and when will it open?</summary>
@@ -887,10 +848,6 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
       <details class="faq-item">
         <summary>What rental can I expect from this property?</summary>
         <div class="faq-item__body">Based on 2026 market data from R&F Princess Cove listings: Studios rent for RM 2,300–2,700/mo; 1BR for RM 2,300–2,800/mo; 2BR for RM 3,000–3,500/mo; 3BR for RM 4,000–5,000/mo; and 4BR for RM 5,000–6,000/mo. These are market reference rates based on current listings and actual income may vary by unit, floor, and conditions.</div>
-      </details>
-      <details class="faq-item">
-        <summary>What does the Phase 3 free package actually include?</summary>
-        <div class="faq-item__body">The developer absorbs: (1) legal fees on the SPA, (2) legal fees on the Loan Agreement, (3) stamp duty on the Loan Agreement, (4) Memorandum on Transfer fees, (5) Foreigner Consent Fee, and (6) fixed car park allocation. Confirm current terms with Terry as these packages can be updated.</div>
       </details>
       <details class="faq-item">
         <summary>Is there a link between Phase 3 and R&F Mall?</summary>
@@ -905,36 +862,46 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
   <div class="container">
     <div class="cta-section__inner">
       <div>
-        <div class="section-eyebrow" style="color:var(--gold)">Get In Touch</div>
-        <h2 class="cta-section__headline">650 metres from Singapore.<br>A conversation away from yours.</h2>
-        <p class="cta-section__sub">Terry provides direct developer pricing, current availability, and honest, pressure-free guidance on whether New Casa Suites fits your goals — whether you're buying to live, invest, or both.</p>
-        <div class="cta-section__actions">
-          <a href="https://wa.me/60126672669?text=Hi%20Terry%2C%20I%27d%20like%20to%20know%20more%20about%20R%26F%20Princess%20Cove%20Phase%203%20New%20Casa%20Suites." class="btn-gold" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
-            WhatsApp Terry Now
-          </a>
-          <a href="tel:+60126672669" class="btn-outline">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M2.9.5C2.4.2 1.8.3 1.4.8L.3 2.3C-.1 2.9-.1 3.7.3 4.2c1.8 2.6 4 4.8 6.6 6.6.5.4 1.3.4 1.9 0l1.5-1.1c.5-.4.6-1 .3-1.5L9.4 6.4c-.3-.5-.9-.7-1.4-.5l-.8.3C6.1 5.5 5.1 4.5 4.4 3.4l.3-.8C5 2.1 4.8 1.5 4.3 1.2L2.9.5z"/></svg>
-            Call Terry
-          </a>
+        <div class="section-eyebrow" style="color:var(--gold)">Register Interest</div>
+        <h2 class="cta-section__headline">650 metres from Singapore.<br>Register your interest.</h2>
+        <p class="cta-section__sub">Submit your details and we'll reach out with direct developer pricing, current availability, and floor plan options for R&F Princess Cove Phase 3 New Casa Suites. No obligation.</p>
+        <div class="agent-badge">
+          <div class="agent-badge__ren">REN 84844</div>
+          <div class="agent-badge__company">GT Nelson Realty Sdn Bhd</div>
+          <div class="agent-badge__license">Licensed under BOVAEA · Johor Bahru, Malaysia</div>
         </div>
       </div>
-      <div class="contact-card">
-        <div class="contact-card__avatar">TT</div>
-        <div>
-          <div class="contact-card__name">Terry Toh</div>
-          <div class="contact-card__role">Licensed Real Estate Negotiator · REN 84844</div>
+      <form class="interest-form" id="interestForm" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="formName">Full Name *</label>
+            <input type="text" class="form-input" id="formName" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="formPhone">WhatsApp Number *</label>
+            <input type="tel" class="form-input" id="formPhone" placeholder="+60 12 345 6789" required>
+          </div>
         </div>
-        <div class="contact-card__divider"></div>
-        <div class="contact-detail"><div class="contact-detail__icon">📱</div>+60 12-667 2669</div>
-        <div class="contact-detail"><div class="contact-detail__icon">🏢</div>GT Nelson Realty Sdn Bhd</div>
-        <div class="contact-detail"><div class="contact-detail__icon">📍</div>Johor Bahru, Malaysia</div>
-        <button class="contact-card__wa" onclick="window.open('https://wa.me/60126672669?text=Hi%20Terry%2C%20I%27d%20like%20to%20know%20more%20about%20R%26F%20Princess%20Cove%20Phase%203%20New%20Casa%20Suites.','_blank')">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
-          Open WhatsApp Chat
+        <div class="form-group">
+          <label class="form-label" for="formUnit">Unit Preference</label>
+          <select class="form-input" id="formUnit">
+            <option value="">— Select unit type —</option>
+            <option value="Studio (398 sq ft)">Studio (398 sq ft)</option>
+            <option value="1 Bedroom (480 sq ft)">1 Bedroom (480 sq ft)</option>
+            <option value="2 Bedrooms (721 sq ft)">2 Bedrooms (721 sq ft)</option>
+            <option value="Not decided yet">Not decided yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="formMsg">Message (optional)</label>
+          <textarea class="form-input form-textarea" id="formMsg" placeholder="Any specific questions or requirements..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
+          Send via WhatsApp
         </button>
-        <div class="contact-card__license">REN 84844 · GT Nelson Realty Sdn Bhd<br>Licensed under BOVAEA</div>
-      </div>
+        <div class="form-note">Your details will be sent to REN 84844 · GT Nelson Realty Sdn Bhd via WhatsApp for follow-up on R&F Princess Cove Phase 3 New Casa Suites.</div>
+      </form>
     </div>
   </div>
 </section>
@@ -953,7 +920,7 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
       </nav>
     </div>
     <div class="footer__disclaimer">
-      Information on this page is prepared by Terry Toh (REN 84844), GT Nelson Realty Sdn Bhd, for general reference only. Data sourced from R&F Princess Cove Phase 3 project briefing and developer materials. Unit sizes, floor plans, facilities, and sale package terms are subject to change and the Sale &amp; Purchase Agreement governs all transactions. Artist's impressions and renders are indicative only. Photography from show units — actual unit finishes may vary. Rental figures are 2026 market reference rates based on current listings; actual rental income is not guaranteed. Pricing upon enquiry. RTS Link progress sourced from publicly available project updates — completion timelines subject to change. All distances approximate. For Singapore buyers: consult a qualified financial adviser regarding cross-border property implications. Images sourced from rfmalaysia.com for reference purposes. &copy; 2025 CIQ Property Hub · Terry Toh REN 84844.
+      Information on this page is prepared by REN 84844, GT Nelson Realty Sdn Bhd, for general reference only. Data sourced from R&F Princess Cove Phase 3 project briefing and developer materials. Unit sizes, floor plans, and facilities are subject to change and the Sale &amp; Purchase Agreement governs all transactions. Artist's impressions and renders are indicative only. Photography from show units — actual unit finishes may vary. Rental figures are 2026 market reference rates based on current listings; actual rental income is not guaranteed. Pricing upon enquiry. RTS Link progress sourced from publicly available project updates — completion timelines subject to change. All distances approximate. For Singapore buyers: consult a qualified financial adviser regarding cross-border property implications. Images sourced from rfmalaysia.com for reference purposes. &copy; 2025 CIQ Property Hub · REN 84844.
     </div>
   </div>
 </footer>
@@ -1013,6 +980,19 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft') changeLightbox(-1);
   if (e.key === 'ArrowRight') changeLightbox(1);
 });
+
+function submitForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('formName').value.trim();
+  const phone = document.getElementById('formPhone').value.trim();
+  const unit = document.getElementById('formUnit').value;
+  const msg = document.getElementById('formMsg').value.trim();
+  if (!name || !phone) return;
+  let text = `Hi, I'd like to register my interest in R&F Princess Cove Phase 3 New Casa Suites.\n\nName: ${name}\nContact: ${phone}`;
+  if (unit) text += `\nUnit Preference: ${unit}`;
+  if (msg) text += `\nMessage: ${msg}`;
+  window.open('https://wa.me/60128742687?text=' + encodeURIComponent(text), '_blank');
+}
 </script>
 </body>
 </html>
