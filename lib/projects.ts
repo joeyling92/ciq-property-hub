@@ -181,7 +181,7 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "rf-princess-cove",
+    slug: "rf-princess-cove-phase3",
     name: "R&F Princess Cove",
     tagline: "Waterfront Living on Johor Strait — Integrated Lifestyle Development",
     location: "Danga Bay, Johor Bahru",
@@ -495,7 +495,7 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "the-address",
+    slug: "the-address-jb",
     name: "The Address",
     tagline: "58–69 Levels — A Premium High-Rise Address in Johor Bahru",
     location: "Johor Bahru",
