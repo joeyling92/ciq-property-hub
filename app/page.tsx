@@ -29,14 +29,12 @@ export default function HomePage() {
               >
                 Explore CIQ Properties
               </Link>
-              <a
-                href={siteConfig.consultant.whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center border border-[var(--border)] hover:border-[var(--accent)] text-[var(--text-primary)] font-semibold px-6 py-3.5 rounded transition-colors duration-200"
               >
-                Speak With a Consultant
-              </a>
+                Register Interest
+              </Link>
             </div>
           </div>
         </div>
@@ -272,10 +270,9 @@ export default function HomePage() {
               An Independent Property Consultant
             </h2>
             <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-              CIQ Property Hub is operated by <strong>{siteConfig.consultant.name}</strong>, an independent
-              property consultant registered under <strong>{siteConfig.consultant.company}</strong>{" "}
-              ({siteConfig.consultant.ren}). This website is focused exclusively on properties around
-              JB CIQ, RTS and Johor Bahru City Centre.
+              CIQ Property Hub is an independent property consultant website registered under{" "}
+              <strong>{siteConfig.consultant.company}</strong> ({siteConfig.consultant.ren}).
+              Focused exclusively on properties around JB CIQ, RTS and Johor Bahru City Centre.
             </p>
             <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
               We are <strong>not</strong> the official website of any developer. Our purpose is to
@@ -328,21 +325,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WhatsApp CTA */}
+      {/* Register Interest CTA */}
       <section className="py-10 bg-[var(--bg-secondary)]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <WhatsAppCTA
-            message="Hi, I found your website and I'm interested in properties near JB CIQ. Could you help me explore the available options?"
-          />
+          <WhatsAppCTA />
         </div>
       </section>
 
-
-      {/* Floating WhatsApp */}
-      <WhatsAppCTA
-        message="Hi, I found your website and I'm interested in properties near JB CIQ. Could you help me?"
-        variant="floating"
-      />
+      <WhatsAppCTA variant="floating" />
     </>
   );
 }

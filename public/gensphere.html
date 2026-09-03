@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gen Sphere — 480m to CIQ · Freehold JB City Centre</title>
+<meta name="description" content="Gen Sphere by Majestic Gen — freehold serviced apartments 480m from CIQ checkpoint in JB City Centre. 459–755 sq ft. From RM609,000. 1BR to Duplex. Enquire with Terry.">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap">
+<style>
+:root{
+  --ink:#140A08;--depth:#120908;--slate:#1A0E0A;--mid:#1E1008;
+  --accent:#E8431A;--accent-d:#C43310;--accent-l:#FFB08A;--accent-faint:rgba(232,67,26,.1);
+  --cream:#FFF7F4;--mist:#FFE8DC;--white:#FFFAF7;
+  --text-on-dark:#F0E0D8;--muted-on-dark:#C08878;--sub-on-dark:#6A3828;
+  --text-on-light:#10142A;--muted-on-light:#5C3828;--sub-on-light:#907060;
+  --border-dark:rgba(255,255,255,.07);--border-light:rgba(30,15,10,.1);
+  --max:1120px;--ease:cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--text-on-light);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:var(--max);margin-inline:auto;padding-inline:clamp(20px,5vw,60px)}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 0;transition:background .3s var(--ease)}
+.nav.scrolled{background:rgba(10,11,20,.94);backdrop-filter:blur(16px)}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav__brand{display:flex;align-items:center;gap:10px}
+.nav__brand img{width:38px;height:38px;object-fit:contain;border-radius:8px;flex-shrink:0}
+.nav__brand-text{line-height:1}
+.nav__brand-name{font-family:'Sora',sans-serif;font-size:13px;font-weight:600;color:var(--white);letter-spacing:.01em}
+.nav__brand-sub{font-size:9px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-l);display:block;margin-top:3px}
+.nav__cta{padding:8px 18px;background:var(--accent);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;border-radius:2px;transition:background .2s}
+.nav__cta:hover{background:var(--accent-d)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.hero__bg{position:absolute;inset:0;background-image:url('/gensphere/hero.png');background-size:cover;background-position:center 30%}
+.hero__overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,11,20,.98) 0%,rgba(10,11,20,.55) 50%,rgba(10,11,20,.1) 100%)}
+.hero__inner{position:relative;padding:120px 0 80px}
+.hero__tag{font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-l);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.hero__tag::before{content:'';display:block;width:24px;height:1px;background:currentColor}
+.hero__title{font-family:'Sora',sans-serif;font-size:clamp(52px,10vw,120px);font-weight:800;line-height:.9;color:var(--white);letter-spacing:-.03em}
+.hero__title span{display:block;color:var(--accent-l);font-weight:300;font-size:.45em;letter-spacing:.12em;text-transform:uppercase;margin-top:10px}
+.hero__desc{font-size:clamp(13px,1.6vw,16px);font-weight:300;color:var(--muted-on-dark);margin-top:20px;max-width:500px;line-height:1.75}
+.hero__pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.hero__pill{padding:5px 13px;border:1px solid rgba(255,255,255,.1);font-size:11px;font-weight:500;color:var(--muted-on-dark)}
+.hero__pill--blue{border-color:rgba(232,67,26,.5);color:var(--accent-l)}
+.hero__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn-accent{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;background:var(--accent);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;border-radius:2px;transition:background .2s}
+.btn-accent:hover{background:var(--accent-d)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:12px 25px;border:1.5px solid rgba(255,255,255,.15);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--text-on-dark);border-radius:2px;transition:border-color .2s}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3)}
+.hero__stats{display:flex;flex-wrap:wrap;gap:36px;margin-top:48px;padding-top:36px;border-top:1px solid var(--border-dark)}
+.hero__stat-val{font-family:'Sora',sans-serif;font-size:36px;font-weight:700;color:var(--accent-l);line-height:1}
+.hero__stat-label{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-on-dark);margin-top:5px}
+
+/* marquee */
+.marquee-strip{background:var(--accent);padding:11px 0;overflow:hidden}
+.marquee-track{display:flex;white-space:nowrap;animation:marquee 34s linear infinite}
+.marquee-track span{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.9);padding:0 26px}
+.marquee-track .dot{padding:0;color:rgba(255,255,255,.3)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* shared */
+.section-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.section-eyebrow::before{content:'';display:block;width:18px;height:1px;background:currentColor}
+.section-title{font-family:'Sora',sans-serif;font-size:clamp(26px,4vw,44px);font-weight:700;line-height:1.1;text-wrap:balance;letter-spacing:-.02em}
+.section-title--dark{color:var(--white)}
+.section-title--light{color:var(--text-on-light)}
+.section-sub{font-size:15px;line-height:1.8;max-width:580px}
+.section-sub--dark{color:var(--muted-on-dark)}
+.section-sub--light{color:var(--muted-on-light)}
+
+/* overview */
+.overview{background:var(--depth);padding:80px 0}
+.ov-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border-dark);border:1px solid var(--border-dark);margin-top:36px}
+.ov-cell{background:var(--slate);padding:22px 26px}
+.ov-cell__label{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-on-dark);margin-bottom:8px}
+.ov-cell__val{font-family:'Sora',sans-serif;font-size:17px;font-weight:600;color:var(--white);line-height:1.3}
+.ov-cell__sub{font-size:11px;color:var(--sub-on-dark);margin-top:4px}
+.ov-highlight{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.ov-hl-item{background:var(--mid);border:1px solid rgba(232,67,26,.2);padding:18px 22px;display:flex;align-items:flex-start;gap:12px}
+.ov-hl-item__icon{font-size:24px;flex-shrink:0}
+.ov-hl-item__title{font-weight:600;font-size:13px;color:var(--white);margin-bottom:4px}
+.ov-hl-item__desc{font-size:12px;color:var(--muted-on-dark);line-height:1.6}
+
+/* connectivity */
+.connectivity{background:var(--cream);padding:96px 0}
+.conn-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:48px}
+.conn-img img{width:100%;border:1px solid var(--border-light)}
+.conn-distances{display:grid;gap:10px}
+.dist-group{background:var(--white);border:1px solid var(--border-light);overflow:hidden}
+.dist-group__head{padding:9px 16px;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sub-on-light);background:rgba(0,0,0,.02);border-bottom:1px solid var(--border-light)}
+.dist-group__items{padding:10px 16px;display:grid;gap:6px}
+.dist-item{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px}
+.dist-item__name{color:var(--muted-on-light)}
+.dist-item__km{font-family:'Sora',sans-serif;font-weight:700;font-size:12px;color:var(--accent);white-space:nowrap}
+.dist-item--key .dist-item__name{color:var(--text-on-light);font-weight:600}
+.dist-item--key .dist-item__km{color:var(--accent);font-size:14px}
+
+/* units */
+.units{background:var(--slate);padding:96px 0}
+.units-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:48px}
+.unit-card{background:var(--depth);border:1px solid var(--border-dark);padding:28px 30px;position:relative;overflow:hidden;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.unit-card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.3)}
+.unit-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent);opacity:0;transition:opacity .2s}
+.unit-card:hover::after{opacity:1}
+.unit-card__badge{display:inline-block;padding:3px 10px;background:var(--accent-faint);border:1px solid rgba(232,67,26,.3);font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-l);margin-bottom:12px;border-radius:2px}
+.unit-card__type{font-family:'Sora',sans-serif;font-size:22px;font-weight:700;color:var(--white);letter-spacing:-.01em}
+.unit-card__size{font-family:'Sora',sans-serif;font-size:38px;font-weight:800;color:var(--accent-l);line-height:1;margin-top:12px}
+.unit-card__size span{font-size:12px;font-family:'Inter',sans-serif;font-weight:400;color:var(--sub-on-dark)}
+.unit-card__features{list-style:none;display:grid;gap:6px;margin-top:14px;padding-top:14px;border-top:1px solid var(--border-dark)}
+.unit-card__features li{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted-on-dark)}
+.unit-card__features li::before{content:'';display:block;width:4px;height:4px;background:var(--accent);flex-shrink:0;border-radius:50%}
+.unit-card__wa{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;background:rgba(232,67,26,.12);border:1px solid rgba(232,67,26,.25);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-l);margin-top:16px;border-radius:2px;transition:background .2s}
+.unit-card__wa:hover{background:var(--accent);color:#fff}
+.units-note{font-size:11px;color:var(--sub-on-dark);margin-top:16px;line-height:1.7}
+.price-band{background:var(--mid);border:1px solid rgba(232,67,26,.2);padding:22px 28px;margin-top:20px;display:flex;align-items:center;gap:32px;flex-wrap:wrap}
+.price-band__from{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-on-dark)}
+.price-band__val{font-family:'Sora',sans-serif;font-size:32px;font-weight:800;color:var(--accent-l);line-height:1}
+.price-band__range{font-size:13px;color:var(--muted-on-dark);flex:1;min-width:200px;line-height:1.6}
+
+/* features image */
+.features{background:var(--ink);padding:80px 0}
+.features__img{margin-top:36px;overflow:hidden;border:1px solid var(--border-dark)}
+.features__img img{width:100%;object-fit:cover}
+
+/* facilities */
+.facilities{background:var(--depth);padding:96px 0}
+.facilities__img{margin-top:36px;overflow:hidden;border:1px solid var(--border-dark)}
+.facilities__img img{width:100%;object-fit:cover}
+
+/* location */
+.location{background:var(--cream);padding:96px 0}
+.location-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:48px}
+.location-img{overflow:hidden;border:1px solid var(--border-light)}
+.location-img img{width:100%;object-fit:cover}
+.loc-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:16px}
+.loc-stat{background:var(--ink);padding:18px 20px;border:1px solid var(--border-dark)}
+.loc-stat__val{font-family:'Sora',sans-serif;font-size:28px;font-weight:700;color:var(--accent-l);line-height:1}
+.loc-stat__label{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-on-dark);margin-top:5px}
+
+/* developer */
+.developer{background:var(--slate);padding:96px 0}
+.dev-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.dev-name{font-family:'Sora',sans-serif;font-size:clamp(22px,3vw,36px);font-weight:700;color:var(--white);margin-top:14px;line-height:1.2;letter-spacing:-.02em}
+.dev-body{font-size:14px;line-height:1.8;color:var(--muted-on-dark);margin-top:16px}
+.dev-body p+p{margin-top:12px}
+.dev-specs{display:grid;gap:8px;margin-top:20px}
+.dev-spec{display:flex;align-items:flex-start;gap:14px;padding:12px 16px;background:var(--depth);border:1px solid var(--border-dark)}
+.dev-spec__label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sub-on-dark);flex-shrink:0;min-width:110px}
+.dev-spec__val{font-size:12px;color:var(--text-on-dark)}
+.dev-img{overflow:hidden;border:1px solid var(--border-dark)}
+.dev-img img{width:100%;object-fit:cover}
+
+/* faq */
+.faq{background:var(--cream);padding:96px 0}
+.faq-list{display:grid;gap:10px;max-width:800px;margin-top:40px}
+.faq-item{border:1px solid var(--border-light);background:var(--white);overflow:hidden;border-radius:2px}
+.faq-item summary{list-style:none;padding:18px 22px;font-weight:500;font-size:14px;color:var(--text-on-light);cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px;user-select:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:20px;font-weight:300;color:var(--accent);flex-shrink:0;transition:transform .2s}
+details[open].faq-item summary::after{transform:rotate(45deg)}
+.faq-item__body{padding:0 22px 18px;font-size:13px;color:var(--muted-on-light);line-height:1.75}
+
+/* cta */
+.cta-section{background:var(--ink);padding:96px 0;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;top:-60px;right:-60px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(232,67,26,.08) 0%,transparent 70%);pointer-events:none}
+.cta-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative}
+.cta-headline{font-family:'Sora',sans-serif;font-size:clamp(26px,4vw,42px);font-weight:700;color:var(--white);margin-top:14px;line-height:1.15;letter-spacing:-.02em;text-wrap:balance}
+.cta-sub{font-size:14px;line-height:1.8;color:var(--muted-on-dark);margin-top:16px}
+.cta-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.contact-card{background:var(--slate);border:1px solid var(--border-dark);padding:28px;display:flex;flex-direction:column;gap:18px;border-radius:2px}
+.contact-card__avatar{width:52px;height:52px;background:var(--accent-faint);border:2px solid rgba(232,67,26,.35);display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-size:18px;font-weight:700;color:var(--accent-l);border-radius:2px}
+.contact-card__name{font-weight:700;font-size:17px;color:var(--white);margin-bottom:3px}
+.contact-card__role{font-size:11px;color:var(--muted-on-dark)}
+.contact-card__divider{height:1px;background:var(--border-dark)}
+.contact-detail{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text-on-dark)}
+.contact-detail__icon{width:30px;height:30px;background:var(--accent-faint);border:1px solid rgba(232,67,26,.25);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;border-radius:2px}
+.contact-card__wa{display:flex;align-items:center;justify-content:center;gap:10px;padding:12px;background:var(--accent);font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.1em;cursor:pointer;border:none;width:100%;transition:background .2s;border-radius:2px}
+.contact-card__wa:hover{background:var(--accent-d)}
+.contact-card__license{font-size:10px;color:var(--sub-on-dark);text-align:center;line-height:1.6}
+
+/* footer */
+.footer{background:var(--depth);padding:36px 0;border-top:1px solid var(--border-dark)}
+.footer__inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
+.footer__brand{font-family:'Sora',sans-serif;font-size:14px;font-weight:700;color:var(--white);letter-spacing:-.01em}
+.footer__brand em{color:var(--accent-l);font-style:normal}
+.footer__links{display:flex;flex-wrap:wrap;gap:20px}
+.footer__links a{font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--sub-on-dark);transition:color .2s}
+.footer__links a:hover{color:var(--accent-l)}
+.footer__disclaimer{width:100%;font-size:11px;color:var(--sub-on-dark);line-height:1.75;border-top:1px solid var(--border-dark);padding-top:20px;margin-top:8px}
+
+/* interest form */
+.interest-form{background:var(--slate);border:1px solid var(--border-dark);padding:36px;display:grid;gap:18px}
+.form-group{display:grid;gap:7px}
+.form-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-on-dark)}
+.form-input{width:100%;padding:11px 14px;background:var(--mid);border:1px solid var(--border-dark);color:var(--text-on-dark);font-family:'Inter',sans-serif;font-size:13px;outline:none;transition:border-color .2s;border-radius:1px}
+.form-input:focus{border-color:var(--accent)}
+.form-input::placeholder{color:var(--sub-on-dark)}
+select.form-input{cursor:pointer}
+.form-textarea{resize:vertical;min-height:80px}
+.form-submit{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px;background:var(--accent);border:none;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;cursor:pointer;transition:background .2s;border-radius:2px;width:100%}
+.form-submit:hover{background:var(--accent-d)}
+.form-note{font-size:10px;color:var(--sub-on-dark);line-height:1.7;text-align:center}
+.agent-badge{margin-top:28px;padding:18px 20px;border:1px solid var(--border-dark);background:var(--slate)}
+.agent-badge__ren{font-family:'Sora',sans-serif;font-size:22px;font-weight:700;color:var(--accent-l);letter-spacing:.04em}
+.agent-badge__company{font-size:12px;color:var(--muted-on-dark);margin-top:5px}
+.agent-badge__license{font-size:10px;color:var(--sub-on-dark);margin-top:3px;letter-spacing:.06em;text-transform:uppercase}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+@media(max-width:860px){
+  .ov-grid{grid-template-columns:1fr 1fr}
+  .conn-layout,.location-layout,.dev-layout,.cta-inner{grid-template-columns:1fr}
+  .units-grid{grid-template-columns:1fr}
+  .ov-highlight{grid-template-columns:1fr}
+  .loc-stats{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .ov-grid{grid-template-columns:1fr}
+  .loc-stats{grid-template-columns:1fr}
+  .price-band{flex-direction:column;gap:12px}
+  .overview,.connectivity,.units,.features,.facilities,.location,.developer,.faq,.cta-section{padding:72px 0}
+  .form-row{grid-template-columns:1fr}
+  .interest-form{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="/" class="nav__brand">
+        <img src="/logo.png" alt="CIQ Property Hub" style="width:38px;height:38px;object-fit:contain;border-radius:8px;flex-shrink:0">
+        <div class="nav__brand-text">
+          <span class="nav__brand-name">CIQ Property Hub</span>
+          <span class="nav__brand-sub">Johor Bahru</span>
+        </div>
+      </a>
+      <a href="#contact" class="nav__cta">Register Interest</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__bg"></div>
+  <div class="hero__overlay"></div>
+  <div class="container hero__inner">
+    <div class="hero__tag">Gen Sphere · Majestic Gen · JB City Centre</div>
+    <h1 class="hero__title">
+      Gen<br>Sphere
+      <span>by Majestic Gen</span>
+    </h1>
+    <p class="hero__desc">A freehold serviced apartment in the heart of JB City Centre — 480m from the CIQ checkpoint and 700m from the future RTS Bukit Chagar Station. From RM609,000.</p>
+    <div class="hero__pills">
+      <span class="hero__pill hero__pill--blue">480m to CIQ Checkpoint</span>
+      <span class="hero__pill hero__pill--blue">700m to RTS Bukit Chagar</span>
+      <span class="hero__pill">Freehold</span>
+      <span class="hero__pill">996 Units</span>
+      <span class="hero__pill">From RM609,000</span>
+      <span class="hero__pill">Dec 2029</span>
+    </div>
+    <div class="hero__actions">
+      <a href="#contact" class="btn-accent">Register Interest</a>
+      <a href="#units" class="btn-ghost">View Unit Types</a>
+    </div>
+    <div class="hero__stats">
+      <div><div class="hero__stat-val">480m</div><div class="hero__stat-label">to CIQ Checkpoint</div></div>
+      <div><div class="hero__stat-val">440m</div><div class="hero__stat-label">to JB Sentral</div></div>
+      <div><div class="hero__stat-val">700m</div><div class="hero__stat-label">to RTS Bukit Chagar</div></div>
+      <div><div class="hero__stat-val">230m</div><div class="hero__stat-label">to R&F Mall</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span>480m to CIQ Checkpoint</span><span class="dot">·</span>
+    <span>Freehold · JB City Centre</span><span class="dot">·</span>
+    <span>440m to JB Sentral</span><span class="dot">·</span>
+    <span>700m to RTS Bukit Chagar</span><span class="dot">·</span>
+    <span>From RM609,000</span><span class="dot">·</span>
+    <span>459–755 sq ft</span><span class="dot">·</span>
+    <span>996 Units · Dec 2029</span><span class="dot">·</span>
+    <span>Majestic Gen Sdn Bhd</span><span class="dot">·</span>
+    <span>480m to CIQ Checkpoint</span><span class="dot">·</span>
+    <span>Freehold · JB City Centre</span><span class="dot">·</span>
+    <span>440m to JB Sentral</span><span class="dot">·</span>
+    <span>700m to RTS Bukit Chagar</span><span class="dot">·</span>
+    <span>From RM609,000</span><span class="dot">·</span>
+    <span>459–755 sq ft</span><span class="dot">·</span>
+    <span>996 Units · Dec 2029</span><span class="dot">·</span>
+    <span>Majestic Gen Sdn Bhd</span><span class="dot">·</span>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section class="overview" id="overview">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--accent-l)">Project Overview</div>
+    <h2 class="section-title section-title--dark" style="margin-top:14px">Gen Sphere<br>@ JB City Centre</h2>
+    <div class="ov-grid">
+      <div class="ov-cell">
+        <div class="ov-cell__label">Land Tenure</div>
+        <div class="ov-cell__val">Freehold</div>
+        <div class="ov-cell__sub">Prime city centre location</div>
+      </div>
+      <div class="ov-cell">
+        <div class="ov-cell__label">Property Type</div>
+        <div class="ov-cell__val">Serviced Apartment</div>
+        <div class="ov-cell__sub">Under Housing Development Act (HDA)</div>
+      </div>
+      <div class="ov-cell">
+        <div class="ov-cell__label">Total Units</div>
+        <div class="ov-cell__val">996 Units</div>
+        <div class="ov-cell__sub">1BR · 2BR · 3BR · Duplex</div>
+      </div>
+      <div class="ov-cell">
+        <div class="ov-cell__label">Built-Up Size</div>
+        <div class="ov-cell__val">459 – 755 sq ft</div>
+        <div class="ov-cell__sub">Efficient urban layouts</div>
+      </div>
+      <div class="ov-cell">
+        <div class="ov-cell__label">Selling Price</div>
+        <div class="ov-cell__val">RM609K – RM1.12M</div>
+        <div class="ov-cell__sub">Bumiputera discount: 15%</div>
+      </div>
+      <div class="ov-cell">
+        <div class="ov-cell__label">Expected Completion</div>
+        <div class="ov-cell__val">December 2029</div>
+        <div class="ov-cell__sub">Approving authority: MBJB</div>
+      </div>
+    </div>
+    <div class="ov-highlight">
+      <div class="ov-hl-item">
+        <div class="ov-hl-item__icon">🚶</div>
+        <div>
+          <div class="ov-hl-item__title">Walk to CIQ &amp; JB Sentral</div>
+          <div class="ov-hl-item__desc">480m to the JB CIQ checkpoint, 440m to JB Sentral KTM — commuters to Singapore can walk to both cross-border gateways from the doorstep.</div>
+        </div>
+      </div>
+      <div class="ov-hl-item">
+        <div class="ov-hl-item__icon">🚉</div>
+        <div>
+          <div class="ov-hl-item__title">700m to Future RTS Station</div>
+          <div class="ov-hl-item__desc">The upcoming Bukit Chagar RTS Link Station is just 700m away — when it opens, direct Singapore access from this location becomes even faster.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECTIVITY -->
+<section class="connectivity" id="connectivity">
+  <div class="container">
+    <div class="section-eyebrow">Connectivity</div>
+    <h2 class="section-title section-title--light" style="margin-top:14px">Walk to Singapore.<br>Almost.</h2>
+    <p class="section-sub section-sub--light" style="margin-top:14px">Gen Sphere's city centre address puts the JB–Singapore corridor at your feet — CIQ, JB Sentral, the future RTS, and multiple malls all within a short walk.</p>
+    <div class="conn-layout">
+      <div class="conn-img">
+        <img src="/gensphere/features-intro.png" alt="JB–Singapore connectivity" loading="lazy">
+        <div style="background:var(--white);border:1px solid var(--border-light);border-top:none;padding:16px 20px">
+          <div style="font-size:11px;color:var(--sub-on-light);line-height:1.7">Residents commute between Johor Bahru and Singapore via the CIQ checkpoint, JB Sentral KTM, and the upcoming RTS Link — all within walking distance of Gen Sphere.</div>
+        </div>
+      </div>
+      <div class="conn-distances">
+        <div class="dist-group">
+          <div class="dist-group__head">Transport Gateways</div>
+          <div class="dist-group__items">
+            <div class="dist-item dist-item--key"><span class="dist-item__name">JB Checkpoint (CIQ)</span><span class="dist-item__km">480m</span></div>
+            <div class="dist-item dist-item--key"><span class="dist-item__name">JB Sentral KTM</span><span class="dist-item__km">440m</span></div>
+            <div class="dist-item dist-item--key"><span class="dist-item__name">Bukit Chagar RTS (future)</span><span class="dist-item__km">700m</span></div>
+            <div class="dist-item"><span class="dist-item__name">Berjaya Waterfront Ferry</span><span class="dist-item__km">2.3km</span></div>
+            <div class="dist-item"><span class="dist-item__name">Larkin Sentral</span><span class="dist-item__km">7.5km</span></div>
+          </div>
+        </div>
+        <div class="dist-group">
+          <div class="dist-group__head">Shopping Malls</div>
+          <div class="dist-group__items">
+            <div class="dist-item dist-item--key"><span class="dist-item__name">R&F Mall</span><span class="dist-item__km">230m</span></div>
+            <div class="dist-item"><span class="dist-item__name">Johor Bahru City Square</span><span class="dist-item__km">630m</span></div>
+            <div class="dist-item"><span class="dist-item__name">Komtar JBCC</span><span class="dist-item__km">680m</span></div>
+            <div class="dist-item"><span class="dist-item__name">Berjaya Waterfront</span><span class="dist-item__km">2.1km</span></div>
+            <div class="dist-item"><span class="dist-item__name">Mid Valley Southkey</span><span class="dist-item__km">7.0km</span></div>
+          </div>
+        </div>
+        <div class="dist-group">
+          <div class="dist-group__head">Food &amp; Banks</div>
+          <div class="dist-group__items">
+            <div class="dist-item dist-item--key"><span class="dist-item__name">Kedai Makan Jadi Baru Botak</span><span class="dist-item__km">80m</span></div>
+            <div class="dist-item"><span class="dist-item__name">Tan Kee Cathay Laksa</span><span class="dist-item__km">100m</span></div>
+            <div class="dist-item"><span class="dist-item__name">Heritage Walk &amp; Food Street</span><span class="dist-item__km">1.3km</span></div>
+            <div class="dist-item"><span class="dist-item__name">RHB Bank @ Komtar JBCC</span><span class="dist-item__km">730m</span></div>
+            <div class="dist-item"><span class="dist-item__name">Maybank @ City Square</span><span class="dist-item__km">900m</span></div>
+          </div>
+        </div>
+        <div class="dist-group">
+          <div class="dist-group__head">Education</div>
+          <div class="dist-group__items">
+            <div class="dist-item"><span class="dist-item__name">Stellar Playschool</span><span class="dist-item__km">500m</span></div>
+            <div class="dist-item"><span class="dist-item__name">Open University Malaysia JB</span><span class="dist-item__km">1.0km</span></div>
+            <div class="dist-item"><span class="dist-item__name">Foon Yew High School</span><span class="dist-item__km">1.5km</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNITS -->
+<section class="units" id="units">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--accent-l)">Unit Types</div>
+    <h2 class="section-title section-title--dark" style="margin-top:14px">459 to 755 sq ft.<br>Four configurations.</h2>
+    <p class="section-sub section-sub--dark" style="margin-top:14px">From compact 1-bedroom studios to duplex layouts — Gen Sphere covers every lifestyle from solo commuter to growing family investor.</p>
+    <div class="price-band">
+      <div>
+        <div class="price-band__from">Starting From</div>
+        <div class="price-band__val">RM609,000</div>
+      </div>
+      <div class="price-band__range">Price range RM609,000 – RM1,120,000 · 15% Bumiputera discount available · Register interest below for exact unit pricing and floor selection.</div>
+    </div>
+    <div class="units-grid">
+      <div class="unit-card">
+        <div class="unit-card__badge">Type A</div>
+        <div class="unit-card__type">1 Bedroom</div>
+        <div class="unit-card__size">459<span> sq ft</span></div>
+        <ul class="unit-card__features">
+          <li>Compact &amp; efficient city living</li>
+          <li>Ideal for Singapore commuters</li>
+          <li>Strong rental yield potential</li>
+          <li>Entry-level freehold city centre</li>
+        </ul>
+        <button class="unit-card__wa" onclick="registerInterest('1 Bedroom (459 sq ft)')">Register Interest</button>
+      </div>
+      <div class="unit-card">
+        <div class="unit-card__badge">Type B</div>
+        <div class="unit-card__type">2 Bedrooms</div>
+        <div class="unit-card__size">~600<span> sq ft (indicative)</span></div>
+        <ul class="unit-card__features">
+          <li>Couples &amp; small families</li>
+          <li>Live-in + rental flexibility</li>
+          <li>City centre convenience</li>
+          <li>Steps from CIQ &amp; malls</li>
+        </ul>
+        <button class="unit-card__wa" onclick="registerInterest('2 Bedrooms (~600 sq ft)')">Register Interest</button>
+      </div>
+      <div class="unit-card">
+        <div class="unit-card__badge">Type C</div>
+        <div class="unit-card__type">3 Bedrooms</div>
+        <div class="unit-card__size">~755<span> sq ft (indicative)</span></div>
+        <ul class="unit-card__features">
+          <li>Spacious family layout</li>
+          <li>Multi-generational living option</li>
+          <li>Maximum space in city centre</li>
+          <li>Strong long-term value</li>
+        </ul>
+        <button class="unit-card__wa" onclick="registerInterest('3 Bedrooms (~755 sq ft)')">Register Interest</button>
+      </div>
+      <div class="unit-card">
+        <div class="unit-card__badge">Type D · Premium</div>
+        <div class="unit-card__type">Duplex</div>
+        <div class="unit-card__size">Duplex<span> layout</span></div>
+        <ul class="unit-card__features">
+          <li>Double-level premium unit</li>
+          <li>Unique city centre offering</li>
+          <li>Prestige &amp; privacy</li>
+          <li>Rare configuration in JB City</li>
+        </ul>
+        <button class="unit-card__wa" onclick="registerInterest('Duplex')">Register Interest</button>
+      </div>
+    </div>
+    <div class="units-note">Unit sizes are built-up as stated in developer's APDL disclosure (459–755 sq ft range). Indicative sizes shown for 2BR and 3BR — exact per-unit breakdown upon registration. All pricing subject to developer's current price list. Register interest below for updated availability and floor plans.</div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--accent-l)">The Commuter's Edge</div>
+    <h2 class="section-title section-title--dark" style="margin-top:14px">The CIQ. The RTS.<br>Your front door.</h2>
+    <div class="features__img">
+      <img src="/gensphere/features-intro.png" alt="JB Sentral and Singapore connectivity" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="facilities" id="facilities">
+  <div class="container">
+    <div class="section-eyebrow" style="color:var(--accent-l)">Facilities</div>
+    <h2 class="section-title section-title--dark" style="margin-top:14px">Everything you need,<br>inside your building.</h2>
+    <p class="section-sub section-sub--dark" style="margin-top:14px">Gen Sphere's facilities are designed around urban life — rest, work, and play, all within your own building.</p>
+    <div class="facilities__img">
+      <img src="/gensphere/facilities.png" alt="Gen Sphere facilities" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location">
+  <div class="container">
+    <div class="section-eyebrow">Location</div>
+    <h2 class="section-title section-title--light" style="margin-top:14px">JB City Centre.<br>The address that does the work.</h2>
+    <p class="section-sub section-sub--light" style="margin-top:14px">Surrounded by malls, hospitals, schools, banks, and restaurants — Gen Sphere sits where urban life converges in Johor Bahru.</p>
+    <div class="location-layout">
+      <div class="location-img">
+        <img src="/gensphere/location-map.gif" alt="Gen Sphere location map" loading="lazy">
+      </div>
+      <div>
+        <div class="loc-stats">
+          <div class="loc-stat"><div class="loc-stat__val">480m</div><div class="loc-stat__label">to CIQ Checkpoint</div></div>
+          <div class="loc-stat"><div class="loc-stat__val">440m</div><div class="loc-stat__label">to JB Sentral</div></div>
+          <div class="loc-stat"><div class="loc-stat__val">700m</div><div class="loc-stat__label">to RTS Bukit Chagar</div></div>
+          <div class="loc-stat"><div class="loc-stat__val">230m</div><div class="loc-stat__label">to R&amp;F Mall</div></div>
+        </div>
+        <div style="background:var(--white);border:1px solid var(--border-light);padding:20px 22px">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sub-on-light);margin-bottom:12px">Highways &amp; Access</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="padding:5px 10px;background:var(--mist);border:1px solid var(--border-light);font-size:11px;color:var(--muted-on-light)">JB–SG Causeway</span>
+            <span style="padding:5px 10px;background:var(--mist);border:1px solid var(--border-light);font-size:11px;color:var(--muted-on-light)">Jalan Lingkaran Dalam</span>
+            <span style="padding:5px 10px;background:var(--mist);border:1px solid var(--border-light);font-size:11px;color:var(--muted-on-light)">Eastern Dispersal Link (EDL)</span>
+            <span style="padding:5px 10px;background:var(--mist);border:1px solid var(--border-light);font-size:11px;color:var(--muted-on-light)">Tebrau Highway</span>
+            <span style="padding:5px 10px;background:var(--mist);border:1px solid var(--border-light);font-size:11px;color:var(--muted-on-light)">Skudai Highway</span>
+            <span style="padding:5px 10px;background:var(--mist);border:1px solid var(--border-light);font-size:11px;color:var(--muted-on-light)">North–South Expressway</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOPER -->
+<section class="developer" id="developer">
+  <div class="container">
+    <div class="dev-layout">
+      <div>
+        <div class="section-eyebrow" style="color:var(--accent-l)">Developer</div>
+        <h2 class="dev-name">Majestic Gen<br>Sdn Bhd</h2>
+        <div class="dev-body">
+          <p>Majestic Gen Sdn Bhd (formerly Majestic Builders Sdn Bhd) is the developer behind Gen Sphere — a freehold serviced apartment project in JB City Centre designed for urban professionals and cross-border commuters.</p>
+          <p>The project holds a valid Developer License and Advertising Permit from the relevant authorities, under the Housing Development Act for buyer protection.</p>
+        </div>
+        <div class="dev-specs">
+          <div class="dev-spec"><span class="dev-spec__label">Company No.</span><span class="dev-spec__val">Majestic Gen Sdn Bhd (1056280-K)</span></div>
+          <div class="dev-spec"><span class="dev-spec__label">Dev. License</span><span class="dev-spec__val">30828/08-2029/0170(A) · Valid to 01/08/2029</span></div>
+          <div class="dev-spec"><span class="dev-spec__label">Ad. Permit</span><span class="dev-spec__val">30828-3/05-2028/0410(A)-(S) · Valid to 26/05/2028</span></div>
+          <div class="dev-spec"><span class="dev-spec__label">Completion</span><span class="dev-spec__val">Expected December 2029</span></div>
+          <div class="dev-spec"><span class="dev-spec__label">Authority</span><span class="dev-spec__val">Majlis Bandaraya Johor Bahru (MBJB)</span></div>
+        </div>
+      </div>
+      <div class="dev-img">
+        <img src="/gensphere/hero.png" alt="Gen Sphere building render" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-eyebrow">FAQ</div>
+    <h2 class="section-title section-title--light" style="margin-top:14px">Questions answered.</h2>
+    <div class="faq-list">
+      <details class="faq-item"><summary>How far is Gen Sphere from the CIQ checkpoint?</summary><div class="faq-item__body">Gen Sphere is approximately 480m from the JB CIQ checkpoint — about a 6–7 minute walk. JB Sentral (the main bus and KTM hub for cross-border travel) is even closer at 440m. For Singapore commuters, this is one of the most walkable locations in JB City Centre.</div></details>
+      <details class="faq-item"><summary>What is the RTS Bukit Chagar and why does it matter?</summary><div class="faq-item__body">The Johor Bahru–Singapore RTS Link (Rapid Transit System) is a cross-border rail link currently under construction. The Bukit Chagar station — the JB terminus — is approximately 700m from Gen Sphere. When operational, it will allow direct, fast travel between JB and Woodlands North in Singapore, dramatically improving cross-border commuter convenience.</div></details>
+      <details class="faq-item"><summary>What unit types are available and what are the sizes?</summary><div class="faq-item__body">Gen Sphere offers 1 Bedroom, 2 Bedrooms, 3 Bedrooms, and Duplex configurations. Built-up sizes range from 459 sq ft to 755 sq ft as stated in the developer's APDL disclosure. Pricing runs from RM609,000 to RM1,120,000. Register interest below for exact unit-by-unit sizes, floor levels, and current availability.</div></details>
+      <details class="faq-item"><summary>Is there a Bumiputera discount?</summary><div class="faq-item__body">Yes — the developer offers a 15% Bumiputera discount on eligible units. Register interest below and confirm eligibility upon follow-up.</div></details>
+      <details class="faq-item"><summary>When is the expected completion date?</summary><div class="faq-item__body">The expected date of completion is December 2029, based on the developer's APDL disclosure. All completion dates are subject to the Sale & Purchase Agreement between buyer and developer.</div></details>
+      <details class="faq-item"><summary>Why is Gen Sphere a good investment?</summary><div class="faq-item__body">Gen Sphere benefits from three converging factors: (1) an ultra-walkable location — 480m to CIQ and 700m to the future RTS — that directly serves the growing JB–Singapore commuter market; (2) freehold tenure in JB City Centre, which is rare and underpins long-term capital value; and (3) an entry price from RM609,000 that positions it as one of the more accessible freehold city centre options available. Rental demand in this corridor is consistently driven by Singapore-based workers and JB commuters.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <div class="section-eyebrow" style="color:var(--accent-l)">Register Interest</div>
+        <h2 class="cta-headline">480m to CIQ.<br>Register your interest.</h2>
+        <p class="cta-sub">Submit your details and we'll reach out with direct developer pricing, current unit availability, and floor plan options for Gen Sphere. No obligation.</p>
+        <div class="agent-badge">
+          <div class="agent-badge__ren">REN 84844</div>
+          <div class="agent-badge__company">GT Nelson Realty Sdn Bhd</div>
+          <div class="agent-badge__license">Licensed under BOVAEA · Johor Bahru, Malaysia</div>
+        </div>
+      </div>
+      <form class="interest-form" id="interestForm" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="formName">Full Name *</label>
+            <input type="text" class="form-input" id="formName" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="formPhone">WhatsApp Number *</label>
+            <input type="tel" class="form-input" id="formPhone" placeholder="+60 12 345 6789" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="formUnit">Unit Preference</label>
+          <select class="form-input" id="formUnit">
+            <option value="">— Select unit type —</option>
+            <option value="1 Bedroom (459 sq ft)">1 Bedroom (459 sq ft)</option>
+            <option value="2 Bedrooms (~600 sq ft)">2 Bedrooms (~600 sq ft)</option>
+            <option value="3 Bedrooms (~755 sq ft)">3 Bedrooms (~755 sq ft)</option>
+            <option value="Duplex">Duplex</option>
+            <option value="Not decided yet">Not decided yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="formMsg">Message (optional)</label>
+          <textarea class="form-input form-textarea" id="formMsg" placeholder="Any specific questions or requirements..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 2.4C12.1.9 10.1 0 8 0 3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.3 15.6 6.6 16 8 16c4.4 0 8-3.6 8-8 0-2.1-.8-4.1-2.4-5.6zM8 14.7c-1.2 0-2.4-.3-3.5-.9l-.2-.1-2.5.7.7-2.4-.2-.3C1.7 10.4 1.3 9.2 1.3 8 1.3 4.3 4.3 1.3 8 1.3c1.8 0 3.4.7 4.7 1.9 1.2 1.2 1.9 2.9 1.9 4.7 0 3.8-3 6.8-6.6 6.8zm3.7-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.1-.4.1-.2-.1-.9-.3-1.7-1-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.3-.4c.1-.1.1-.2.2-.3 0-.1 0-.2-.1-.3l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.1 1.6 2.5 4 3.5.6.2 1 .3 1.3.4.5.2 1 .1 1.4-.1.4-.2.7-.7.8-1.3.1-.5.1-1 0-1.1z"/></svg>
+          Send via WhatsApp
+        </button>
+        <div class="form-note">Your details will be sent to REN 84844 · GT Nelson Realty Sdn Bhd via WhatsApp for follow-up on Gen Sphere by Majestic Gen.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">CIQ <em>Property Hub</em></div>
+      <nav class="footer__links">
+        <a href="/">Home</a>
+        <a href="/ctc-skyone.html">CTC SkyOne</a>
+        <a href="/the-address-jb.html">The Address JB</a>
+        <a href="/paragon-gateway.html">Paragon Gateway</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__disclaimer">
+      Information prepared by REN 84844, GT Nelson Realty Sdn Bhd, for general reference only. Data sourced from gensphere.com.my and developer's APDL disclosure: Developer: Majestic Gen Sdn Bhd (1056280-K) · Developer License: 30828/08-2029/0170(A) · Advertising Permit: 30828-3/05-2028/0410(A)-(S) · Land Tenure: Freehold · Total Units: 996 · Type: Serviced Apartment · Expected Completion: Dec 2029 · Size: 459–755 sq ft · Price: RM609,000–RM1,120,000 · Bumiputera Discount: 15% · Approving Authority: MBJB. All distances are approximate. Artist's impressions are indicative only. The Sale &amp; Purchase Agreement governs all transactions. Images sourced from gensphere.com.my — rights remain with Majestic Gen Sdn Bhd. &copy; 2025 CIQ Property Hub · REN 84844.
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60), {passive:true});
+
+function registerInterest(unitType) {
+  document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+  setTimeout(() => {
+    const sel = document.getElementById('formUnit');
+    if (sel) sel.value = unitType;
+  }, 600);
+}
+
+function submitForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('formName').value.trim();
+  const phone = document.getElementById('formPhone').value.trim();
+  const unit = document.getElementById('formUnit').value;
+  const msg = document.getElementById('formMsg').value.trim();
+  if (!name || !phone) return;
+  let text = `Hi, I'd like to register my interest in Gen Sphere by Majestic Gen.\n\nName: ${name}\nContact: ${phone}`;
+  if (unit) text += `\nUnit Preference: ${unit}`;
+  if (msg) text += `\nMessage: ${msg}`;
+  window.open('https://wa.me/60128742687?text=' + encodeURIComponent(text), '_blank');
+}
+</script>
+</body>
+</html>

@@ -35,20 +35,12 @@ export default function AboutPage() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
-                <p className="text-xs text-[var(--text-muted)] mb-1">Consultant Name</p>
-                <p className="font-semibold text-[var(--text-primary)]">{siteConfig.consultant.name}</p>
-              </div>
-              <div>
                 <p className="text-xs text-[var(--text-muted)] mb-1">Registered Under</p>
                 <p className="font-semibold text-[var(--text-primary)]">{siteConfig.consultant.company}</p>
               </div>
               <div>
                 <p className="text-xs text-[var(--text-muted)] mb-1">REN / Registration</p>
                 <p className="font-semibold text-[var(--text-primary)]">{siteConfig.consultant.ren}</p>
-              </div>
-              <div>
-                <p className="text-xs text-[var(--text-muted)] mb-1">Phone</p>
-                <p className="font-semibold text-[var(--text-primary)]">{siteConfig.consultant.phone}</p>
               </div>
               <div>
                 <p className="text-xs text-[var(--text-muted)] mb-1">WhatsApp</p>
@@ -60,10 +52,6 @@ export default function AboutPage() {
                 >
                   {siteConfig.consultant.whatsapp}
                 </a>
-              </div>
-              <div>
-                <p className="text-xs text-[var(--text-muted)] mb-1">Email</p>
-                <p className="font-semibold text-[var(--text-primary)]">{siteConfig.consultant.email}</p>
               </div>
             </div>
           </div>
@@ -122,8 +110,7 @@ export default function AboutPage() {
             </h2>
             <div className="bg-amber-50 border border-amber-200 rounded p-5 text-sm text-amber-800">
               <p>
-                This website is operated by <strong>{siteConfig.consultant.name}</strong>, an
-                independent property consultant registered under{" "}
+                This website is operated by an independent property consultant registered under{" "}
                 <strong>{siteConfig.consultant.company}</strong> ({siteConfig.consultant.ren}).
                 This website is not the official website of any developer or any property project.
                 Property information presented is for general informational purposes and should be
@@ -151,9 +138,7 @@ export default function AboutPage() {
 
       <section className="py-8 bg-[var(--bg-secondary)]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <WhatsAppCTA
-            message="Hi, I found your website and would like to learn more about CIQ area properties. Could you tell me more about what you do?"
-          />
+          <WhatsAppCTA />
         </div>
       </section>
     </>

@@ -12,7 +12,7 @@ export default function Disclosure({ developerName }: { developerName?: string }
         <div>
           <p className="font-semibold text-[var(--text-primary)] mb-1">Independent Marketing Negotiator Disclosure</p>
           <p className="text-[var(--text-secondary)] leading-relaxed">
-            This website is operated by <strong>{siteConfig.consultant.name}</strong>, an independent property
+            This website is operated by an independent property
             marketing negotiator registered under <strong>{siteConfig.consultant.company}</strong> ({siteConfig.consultant.ren}).
             {developerName && (
               <> This is <strong>NOT</strong> the official website of <strong>{developerName}</strong> or their official sales gallery.</>

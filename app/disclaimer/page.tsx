@@ -27,8 +27,7 @@ export default function DisclaimerPage() {
               Important — Please Read Before Using This Website
             </p>
             <p className="text-amber-800 text-sm leading-relaxed">
-              This website is operated by <strong>{siteConfig.consultant.name}</strong>, an independent
-              property consultant registered under{" "}
+              This website is operated by an independent property consultant registered under{" "}
               <strong>{siteConfig.consultant.company}</strong> ({siteConfig.consultant.ren}).
               This website is <strong>NOT</strong> the official website of any property developer,
               official project sales gallery, or developer-authorised portal. All project information is
@@ -137,11 +136,15 @@ export default function DisclaimerPage() {
             <div>
               <h2 className="font-serif text-xl font-bold text-[var(--text-primary)] mb-3">Contact</h2>
               <div className="bg-[var(--bg-secondary)] border border-[var(--border)] rounded p-4">
-                <p><strong>{siteConfig.consultant.name}</strong></p>
-                <p>{siteConfig.consultant.company} · {siteConfig.consultant.ren}</p>
-                <p>Email:{" "}
-                  <a href={`mailto:${siteConfig.consultant.email}`} className="text-[var(--accent)] hover:underline">
-                    {siteConfig.consultant.email}
+                <p><strong>{siteConfig.consultant.company}</strong> · {siteConfig.consultant.ren}</p>
+                <p>WhatsApp:{" "}
+                  <a
+                    href={siteConfig.consultant.whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--accent)] hover:underline"
+                  >
+                    {siteConfig.consultant.whatsapp}
                   </a>
                 </p>
               </div>

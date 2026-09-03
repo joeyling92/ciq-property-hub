@@ -28,6 +28,26 @@ const nextConfig: NextConfig = {
         destination: "/paragon-gateway.html",
         permanent: false,
       },
+      {
+        source: "/projects/the-address-jb",
+        destination: "/the-address-jb.html",
+        permanent: false,
+      },
+      {
+        source: "/projects/ctc-skyone",
+        destination: "/ctc-skyone.html",
+        permanent: false,
+      },
+      {
+        source: "/projects/gensphere",
+        destination: "/gensphere.html",
+        permanent: false,
+      },
+      {
+        source: "/projects/summer-suites",
+        destination: "/summer-suites.html",
+        permanent: false,
+      },
     ];
   },
 };

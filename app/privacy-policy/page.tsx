@@ -25,15 +25,19 @@ export default function PrivacyPolicyPage() {
             <div>
               <h2 className="font-serif text-xl font-bold text-[var(--text-primary)] mb-3">1. Who We Are</h2>
               <p>
-                This website (<strong>CIQ Property Hub</strong>) is operated by{" "}
-                <strong>{siteConfig.consultant.name}</strong>, an independent property consultant
-                registered under <strong>{siteConfig.consultant.company}</strong> (
+                This website (<strong>CIQ Property Hub</strong>) is operated by an independent property
+                consultant registered under <strong>{siteConfig.consultant.company}</strong> (
                 {siteConfig.consultant.ren}).
               </p>
               <p className="mt-3">
                 Contact:{" "}
-                <a href={`mailto:${siteConfig.consultant.email}`} className="text-[var(--accent)] hover:underline">
-                  {siteConfig.consultant.email}
+                <a
+                  href={siteConfig.consultant.whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--accent)] hover:underline"
+                >
+                  {siteConfig.consultant.whatsapp} (WhatsApp)
                 </a>
               </p>
             </div>
@@ -118,9 +122,14 @@ export default function PrivacyPolicyPage() {
                 <li>Withdraw consent for marketing communications</li>
               </ul>
               <p className="mt-3">
-                To exercise these rights, contact us at{" "}
-                <a href={`mailto:${siteConfig.consultant.email}`} className="text-[var(--accent)] hover:underline">
-                  {siteConfig.consultant.email}
+                To exercise these rights, contact us via{" "}
+                <a
+                  href={siteConfig.consultant.whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--accent)] hover:underline"
+                >
+                  WhatsApp
                 </a>
                 .
               </p>
@@ -132,13 +141,17 @@ export default function PrivacyPolicyPage() {
                 For any privacy-related queries, contact:
               </p>
               <div className="bg-[var(--bg-secondary)] border border-[var(--border)] rounded p-4 mt-3">
-                <p><strong>{siteConfig.consultant.name}</strong></p>
-                <p>{siteConfig.consultant.company}</p>
+                <p><strong>{siteConfig.consultant.company}</strong></p>
                 <p>{siteConfig.consultant.ren}</p>
                 <p>
-                  Email:{" "}
-                  <a href={`mailto:${siteConfig.consultant.email}`} className="text-[var(--accent)] hover:underline">
-                    {siteConfig.consultant.email}
+                  WhatsApp:{" "}
+                  <a
+                    href={siteConfig.consultant.whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--accent)] hover:underline"
+                  >
+                    {siteConfig.consultant.whatsapp}
                   </a>
                 </p>
               </div>

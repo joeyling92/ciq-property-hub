@@ -25,8 +25,7 @@ export default function TermsPage() {
             <div>
               <h2 className="font-serif text-xl font-bold text-[var(--text-primary)] mb-3">1. Website Operator</h2>
               <p>
-                This website is operated by <strong>{siteConfig.consultant.name}</strong>, an independent
-                property consultant registered under{" "}
+                This website is operated by an independent property consultant registered under{" "}
                 <strong>{siteConfig.consultant.company}</strong> ({siteConfig.consultant.ren}).
                 By using this website, you agree to these Terms of Use.
               </p>
@@ -111,7 +110,7 @@ export default function TermsPage() {
               <h2 className="font-serif text-xl font-bold text-[var(--text-primary)] mb-3">10. Limitation of Liability</h2>
               <p>
                 To the fullest extent permitted by applicable law, {siteConfig.consultant.company}{" "}
-                and {siteConfig.consultant.name} shall not be liable for any direct, indirect, incidental,
+                and its registered consultants shall not be liable for any direct, indirect, incidental,
                 consequential or special damages arising from your use of this website or reliance on
                 information contained herein.
               </p>
@@ -128,9 +127,17 @@ export default function TermsPage() {
             <div>
               <h2 className="font-serif text-xl font-bold text-[var(--text-primary)] mb-3">12. Contact</h2>
               <div className="bg-[var(--bg-secondary)] border border-[var(--border)] rounded p-4">
-                <p><strong>{siteConfig.consultant.name}</strong></p>
-                <p>{siteConfig.consultant.company} · {siteConfig.consultant.ren}</p>
-                <p>Email: <a href={`mailto:${siteConfig.consultant.email}`} className="text-[var(--accent)] hover:underline">{siteConfig.consultant.email}</a></p>
+                <p><strong>{siteConfig.consultant.company}</strong> · {siteConfig.consultant.ren}</p>
+                <p>WhatsApp:{" "}
+                  <a
+                    href={siteConfig.consultant.whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--accent)] hover:underline"
+                  >
+                    {siteConfig.consultant.whatsapp}
+                  </a>
+                </p>
               </div>
             </div>
 
