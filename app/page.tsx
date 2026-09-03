@@ -1,10 +1,29 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { projects } from "@/lib/projects";
 import { siteConfig } from "@/lib/siteConfig";
 import HomePremiumCard from "@/components/HomePremiumCard";
 import ProjectMap from "@/components/ProjectMap";
 import LeadForm from "@/components/LeadForm";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "https://ciq-property.com" },
+  openGraph: {
+    url: "https://ciq-property.com",
+    images: [
+      {
+        url: "/hero-jb-night.jpg",
+        width: 1920,
+        height: 1080,
+        alt: "Johor Bahru cityscape at night — aerial view",
+      },
+    ],
+  },
+  twitter: {
+    images: ["/hero-jb-night.jpg"],
+  },
+};
 
 /* ─────────────────────────────────────────────────────────────────
    HERO
@@ -17,7 +36,7 @@ function Hero() {
         <img
           src="/hero-jb-night.jpg"
           alt="Johor Bahru cityscape at night — aerial view"
-          className="w-full h-full object-cover opacity-65"
+          className="hero-enter-img w-full h-full object-cover opacity-65"
         />
         {/* Multi-layer overlay for cinematic depth */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117] via-[#0D1117]/55 to-[#0D1117]/15" />
@@ -26,22 +45,22 @@ function Hero() {
 
       {/* Content anchored to bottom */}
       <div className="relative z-10 max-w-[1120px] mx-auto px-6 sm:px-8 pb-16 md:pb-24 pt-32 w-full">
-        <span className="block text-[10px] font-semibold tracking-[.18em] uppercase text-[var(--accent)] mb-6">
+        <span className="hero-enter-eyebrow block text-[10px] font-semibold tracking-[.18em] uppercase text-[var(--accent)] mb-6">
           Johor Bahru Property Collection
         </span>
 
         <h1
-          className="font-serif text-[clamp(2.8rem,7vw,5.2rem)] font-bold text-white leading-[1.05] tracking-[-0.02em] mb-6 max-w-3xl"
+          className="hero-enter-h1 font-serif text-[clamp(2.8rem,7vw,5.2rem)] font-bold text-white leading-[1.05] tracking-[-0.02em] mb-6 max-w-3xl"
         >
           Johor Bahru&apos;s<br className="hidden sm:block" /> Prime Addresses.
         </h1>
 
-        <p className="text-white/60 text-base md:text-lg max-w-lg mb-10 leading-[1.75]">
+        <p className="hero-enter-body text-white/60 text-base md:text-lg max-w-lg mb-10 leading-[1.75]">
           A curated collection of residences around CIQ, RTS and Johor Bahru&apos;s most connected districts.
         </p>
 
         {/* Compact stats strip */}
-        <div className="flex w-fit mb-10 border border-[rgba(201,168,76,0.3)] overflow-hidden">
+        <div className="hero-enter-stats flex w-fit mb-10 border border-[rgba(201,168,76,0.3)] overflow-hidden">
           {[
             { val: String(projects.length), lbl: "Projects" },
             { val: "CIQ · RTS", lbl: "Corridor" },
@@ -58,7 +77,7 @@ function Hero() {
         </div>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="hero-enter-ctas flex flex-col sm:flex-row gap-3">
           <Link
             href="#collection"
             className="inline-flex items-center justify-center bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-semibold px-7 py-3.5 text-[13px] tracking-[.04em] uppercase transition-colors duration-200"

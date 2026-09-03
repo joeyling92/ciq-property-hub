@@ -19,13 +19,20 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex flex-col leading-none group">
-            <span className="font-serif text-xl font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors duration-200">
-              CIQ Property Hub
-            </span>
-            <span className="text-[10px] uppercase tracking-widest text-[var(--text-muted)]">
-              Independent Property Consultant
-            </span>
+          <Link href="/" className="flex items-center gap-3 group">
+            <img
+              src="/logo.png"
+              alt="CIQ Property Hub"
+              className="h-10 w-10 object-contain rounded-lg flex-shrink-0"
+            />
+            <div className="flex flex-col leading-none">
+              <span className="font-serif text-xl font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors duration-200">
+                CIQ Property Hub
+              </span>
+              <span className="text-[10px] uppercase tracking-widest text-[var(--text-muted)]">
+                Independent Property Consultant
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}

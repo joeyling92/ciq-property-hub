@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroEntrance from "@/components/HeroEntrance";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -17,6 +18,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ciq-property.com"),
   title: {
     default: "CIQ Property Hub | JB CIQ & RTS Property Consultant",
     template: "%s | CIQ Property Hub",
@@ -38,16 +40,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_MY",
-    url: "https://www.ciqpropertyhub.com",
+    url: "https://ciq-property.com",
     siteName: "CIQ Property Hub",
     title: "CIQ Property Hub | JB CIQ & RTS Property Consultant",
     description:
       "Explore selected residential developments around JB CIQ, RTS and the city centre with an independent property consultant.",
+    images: [
+      {
+        url: "/hero-jb-night.jpg",
+        width: 1920,
+        height: 1080,
+        alt: "Johor Bahru cityscape at night — aerial view",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "CIQ Property Hub | JB CIQ & RTS Property Consultant",
     description: "Explore selected residential developments around JB CIQ, RTS and the city centre.",
+    images: ["/hero-jb-night.jpg"],
   },
   robots: {
     index: true,
@@ -63,6 +74,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)]">
+        <HeroEntrance />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
