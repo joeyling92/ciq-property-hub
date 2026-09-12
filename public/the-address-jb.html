@@ -132,7 +132,7 @@ a{color:inherit;text-decoration:none}
 .gal-item{position:relative;overflow:hidden;aspect-ratio:16/9;cursor:pointer}
 .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
 .gal-item:hover img{transform:scale(1.05)}
-.gal-item--wide{grid-column:span 2;aspect-ratio:auto}
+.gal-item--wide{grid-column:span 2;aspect-ratio:32/9}
 .gal-item--tall{grid-row:span 2;aspect-ratio:auto}
 .gal-item__caption{position:absolute;bottom:0;left:0;right:0;padding:12px 16px;background:linear-gradient(transparent,rgba(10,13,22,.85));font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);opacity:0;transition:opacity .3s}
 .gal-item:hover .gal-item__caption{opacity:1}
@@ -525,18 +525,30 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
 <section class="facilities" id="facilities">
   <div class="container">
     <div class="section-eyebrow" style="color:var(--amber)">Amenities</div>
-    <h2 class="section-title section-title--dark" style="margin-top:14px">Over 40 amenities.<br>Soak in the sky.</h2>
-    <p class="section-sub section-sub--dark" style="margin-top:14px">Two amenity zones — a comprehensive Level 6 lifestyle podium and a Level 11 Sky Park with a 25m infinity pool above the city.</p>
+    <h2 class="section-title section-title--dark" style="margin-top:14px">Over 40 amenities.<br>All on Level 11.</h2>
+    <p class="section-sub section-sub--dark" style="margin-top:14px">The dedicated Level 11 Facilities Deck brings together pools, fitness, wellness, social, and leisure amenities — all in one level for residents of The Address JB.</p>
     <div class="fac-layout">
-      <div class="fac-block">
+      <div class="fac-block fac-block--highlight" style="grid-column:1/-1">
         <div class="fac-block__header">
-          <div class="fac-block__level"><span>L6</span></div>
+          <div class="fac-block__level"><span>L11</span></div>
           <div>
-            <div class="fac-block__title">Level 6 Facilities Podium</div>
-            <div class="fac-block__sub">Indoor &amp; outdoor lifestyle amenities</div>
+            <div class="fac-block__title">Level 11 — Facilities Deck</div>
+            <div class="fac-block__sub">Pools · fitness · wellness · social spaces</div>
           </div>
         </div>
         <div class="fac-block__items">
+          <div class="fac-item">25m Infinity Pool</div>
+          <div class="fac-item">Water Cocoon</div>
+          <div class="fac-item">Aqua Gym</div>
+          <div class="fac-item">Pool Deck</div>
+          <div class="fac-item">Children's Pool</div>
+          <div class="fac-item">Sunken Lounger</div>
+          <div class="fac-item">Multipurpose Lawn</div>
+          <div class="fac-item">Terraced Seating</div>
+          <div class="fac-item">Basketball Court</div>
+          <div class="fac-item">Pickleball Court</div>
+          <div class="fac-item">Garden Lawn</div>
+          <div class="fac-item">Pergola Seating</div>
           <div class="fac-item">Gymnasium</div>
           <div class="fac-item">Outdoor Gym</div>
           <div class="fac-item">Open Studio</div>
@@ -559,33 +571,10 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
           <div class="fac-item">Outdoor Lounge</div>
         </div>
       </div>
-      <div class="fac-block fac-block--highlight">
-        <div class="fac-block__header">
-          <div class="fac-block__level"><span>L11</span></div>
-          <div>
-            <div class="fac-block__title">Level 11 Sky Amenities</div>
-            <div class="fac-block__sub">Float above the city</div>
-          </div>
-        </div>
-        <div class="fac-block__items">
-          <div class="fac-item">25m Infinity Pool</div>
-          <div class="fac-item">Water Cocoon</div>
-          <div class="fac-item">Aqua Gym</div>
-          <div class="fac-item">Pool Deck</div>
-          <div class="fac-item">Children's Pool</div>
-          <div class="fac-item">Sunken Lounger</div>
-          <div class="fac-item">Multipurpose Lawn</div>
-          <div class="fac-item">Terraced Seating</div>
-          <div class="fac-item">Basketball Court</div>
-          <div class="fac-item">Pickleball Court</div>
-          <div class="fac-item">Garden Lawn</div>
-          <div class="fac-item">Pergola Seating</div>
-        </div>
-      </div>
     </div>
     <div class="fac-skypool">
       <img src="/the-address-jb/skypool.png" alt="25m Sky Infinity Pool" loading="lazy">
-      <div class="fac-skypool__label">Sky Infinity Pool · Level 11</div>
+      <div class="fac-skypool__label">25m Infinity Pool · Level 11 Facilities Deck</div>
     </div>
     <div class="fac-count">
       <div class="fac-count__val">40+</div>
@@ -650,7 +639,7 @@ details[open].faq-item summary::after{transform:rotate(45deg)}
       <details class="faq-item"><summary>What unit types are available at The Address JB?</summary><div class="faq-item__body">Three unit types: Type A — The Studio (450 sq ft, 1BR+1BA), Type B — The Edge (660 sq ft, 2BR+2BA, Variants B1 &amp; B2), and Type C — The Residence (865 sq ft, 3BR+2BA, Dual-Key concept). 3D virtual tours are available for Type A and Type B via Lapentor.</div></details>
       <details class="faq-item"><summary>What does GreenRE certified mean for residents?</summary><div class="faq-item__body">GreenRE is Malaysia's green building certification — it means The Address was designed and built to meet standards for energy efficiency, water conservation, indoor air quality, and sustainable materials. In practice this translates to lower utility bills, better air quality, and a reduced environmental footprint compared to conventional high-rises.</div></details>
       <details class="faq-item"><summary>How close is The Address to Singapore?</summary><div class="faq-item__body">The Address is approximately 3km from the CIQ checkpoint and 3.2km from the JB-Singapore Causeway. JB Sentral (the main transit hub for cross-border buses and KTM) is 4km away. The future RTS Link will further improve cross-border connectivity.</div></details>
-      <details class="faq-item"><summary>What amenities are on Level 11?</summary><div class="faq-item__body">Level 11 hosts the Sky Amenities: 25m Infinity Pool, Water Cocoon, Aqua Gym, Pool Deck, Children's Pool, Sunken Lounger, Multipurpose Lawn, Terraced Seating, Basketball Court, Pickleball Court, Garden Lawn, and Pergola Seating — with elevated city and skyline views.</div></details>
+      <details class="faq-item"><summary>What amenities are at The Address JB?</summary><div class="faq-item__body">All 40+ amenities are located on the Level 11 Facilities Deck: 25m Infinity Pool, Water Cocoon, Aqua Gym, Pool Deck, Children's Pool, Sunken Lounger, Multipurpose Lawn, Terraced Seating, Basketball Court, Pickleball Court, Garden Lawn, Pergola Seating, Gymnasium, Outdoor Gym, Open Studio, Games Room, Sauna &amp; Locker, Study Lounge, Working Area, Social Kitchen, Residence Lounge, Multipurpose Hall, Laundry, Surau, BBQ Area, Forest Garden, Jogging Path, Children's Playground, Fitness Station, Quiet Garden, Terrace, and Outdoor Lounge.</div></details>
       <details class="faq-item"><summary>What is the Dual-Key concept in Type C?</summary><div class="faq-item__body">The Dual-Key concept in Type C (The Residence) allows the unit to function as two separate living spaces — typically a main home and a smaller studio or bedroom with its own entrance. This enables flexible uses: live in one and rent out the other, or house extended family with privacy. Confirm the exact specification via the Register Interest form below.</div></details>
       <details class="faq-item"><summary>Can I do a virtual tour before deciding?</summary><div class="faq-item__body">Yes — The Address provides fully navigable 3D virtual tours for Type A (Studio) and Type B (The Edge) via Lapentor. You can explore the space from any device, at any time. Type C does not currently have a virtual tour — register interest below to arrange a physical showroom visit.</div></details>
     </div>

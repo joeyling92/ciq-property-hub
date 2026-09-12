@@ -621,9 +621,11 @@ export const projects: Project[] = [
       "Retail Shops (Level 1–2)",
     ],
     unitTypes: [
-      { type: "Type A", size: "645 sq ft", bedrooms: "1", bathrooms: "1" },
-      { type: "Type B / C", size: "745 sq ft", bedrooms: "2", bathrooms: "2" },
-      { type: "Type D / E", size: "880 sq ft", bedrooms: "3", bathrooms: "2" },
+      { type: "Type A", size: "499 sq ft", bedrooms: "1", bathrooms: "1" },
+      { type: "Type B", size: "648 sq ft", bedrooms: "1", bathrooms: "1" },
+      { type: "Type C", size: "788 sq ft", bedrooms: "2", bathrooms: "2" },
+      { type: "Type D", size: "915 sq ft", bedrooms: "3", bathrooms: "2" },
+      { type: "Type E", size: "1,177 sq ft", bedrooms: "3", bathrooms: "3" },
     ],
     nearbyPlaces: [
       { category: "Shopping", name: "Giant Hypermarket Southern City", distance: "3 min walk" },
@@ -637,7 +639,7 @@ export const projects: Project[] = [
     faq: [
       {
         question: "What makes Paragon Gateway different from other Paragon developments?",
-        answer: "Paragon Gateway is a large-scale development by Joland Group & Linbaq Holding — 4 towers across 5.24 acres with 2,136 serviced apartments and 48 retail units. Units are partially furnished and range from 645 to 880 sq ft. The Level 10 Recreation Deck features 32+ facilities including a 50m lap pool. Contact us to compare it with other projects for your needs.",
+        answer: "Paragon Gateway is a large-scale development by Joland Group & Linbaq Holding — 4 towers across 5.24 acres with 2,136 serviced apartments and 48 retail units. Units are partially furnished and range from 499 to 1,177 sq ft across five types (A–E). The Level 10 Recreation Deck features 32+ facilities including a 50m lap pool. Contact us to compare it with other projects for your needs.",
       },
       {
         question: "What is the starting price?",
