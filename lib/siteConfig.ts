@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "Discover Property Around Johor Bahru CIQ",
   description:
     "Explore selected residential developments around JB CIQ, RTS and the city centre, with clear project information and guidance from an independent property consultant.",
-  url: "https://www.ciqpropertyhub.com",
+  url: "https://ciq-property.com",
   consultant: {
     name: "Terry Toh",
     company: "GT Nelson Realty Sdn Bhd",
