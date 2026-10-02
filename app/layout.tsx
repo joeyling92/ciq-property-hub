@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     "Singapore commuter property",
     "JB property consultant",
   ],
-  authors: [{ name: "CIQ Property Hub" }],
-  creator: "CIQ Property Hub",
+  authors: [{ name: "Terry Toh", url: "https://ciq-property.com/terry-toh" }],
+  creator: "Terry Toh",
   openGraph: {
     type: "website",
     locale: "en_MY",
@@ -67,6 +67,34 @@ export const metadata: Metadata = {
   },
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://ciq-property.com/#website",
+      name: "CIQ Property Hub",
+      url: "https://ciq-property.com",
+      author: {
+        "@type": "Person",
+        "@id": "https://ciq-property.com/terry-toh",
+        name: "Terry Toh",
+      },
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ciq-property.com/#organization",
+      name: "GT Nelson Realty Sdn Bhd",
+      member: {
+        "@type": "Person",
+        "@id": "https://ciq-property.com/terry-toh",
+        name: "Terry Toh",
+        identifier: "REN 84844",
+      },
+    },
+  ],
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
@@ -74,6 +102,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)]">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <HeroEntrance />
         <Header />
         <main className="flex-1">{children}</main>

@@ -10,21 +10,44 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <h3 className="font-serif text-xl font-bold text-white mb-2">CIQ Property Hub</h3>
-            <p className="text-xs uppercase tracking-widest text-[var(--accent)] mb-4">
+            <h3 className="font-serif text-xl font-bold text-white mb-1">CIQ Property Hub</h3>
+            <p className="text-xs uppercase tracking-widest text-[var(--accent)] mb-3">
               Independent Marketing Negotiator · {siteConfig.consultant.ren}
             </p>
-            <p className="text-white/60 text-sm leading-relaxed max-w-sm">
+            <p className="text-white/60 text-sm leading-relaxed max-w-sm mb-4">
               Property listings around JB CIQ, RTS and Johor Bahru City Centre.
-              Operated under {siteConfig.consultant.company} · {siteConfig.consultant.ren}.
+              Operated by{" "}
+              <Link href="/terry-toh" className="text-white/80 hover:text-white underline underline-offset-2">
+                {siteConfig.consultant.name}
+              </Link>{" "}
+              · {siteConfig.consultant.ren} · {siteConfig.consultant.company}.
             </p>
-            <div className="mt-6 flex gap-3">
+            <div className="flex flex-wrap gap-3 mb-5">
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white text-sm font-semibold px-4 py-2 rounded transition-colors duration-200"
               >
                 Register Interest
               </Link>
+            </div>
+            {/* Social links */}
+            <div className="flex flex-wrap gap-3">
+              {siteConfig.social.tiktok && (
+                <a href={siteConfig.social.tiktok} target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-white/50 hover:text-white transition-colors">TikTok</a>
+              )}
+              {siteConfig.social.youtube && (
+                <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-white/50 hover:text-white transition-colors">YouTube</a>
+              )}
+              {siteConfig.social.facebook && (
+                <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-white/50 hover:text-white transition-colors">Facebook</a>
+              )}
+              {siteConfig.social.instagram && (
+                <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-white/50 hover:text-white transition-colors">Instagram</a>
+              )}
             </div>
           </div>
 
@@ -35,7 +58,8 @@ export default function Footer() {
               <li><Link href="/projects" className="hover:text-white transition-colors">All Properties</Link></li>
               <li><Link href="/locations/ciq" className="hover:text-white transition-colors">CIQ Area Guide</Link></li>
               <li><Link href="/guides" className="hover:text-white transition-colors">Buyer Guides</Link></li>
-              <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
+              <li><Link href="/terry-toh" className="hover:text-white transition-colors">Meet Terry Toh</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>

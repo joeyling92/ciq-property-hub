@@ -5,9 +5,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 
 export const metadata: Metadata = {
-  title: "About | Independent CIQ Property Consultant",
+  title: "About Terry Toh | Independent Property Consultant JB",
   description:
-    "Learn about the independent property consultant behind CIQ Property Hub — specialising in JB CIQ, RTS and Johor Bahru City Centre properties.",
+    "Terry Toh (REN 84844) is the independent property consultant behind CIQ Property Hub, specialising in JB CIQ, Iskandar Puteri and Kota Masai residential developments.",
 };
 
 export default function AboutPage() {
@@ -17,11 +17,11 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "About" }]} />
           <h1 className="font-serif text-4xl font-bold text-white mt-4 mb-3">
-            About CIQ Property Hub
+            About Terry Toh
           </h1>
           <p className="text-white/60 max-w-2xl">
-            An independent property consultant website focused exclusively on Johor Bahru CIQ,
-            RTS and City Centre residential developments.
+            Terry Toh ({siteConfig.consultant.ren}) — independent property consultant behind CIQ Property Hub,
+            focused on Johor Bahru CIQ, Iskandar Puteri, Kota Masai and City Centre residential developments.
           </p>
         </div>
       </section>
@@ -34,6 +34,12 @@ export default function AboutPage() {
               Website Operator Identity
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <p className="text-xs text-[var(--text-muted)] mb-1">Consultant</p>
+                <Link href="/terry-toh" className="font-semibold text-[var(--accent)] hover:underline">
+                  {siteConfig.consultant.name}
+                </Link>
+              </div>
               <div>
                 <p className="text-xs text-[var(--text-muted)] mb-1">Registered Under</p>
                 <p className="font-semibold text-[var(--text-primary)]">{siteConfig.consultant.company}</p>

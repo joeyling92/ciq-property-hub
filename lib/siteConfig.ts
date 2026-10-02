@@ -14,8 +14,9 @@ export const siteConfig = {
     email: "",
   },
   social: {
-    facebook: "",
-    instagram: "",
-    linkedin: "",
+    facebook: "https://www.facebook.com/profile.php?id=61576322462782",
+    instagram: "https://www.instagram.com/terry_gtnelson/",
+    tiktok: "https://www.tiktok.com/@terry_toh",
+    youtube: "https://www.youtube.com/@Terry%E8%AF%B4%E6%88%BF",
   },
 };

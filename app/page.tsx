@@ -212,6 +212,63 @@ function PropertyCollection() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
+   MORE JB AREAS BANNER
+───────────────────────────────────────────────────────────────── */
+function MoreAreasBanner() {
+  const areas = [
+    "Iskandar Puteri",
+    "Tebrau · Setia Tropika",
+    "Kota Masai",
+    "Skudai · Tampoi",
+    "JB City Centre",
+    "Kempas · Permas",
+    "Johor Jaya",
+    "Danga Bay",
+  ];
+
+  return (
+    <section className="bg-[var(--bg-dark)] border-t border-white/10 py-16 md:py-20">
+      <div className="max-w-[1120px] mx-auto px-6 sm:px-8">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10">
+          <div>
+            <span className="block text-[10px] font-semibold tracking-[.18em] uppercase text-[var(--accent)] mb-4">
+              Full JB Coverage
+            </span>
+            <h2 className="font-serif text-[clamp(1.8rem,4vw,2.8rem)] font-bold text-white leading-[1.1] tracking-[-0.02em]">
+              Looking beyond CIQ?
+            </h2>
+            <p className="text-white/45 text-[14px] leading-[1.8] mt-3 max-w-lg">
+              Terry also covers projects across wider Johor Bahru — from Iskandar Puteri to Kota Masai, Tebrau and Skudai.
+            </p>
+          </div>
+          <Link
+            href="/premium-listing"
+            className="flex-shrink-0 inline-flex items-center justify-center gap-2 bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-semibold px-6 py-3 text-[13px] tracking-[.04em] uppercase transition-colors duration-200 whitespace-nowrap"
+          >
+            View All Projects
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+
+        <div className="flex flex-wrap gap-2">
+          {areas.map((area) => (
+            <Link
+              key={area}
+              href="/premium-listing"
+              className="inline-flex items-center border border-white/15 hover:border-[var(--accent)] hover:text-[var(--accent)] text-white/55 text-[12px] font-medium tracking-[.04em] px-4 py-2 transition-colors duration-200"
+            >
+              {area}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
    MAP SECTION
 ───────────────────────────────────────────────────────────────── */
 function MapSection() {
@@ -463,6 +520,7 @@ export default function HomePage() {
       <Hero />
       <LocationStory />
       <PropertyCollection />
+      <MoreAreasBanner />
       <MapSection />
       <ComparisonTable />
       <WhyThisCollection />
