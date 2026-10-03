@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Disclaimer",
-  description: "Disclaimer for CIQ Property Hub — independent property consultant website.",
+  description: "Disclaimer for CIQ Property Hub — registered marketing negotiator website.",
 };
 
 export default function DisclaimerPage() {
@@ -27,7 +27,7 @@ export default function DisclaimerPage() {
               Important — Please Read Before Using This Website
             </p>
             <p className="text-amber-800 text-sm leading-relaxed">
-              This website is operated by an independent property consultant registered under{" "}
+              This website is operated by an independent marketing negotiator registered under{" "}
               <strong>{siteConfig.consultant.company}</strong> ({siteConfig.consultant.ren}).
               This website is <strong>NOT</strong> the official website of any property developer,
               official project sales gallery, or developer-authorised portal. All project information is
@@ -43,7 +43,7 @@ export default function DisclaimerPage() {
                 Independent Consultant Website
               </h2>
               <p>
-                CIQ Property Hub is operated by an independent property consultant. We are not employed
+                CIQ Property Hub is operated by an independent marketing negotiator. We are not employed
                 by, affiliated with, or authorised as the official representative of any developer
                 featured on this website, unless explicitly stated otherwise on a specific project page.
               </p>

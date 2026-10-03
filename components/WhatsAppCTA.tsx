@@ -29,7 +29,7 @@ export default function WhatsAppCTA({ projectName, variant = "primary", href = "
             {projectName ? `Register Interest in ${projectName}` : "Register Your Interest"}
           </p>
           <p className="text-xs text-[var(--text-secondary)]">
-            Submit your details and our independent property consultant will get in touch with you.
+            Submit your details and our registered marketing negotiator will get in touch with you.
           </p>
         </div>
         <a

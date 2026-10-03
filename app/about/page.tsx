@@ -5,9 +5,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 
 export const metadata: Metadata = {
-  title: "About Terry Toh | Independent Property Consultant JB",
+  title: "About Terry Toh | Independent Marketing Negotiator JB",
   description:
-    "Terry Toh (REN 84844) is the independent property consultant behind CIQ Property Hub, specialising in JB CIQ, Iskandar Puteri and Kota Masai residential developments.",
+    "Terry Toh (REN 84844) is a registered marketing negotiator under GT Nelson Realty Sdn Bhd, behind CIQ Property Hub — specialising in JB CIQ, Iskandar Puteri and Kota Masai residential developments.",
 };
 
 export default function AboutPage() {
@@ -20,7 +20,7 @@ export default function AboutPage() {
             About Terry Toh
           </h1>
           <p className="text-white/60 max-w-2xl">
-            Terry Toh ({siteConfig.consultant.ren}) — independent property consultant behind CIQ Property Hub,
+            Terry Toh ({siteConfig.consultant.ren}) — registered marketing negotiator behind CIQ Property Hub,
             focused on Johor Bahru CIQ, Iskandar Puteri, Kota Masai and City Centre residential developments.
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function AboutPage() {
               What We Do
             </h2>
             <p>
-              CIQ Property Hub is an independent property consultant website focused exclusively on
+              CIQ Property Hub is operated by an independent marketing negotiator focused exclusively on
               residential developments in the Johor Bahru CIQ, RTS and City Centre corridor. We are
               not affiliated with any developer, developer group or official sales gallery.
             </p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
             </h2>
             <div className="bg-amber-50 border border-amber-200 rounded p-5 text-sm text-amber-800">
               <p>
-                This website is operated by an independent property consultant registered under{" "}
+                This website is operated by an independent marketing negotiator registered under{" "}
                 <strong>{siteConfig.consultant.company}</strong> ({siteConfig.consultant.ren}).
                 This website is not the official website of any developer or any property project.
                 Property information presented is for general informational purposes and should be

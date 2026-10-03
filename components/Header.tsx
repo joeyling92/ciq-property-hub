@@ -30,7 +30,7 @@ export default function Header() {
                 CIQ Property Hub
               </span>
               <span className="text-[10px] uppercase tracking-widest text-[var(--text-muted)]">
-                Independent Property Consultant
+                Independent Marketing Negotiator
               </span>
             </div>
           </Link>

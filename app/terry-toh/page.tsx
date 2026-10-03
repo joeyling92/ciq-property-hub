@@ -232,7 +232,7 @@ export default function TerryTohPage() {
           {/* Disclosure */}
           <div className="bg-amber-50 border border-amber-200 rounded p-5 text-sm text-amber-800">
             <p>
-              Terry Toh ({siteConfig.consultant.ren}) is an independent property consultant registered
+              Terry Toh ({siteConfig.consultant.ren}) is a registered marketing negotiator
               under <strong>{siteConfig.consultant.company}</strong>. CIQ Property Hub is not the official
               website of any developer or project. Property information is for general informational
               purposes and should be independently verified before any decision is made.

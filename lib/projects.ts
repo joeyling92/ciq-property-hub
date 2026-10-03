@@ -246,7 +246,7 @@ export const projects: Project[] = [
       },
       {
         question: "Who operates this website?",
-        answer: "This website is operated by an independent property consultant and is not the official website of R&F Group or R&F Princess Cove.",
+        answer: "This website is operated by an independent marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844) and is not the official website of R&F Group or R&F Princess Cove.",
       },
     ],
     mapsQuery: "R&F Princess Cove Danga Bay Johor Bahru",
@@ -324,7 +324,7 @@ export const projects: Project[] = [
       },
       {
         question: "Who operates this website?",
-        answer: "This website is operated by an independent property consultant and is not the official website of PGB or Calia Residences.",
+        answer: "This website is operated by an independent marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844) and is not the official website of PGB or Calia Residences.",
       },
     ],
     mapsQuery: "Calia Residences Johor Bahru",
@@ -400,7 +400,7 @@ export const projects: Project[] = [
       },
       {
         question: "Who operates this website?",
-        answer: "This website is operated by an independent property consultant and is not the official website of Majestic Gen or Gensphere.",
+        answer: "This website is operated by an independent marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844) and is not the official website of Majestic Gen or Gensphere.",
       },
     ],
     mapsQuery: "Gensphere Johor Bahru",
@@ -477,7 +477,7 @@ export const projects: Project[] = [
       },
       {
         question: "Who operates this website?",
-        answer: "This website is operated by an independent property consultant and is not the official website of CTC Development or CTC Skyone.",
+        answer: "This website is operated by an independent marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844) and is not the official website of CTC Development or CTC Skyone.",
       },
     ],
     mapsQuery: "CTC Skyone Johor Bahru",
@@ -554,7 +554,7 @@ export const projects: Project[] = [
       },
       {
         question: "Who operates this website?",
-        answer: "This website is operated by an independent property consultant and is not the official website of Maxim, Majestic Gen or The Address.",
+        answer: "This website is operated by an independent marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844) and is not the official website of Maxim, Majestic Gen or The Address.",
       },
     ],
     mapsQuery: "The Address Johor Bahru",
@@ -647,7 +647,7 @@ export const projects: Project[] = [
       },
       {
         question: "Who operates this website?",
-        answer: "This website is operated by an independent property consultant and is not the official website of Joland Group, Linbaq Holding, or Paragon Gateway.",
+        answer: "This website is operated by an independent marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844) and is not the official website of Joland Group, Linbaq Holding, or Paragon Gateway.",
       },
     ],
     mapsQuery: "Paragon Gateway Johor Bahru",

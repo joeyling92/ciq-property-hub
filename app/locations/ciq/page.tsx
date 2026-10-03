@@ -9,7 +9,7 @@ import Disclosure from "@/components/Disclosure";
 export const metadata: Metadata = {
   title: "JB CIQ Area Guide | Property Near CIQ & RTS",
   description:
-    "Learn about the JB CIQ area, RTS Link, Bukit Chagar and property around Johor Bahru's Singapore connectivity corridor. Independent property consultant guide.",
+    "Learn about the JB CIQ area, RTS Link, Bukit Chagar and property around Johor Bahru's Singapore connectivity corridor. Registered marketing negotiator guide.",
   openGraph: {
     title: "JB CIQ Area Guide | Property Near CIQ & RTS",
     description: "Learn about the JB CIQ area, RTS Link, Bukit Chagar and property near the Singapore–JB corridor.",

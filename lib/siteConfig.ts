@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "CIQ Property Hub",
   tagline: "Discover Property Around Johor Bahru CIQ",
   description:
-    "Explore selected residential developments around JB CIQ, RTS and the city centre, with clear project information and guidance from an independent property consultant.",
+    "Explore selected residential developments around JB CIQ, RTS and the city centre, with clear project information and guidance from a registered marketing negotiator.",
   url: "https://ciq-property.com",
   consultant: {
     name: "Terry Toh",

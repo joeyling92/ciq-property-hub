@@ -46,7 +46,7 @@ export default function LeadForm({ projectName }: LeadFormProps) {
         <h3 className="font-serif text-xl font-bold text-[var(--text-primary)] mb-2">Thank You for Your Interest</h3>
         <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-5">
           Your details have been noted. To ensure you receive a response, please send us a WhatsApp
-          message — our independent property consultant ({siteConfig.consultant.ren}) will follow up
+          message — our registered marketing negotiator ({siteConfig.consultant.ren}) will follow up
           with the latest project information.
         </p>
         <a
@@ -135,9 +135,15 @@ export default function LeadForm({ projectName }: LeadFormProps) {
             className="w-full border border-[var(--border)] rounded px-3 py-2.5 text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent)] transition-colors duration-200 bg-white"
           >
             <option value="">Select a project</option>
-            <option value="The Astaka @ One Bukit Senyum">The Astaka @ One Bukit Senyum</option>
-            <option value="Bukit Chagar Residences">Bukit Chagar Residences</option>
-            <option value="JB Cityscape @ City Centre">JB Cityscape @ City Centre</option>
+            <option value="Richmond JBCC">Richmond JBCC</option>
+            <option value="R&F Princess Cove">R&F Princess Cove</option>
+            <option value="Calia Residences">Calia Residences</option>
+            <option value="Gensphere">Gensphere</option>
+            <option value="CTC Skyone">CTC Skyone</option>
+            <option value="The Address">The Address</option>
+            <option value="Paragon Gateway">Paragon Gateway</option>
+            <option value="The Iconic by PGB">The Iconic by PGB</option>
+            <option value="Summer Suites">Summer Suites</option>
             <option value="Not sure yet">Not sure yet — advise me</option>
           </select>
         </div>
@@ -173,7 +179,7 @@ export default function LeadForm({ projectName }: LeadFormProps) {
             className="mt-0.5 w-4 h-4 flex-shrink-0 accent-[var(--accent)]"
           />
           <label htmlFor="consent" className="text-xs text-[var(--text-secondary)] leading-relaxed">
-            I agree to be contacted by a registered independent property consultant regarding my
+            I agree to be contacted by a registered marketing negotiator regarding my
             enquiry. I have read the{" "}
             <a href="/privacy-policy" className="underline hover:text-[var(--accent)]">Privacy Policy</a>{" "}
             and{" "}

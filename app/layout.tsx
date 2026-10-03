@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | CIQ Property Hub",
   },
   description:
-    "Explore selected residential developments around JB CIQ, RTS and the city centre, with clear project information and guidance from an independent property consultant.",
+    "Explore selected residential developments around JB CIQ, RTS and the city centre, with clear project information and guidance from a registered marketing negotiator.",
   keywords: [
     "Johor Bahru CIQ property",
     "JB CIQ property",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "CIQ Property Hub",
     title: "CIQ Property Hub | JB CIQ & RTS Property Consultant",
     description:
-      "Explore selected residential developments around JB CIQ, RTS and the city centre with an independent property consultant.",
+      "Explore selected residential developments around JB CIQ, RTS and the city centre with a registered marketing negotiator.",
     images: [
       {
         url: "/hero-jb-night.jpg",

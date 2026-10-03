@@ -6,7 +6,7 @@ import LeadForm from "@/components/LeadForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact our independent property consultant for information on JB CIQ, RTS and City Centre properties.",
+    "Contact Terry Toh, registered marketing negotiator (REN 84844), for information on JB CIQ, RTS and City Centre properties.",
 };
 
 export default function ContactPage() {
@@ -17,7 +17,7 @@ export default function ContactPage() {
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
           <h1 className="font-serif text-4xl font-bold text-white mt-4 mb-3">Contact</h1>
           <p className="text-white/60 max-w-xl">
-            Reach out to our independent property consultant for guidance on JB CIQ area properties.
+            Reach out to our registered marketing negotiator for guidance on JB CIQ area properties.
           </p>
         </div>
       </section>
@@ -74,9 +74,9 @@ export default function ContactPage() {
               <div className="mt-5 bg-amber-50 border border-amber-200 rounded p-4 text-xs text-amber-800">
                 <p className="font-semibold mb-1">Independent Consultant Notice</p>
                 <p>
-                  This website is operated by an independent property consultant. We are not the
+                  This website is operated by an independent marketing negotiator. We are not the
                   official website or sales gallery of any developer. All enquiries are handled by
-                  a registered property consultant.
+                  a registered marketing negotiator.
                 </p>
               </div>
             </div>

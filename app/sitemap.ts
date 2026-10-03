@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { projects } from "@/lib/projects";
+import { guides } from "@/lib/guides";
 import { siteConfig } from "@/lib/siteConfig";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -29,5 +30,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...projectPages];
+  const guidePages = guides
+    .filter((g) => g.available)
+    .map((g) => ({
+      url: `${base}/guides/${g.slug}`,
+      lastModified: new Date(g.lastUpdated),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }));
+
+  return [...staticPages, ...projectPages, ...guidePages];
 }

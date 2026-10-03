@@ -283,7 +283,7 @@ function MapSection() {
             Everything within reach.
           </h2>
           <p className="text-[var(--text-secondary)] mt-4 max-w-lg text-[15px] leading-[1.75]">
-            All {projects.length} projects sit within the JB CIQ and RTS corridor.
+            All {projects.length} projects are within 10 km of the JB CIQ checkpoint.
           </p>
         </div>
 
@@ -396,7 +396,7 @@ function WhyThisCollection() {
     {
       num: "01",
       title: "CIQ & RTS Corridor",
-      desc: "Every property in this collection sits within the JB CIQ and Bukit Chagar RTS corridor — selected specifically for Singapore commuters and cross-border buyers.",
+      desc: "Every property in this collection is within 10 km of the JB CIQ checkpoint and Bukit Chagar RTS corridor — selected for Singapore commuters and cross-border buyers.",
     },
     {
       num: "02",
@@ -406,7 +406,7 @@ function WhyThisCollection() {
     {
       num: "03",
       title: "Independent Guidance",
-      desc: "This is not a developer portal. We are a registered independent property consultant presenting information clearly so you can make a better-informed decision.",
+      desc: "This is not a developer portal. We are a registered marketing negotiator presenting information clearly so you can make a better-informed decision.",
     },
   ];
 
@@ -480,7 +480,7 @@ function RegisterInterest() {
               Find your next<br className="hidden sm:block" /> address.
             </h2>
             <p className="text-white/50 text-[15px] leading-[1.8] mb-8 max-w-sm">
-              Tell us what you&apos;re looking for and our registered independent property consultant will help you shortlist the properties that fit.
+              Tell us what you&apos;re looking for and our registered marketing negotiator will help you shortlist the properties that fit.
             </p>
 
             <ul className="space-y-4 mb-10">

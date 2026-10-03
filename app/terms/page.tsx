@@ -25,7 +25,7 @@ export default function TermsPage() {
             <div>
               <h2 className="font-serif text-xl font-bold text-[var(--text-primary)] mb-3">1. Website Operator</h2>
               <p>
-                This website is operated by an independent property consultant registered under{" "}
+                This website is operated by an independent marketing negotiator registered under{" "}
                 <strong>{siteConfig.consultant.company}</strong> ({siteConfig.consultant.ren}).
                 By using this website, you agree to these Terms of Use.
               </p>
@@ -34,7 +34,7 @@ export default function TermsPage() {
             <div>
               <h2 className="font-serif text-xl font-bold text-[var(--text-primary)] mb-3">2. Nature of Website</h2>
               <p>
-                CIQ Property Hub is an independent property consultant website. It is <strong>not</strong>{" "}
+                CIQ Property Hub is operated by an independent marketing negotiator. It is <strong>not</strong>{" "}
                 the official website of any property developer, official sales gallery, or developer-authorised
                 portal. All project information is provided by an independent consultant for general
                 informational purposes.

@@ -8,7 +8,7 @@ import WhatsAppCTA from "@/components/WhatsAppCTA";
 export const metadata: Metadata = {
   title: "CIQ Properties | All Projects Near JB CIQ & RTS",
   description:
-    "Browse selected residential developments near JB CIQ, Bukit Chagar RTS and Johor Bahru City Centre. Independent property consultant guidance.",
+    "Browse selected residential developments near JB CIQ, Bukit Chagar RTS and Johor Bahru City Centre. Registered marketing negotiator guidance.",
   openGraph: {
     title: "CIQ Properties | All Projects Near JB CIQ & RTS",
     description: "Browse selected residential developments near JB CIQ, Bukit Chagar RTS and Johor Bahru City Centre.",
@@ -27,7 +27,7 @@ export default function ProjectsPage() {
           </h1>
           <p className="text-white/60 max-w-2xl">
             Selected residential developments around JB CIQ, RTS and Johor Bahru City Centre.
-            Each project is presented with verified information from an independent property consultant.
+            Each project is presented with verified information from a registered marketing negotiator.
           </p>
         </div>
       </section>
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
       <div className="bg-[var(--bg-secondary)] border-b border-[var(--border)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <p className="text-xs text-[var(--text-muted)]">
-            This page is operated by an independent property consultant. Project information is for general
+            This page is operated by an independent marketing negotiator. Project information is for general
             reference only and is not from the official developer. Verify all details before making decisions.
           </p>
         </div>
