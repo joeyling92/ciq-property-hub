@@ -98,7 +98,7 @@ const jsonLd = {
           name: "Can Singaporeans buy property in the JB CIQ area?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Singapore citizens and permanent residents can purchase residential property in the JB CIQ area, subject to Malaysian foreign buyer rules including a minimum purchase price of RM1,000,000 for strata residential property in Johor. A dedicated Singapore buyer's guide covering eligibility, costs and the purchase process is available on this site.",
+            text: "Yes. Singapore citizens and permanent residents can purchase residential property in the JB CIQ area, subject to Malaysian foreign buyer rules. Strata properties start from RM400,000–RM500,000 depending on the developer; landed is from RM1,000,000. Additional costs include 8% MOT stamp duty (from 2026) and a Johor state levy. A dedicated Singapore buyer's guide is available on this site.",
           },
         },
         {
@@ -434,7 +434,7 @@ export default function JBCIQAreaGuidePage() {
                 },
                 {
                   q: "Can Singaporeans buy property in the JB CIQ area?",
-                  a: "Yes. Singapore citizens and permanent residents can buy residential property in Johor Bahru, subject to Malaysian foreign buyer rules including a minimum purchase price of RM1,000,000 for strata residential property in Johor. A detailed guide covering eligibility, costs and the purchase process is available on this site.",
+                  a: "Yes. Singapore citizens and permanent residents can buy residential property in Johor Bahru. Strata properties (condos, serviced apartments) start from RM400,000–RM500,000 depending on the developer; landed is from RM1,000,000. Additional costs include 8% MOT stamp duty from 2026 and a Johor state levy. A detailed guide is available on this site.",
                 },
                 {
                   q: "Is the JB CIQ area a good place to buy?",

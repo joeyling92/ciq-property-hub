@@ -8,14 +8,14 @@ import Disclosure from "@/components/Disclosure";
 export const metadata: Metadata = {
   title: "Can Singaporeans Buy Property in Johor Bahru? 2026 Guide",
   description:
-    "Yes — Singapore citizens and PRs can buy JB property, subject to Johor's RM1M minimum, 8% stamp duty (from 2026), a 3% state levy and RPGT. Full eligibility, costs and process guide.",
+    "Yes — Singapore citizens and PRs can buy JB property. Strata from RM400k–RM500k (varies by developer), 8% stamp duty from 2026, state levy of RM53k (below RM1M) or 3% (RM1M+), and RPGT.",
   alternates: {
     canonical: `${siteConfig.url}/guides/singapore-buyers`,
   },
   openGraph: {
     title: "Can Singaporeans Buy Property in Johor Bahru? (2026 Guide)",
     description:
-      "A practical guide for Singapore buyers: Johor's RM1M minimum, 8% MOT stamp duty, 3% state levy, RPGT rates, loan eligibility and the step-by-step purchase process.",
+      "A practical guide for Singapore buyers: Johor minimums, 8% MOT stamp duty, state levy (RM53k fixed or 3%), RPGT rates, loan eligibility and the step-by-step purchase process.",
     images: [{ url: "/hero-jb-night.jpg", width: 1920, height: 1080, alt: "Johor Bahru cityscape — property for Singapore buyers" }],
   },
 };
@@ -30,7 +30,7 @@ const jsonLd = {
       "@id": `${siteConfig.url}/guides/singapore-buyers#article`,
       headline: "Can Singaporeans Buy Property in Johor Bahru? 2026 Guide",
       description:
-        "Yes — Singapore citizens and PRs can buy JB property, subject to Johor's RM1M minimum, 8% stamp duty (from 2026), a 3% state levy and RPGT. Full eligibility, costs and process guide.",
+        "Yes — Singapore citizens and PRs can buy JB property. Strata from RM400k–RM500k (varies by developer), 8% stamp duty from 2026, state levy of RM53k (below RM1M) or 3% (RM1M+), and RPGT.",
       url: `${siteConfig.url}/guides/singapore-buyers`,
       image: `${siteConfig.url}/hero-jb-night.jpg`,
       datePublished: "2026-10-05T08:00:00+08:00",
@@ -66,7 +66,7 @@ const jsonLd = {
           name: "What is the minimum property price for Singapore buyers in JB?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "In Johor, foreign buyers including Singapore citizens must purchase at a minimum of RM1,000,000 for strata (high-rise) residential property. Landed property in designated international zones carries a minimum of RM2,000,000. These are Johor state government requirements and apply regardless of nationality.",
+            text: "In Johor, the minimum purchase price for foreign buyers varies by property type. For strata properties (condos and serviced apartments), the minimum starts from RM400,000 or RM500,000 depending on the developer's approval. Landed residential property carries a minimum of RM1,000,000, and landed in designated international zones RM2,000,000. Confirm the applicable minimum with the developer before proceeding.",
           },
         },
         {
@@ -82,7 +82,7 @@ const jsonLd = {
           name: "What is the Johor state foreign levy?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Since 1 July 2025, Johor charges a state foreign buyer levy of 3% of the purchase price or RM30,000, whichever is higher, on purchases from developers. This is separate from the federal stamp duty. On a RM1,000,000 purchase, the levy is RM30,000.",
+            text: "Johor charges a state foreign buyer levy on purchases from developers. For properties below RM1,000,000, the levy is a fixed RM53,000. For properties at RM1,000,000 and above, the levy is 3% of the purchase price. This is separate from the 8% federal stamp duty on the MOT.",
           },
         },
         {
@@ -123,8 +123,8 @@ const costRows = [
   },
   {
     item: "Johor State Foreign Levy",
-    amount: "3% of price (min RM30,000)",
-    note: "Applies to purchases from developers. From 1 July 2025.",
+    amount: "RM53,000 (below RM1M) / 3% (RM1M+)",
+    note: "Fixed RM53,000 for properties below RM1,000,000. 3% of purchase price for RM1,000,000 and above. Applies to developer purchases.",
     highlight: true,
   },
   {
@@ -231,9 +231,10 @@ export default function SingaporeBuyersGuidePage() {
             </p>
             <p className="text-white/65 text-base leading-relaxed max-w-2xl">
               Yes — Singapore citizens and permanent residents can buy residential property
-              in Johor Bahru. The short version: RM1,000,000 minimum, a flat 8% stamp duty
-              from 2026, a 3% state levy, and RPGT on profits when you sell. Here is what
-              you need to know before committing.
+              in Johor Bahru. Strata properties start from RM400,000–RM500,000 depending
+              on the developer; landed is from RM1,000,000. Then add 8% stamp duty from
+              2026, a state levy (RM53,000 fixed below RM1M or 3% above), and RPGT when
+              you sell. Here is what you need to know before committing.
             </p>
           </div>
         </div>
@@ -288,8 +289,10 @@ export default function SingaporeBuyersGuidePage() {
               What Is the Minimum Purchase Price in Johor?
             </h2>
             <p className="text-[var(--text-secondary)] leading-relaxed mb-4">
-              Johor state sets minimum purchase price thresholds for foreign buyers. As of
-              2026, the requirements are:
+              Johor state sets minimum purchase price thresholds for foreign buyers. For
+              strata properties, the minimum varies by developer approval — some projects
+              are approved from RM400,000, others from RM500,000. Always confirm the
+              applicable minimum for a specific project with the developer or agent.
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="w-full text-sm border-collapse">
@@ -306,6 +309,10 @@ export default function SingaporeBuyersGuidePage() {
                 <tbody>
                   <tr className="border-b border-[var(--border)]">
                     <td className="py-2.5 pr-4 text-[var(--text-secondary)]">Strata residential (condos, serviced apartments)</td>
+                    <td className="py-2.5 font-semibold text-[var(--text-primary)]">From RM400,000 – RM500,000 (varies by developer)</td>
+                  </tr>
+                  <tr className="border-b border-[var(--border)]">
+                    <td className="py-2.5 pr-4 text-[var(--text-secondary)]">Landed residential</td>
                     <td className="py-2.5 font-semibold text-[var(--text-primary)]">RM1,000,000</td>
                   </tr>
                   <tr className="border-b border-[var(--border)]">
@@ -393,33 +400,57 @@ export default function SingaporeBuyersGuidePage() {
               Malaysian solicitor before signing.
             </p>
 
-            {/* Example cost box */}
-            <div className="bg-[var(--bg-secondary)] border border-[var(--border)] rounded p-5 mb-10">
-              <p className="text-sm font-semibold text-[var(--text-primary)] mb-3">
-                Illustrative example — RM1,200,000 strata purchase, 2026
-              </p>
-              <div className="space-y-1.5 text-sm">
-                {[
-                  ["Purchase price", "RM 1,200,000"],
-                  ["MOT stamp duty (8%)", "RM 96,000"],
-                  ["Johor state levy (3%)", "RM 36,000"],
-                  ["Legal fees (est.)", "RM ~10,000"],
-                  ["Total outlay", "RM ~1,342,000+"],
-                ].map(([label, val], i) => (
-                  <div
-                    key={label}
-                    className={`flex justify-between ${i === 4 ? "font-semibold border-t border-[var(--border)] pt-2 mt-2 text-[var(--text-primary)]" : "text-[var(--text-secondary)]"}`}
-                  >
-                    <span>{label}</span>
-                    <span className="font-mono">{val}</span>
-                  </div>
-                ))}
+            {/* Example cost boxes */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
+              <div className="bg-[var(--bg-secondary)] border border-[var(--border)] rounded p-4">
+                <p className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-3">
+                  Example A — RM600,000 serviced apartment
+                </p>
+                <div className="space-y-1.5 text-sm">
+                  {[
+                    ["Purchase price", "RM 600,000"],
+                    ["MOT stamp duty (8%)", "RM 48,000"],
+                    ["Johor state levy (fixed)", "RM 53,000"],
+                    ["Legal fees (est.)", "RM ~6,000"],
+                    ["Total outlay", "RM ~707,000+"],
+                  ].map(([label, val], i) => (
+                    <div
+                      key={label}
+                      className={`flex justify-between ${i === 4 ? "font-semibold border-t border-[var(--border)] pt-2 mt-2 text-[var(--text-primary)]" : "text-[var(--text-secondary)]"}`}
+                    >
+                      <span>{label}</span>
+                      <span className="font-mono">{val}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <p className="text-xs text-[var(--text-muted)] mt-3">
-                This is an illustration only. Does not include loan costs, loan stamp duty,
-                agent fees or RPGT on eventual sale. Verify all figures with your solicitor.
-              </p>
+              <div className="bg-[var(--bg-secondary)] border border-[var(--border)] rounded p-4">
+                <p className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-3">
+                  Example B — RM1,200,000 condo
+                </p>
+                <div className="space-y-1.5 text-sm">
+                  {[
+                    ["Purchase price", "RM 1,200,000"],
+                    ["MOT stamp duty (8%)", "RM 96,000"],
+                    ["Johor state levy (3%)", "RM 36,000"],
+                    ["Legal fees (est.)", "RM ~10,000"],
+                    ["Total outlay", "RM ~1,342,000+"],
+                  ].map(([label, val], i) => (
+                    <div
+                      key={label}
+                      className={`flex justify-between ${i === 4 ? "font-semibold border-t border-[var(--border)] pt-2 mt-2 text-[var(--text-primary)]" : "text-[var(--text-secondary)]"}`}
+                    >
+                      <span>{label}</span>
+                      <span className="font-mono">{val}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
+            <p className="text-xs text-[var(--text-muted)] -mt-6 mb-10">
+              Illustrations only. Do not include loan costs, loan stamp duty, agent fees or
+              RPGT on eventual sale. Verify all figures with your Malaysian solicitor.
+            </p>
 
             {/* Section 5 — Financing */}
             <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-4">
@@ -588,7 +619,7 @@ export default function SingaporeBuyersGuidePage() {
               {[
                 {
                   q: "Can Singapore citizens buy property in Johor Bahru?",
-                  a: "Yes. Singapore citizens are treated as foreign buyers under Malaysian law and can purchase residential property in Johor Bahru. The main requirements are a minimum purchase price of RM1,000,000 for strata residential property, state authority approval, and payment of stamp duty (8% flat from 2026) and the Johor state levy (3%).",
+                  a: "Yes. Singapore citizens are treated as foreign buyers under Malaysian law and can purchase residential property in Johor Bahru. Strata properties (condos, serviced apartments) start from RM400,000–RM500,000 depending on the developer; landed is from RM1,000,000. Additional costs include 8% MOT stamp duty (from 2026) and the Johor state levy.",
                 },
                 {
                   q: "What is the minimum price for foreigners buying in Johor?",
@@ -631,9 +662,9 @@ export default function SingaporeBuyersGuidePage() {
             <ul className="space-y-2 mb-6">
               {[
                 "Singapore citizens and PRs can buy JB property — they are treated as foreign buyers under Malaysian law",
-                "Minimum purchase price in Johor: RM1,000,000 for strata residential",
+                "Strata minimum in Johor: from RM400,000–RM500,000 depending on developer; landed from RM1,000,000",
                 "Stamp duty from 2026: flat 8% on full purchase price (non-citizens)",
-                "Johor state levy from July 2025: 3% of price (minimum RM30,000)",
+                "Johor state levy: fixed RM53,000 for purchases below RM1,000,000; 3% for RM1,000,000 and above",
                 "RPGT: 30% on gains in years 1–5; 10% from year 6+ — never drops to 0% for foreigners",
                 "CPF cannot be used; exchange rate risk applies if financing in Ringgit",
                 "Budget total acquisition costs of ~10–12% above the purchase price before legal fees",
