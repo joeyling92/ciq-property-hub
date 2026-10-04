@@ -54,8 +54,8 @@ export const guides: Guide[] = [
     ogDescription:
       "A practical guide for Singapore buyers considering JB property — covering foreign buyer rules, costs and the purchase process.",
     topics: ["Foreign buyer eligibility", "Minimum purchase price", "Financing considerations", "Buying process"],
-    lastUpdated: "2026-10-03",
-    available: false,
+    lastUpdated: "2026-10-05",
+    available: true,
   },
   {
     slug: "property-tenure",
