@@ -69,8 +69,8 @@ export const guides: Guide[] = [
     ogDescription:
       "A clear guide to Malaysian property tenure — freehold, leasehold and what each means for buyers in Johor Bahru.",
     topics: ["Freehold defined", "Leasehold explained", "Bumi lot vs non-Bumi", "Title types"],
-    lastUpdated: "2026-10-03",
-    available: false,
+    lastUpdated: "2026-10-06",
+    available: true,
   },
   {
     slug: "how-to-buy",
