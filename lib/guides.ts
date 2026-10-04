@@ -39,8 +39,8 @@ export const guides: Guide[] = [
     ogDescription:
       "A clear guide to the JB CIQ area for property buyers — what CIQ is, the surrounding neighbourhoods, and key transport links.",
     topics: ["What is CIQ?", "Bukit Chagar explained", "JB City Centre overview", "Key transport links"],
-    lastUpdated: "2026-10-03",
-    available: false,
+    lastUpdated: "2026-10-04",
+    available: true,
   },
   {
     slug: "singapore-buyers",

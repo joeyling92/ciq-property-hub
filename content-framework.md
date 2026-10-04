@@ -379,7 +379,7 @@ Articles are ordered by priority. Mark done with ✅ when published. Add to `lib
 | # | Slug | Title | Type | Status |
 |---|------|-------|------|--------|
 | 1 | `rts-link` | The JB–Singapore RTS Link: What Buyers Need to Know | Area Guide / News | ✅ Published at /guides/rts-link |
-| 2 | `jb-ciq-area` | Understanding the JB CIQ Area | Area Guide | ⬜ Not started |
+| 2 | `jb-ciq-area` | Understanding the JB CIQ Area | Area Guide | ✅ Published at /guides/jb-ciq-area |
 | 3 | `singapore-buyers` | Can Singaporeans Buy Property in Johor Bahru? | Buyer Question | ⬜ Not started |
 | 4 | `property-tenure` | Freehold vs Leasehold in Malaysia: A JB Buyer's Guide | Buyer Question / Comparison | ⬜ Not started |
 | 5 | `how-to-buy` | How to Buy Property in Johor Bahru: Step-by-Step Guide | How-To | ⬜ Not started |
