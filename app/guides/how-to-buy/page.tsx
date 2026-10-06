@@ -342,6 +342,13 @@ export default function HowToBuyPage() {
           </div>
         </section>
 
+        <img
+          src="/visuals/how-to-buy-steps.svg"
+          alt="8-step process for buying JB property: steps 1–4 before signing (set budget, shortlist property, pay booking fee, appoint solicitor) and steps 5–8 after signing (sign SPA, apply for bank loan, progressive payments, collect keys and follow up on strata title)"
+          className="w-full h-auto rounded-lg mb-8"
+          loading="lazy"
+        />
+
         {/* Steps in detail */}
         <section className="mb-8">
           <h2 className="text-xl font-bold text-[var(--foreground)] mb-4 pb-2 border-b border-[var(--border)]">
