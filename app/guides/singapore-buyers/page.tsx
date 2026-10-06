@@ -363,6 +363,14 @@ export default function SingaporeBuyersGuidePage() {
               Beyond the purchase price, Singapore buyers face significant acquisition costs.
               Budget for all of these before signing anything.
             </p>
+
+            <img
+              src="/visuals/sg-levy-structure.svg"
+              alt="Johor state levy structure: fixed RM53,000 for purchases below RM1 million, then 3 percent for RM1 million and above — at exactly RM1 million the levy is RM30,000, lower than the fixed RM53,000 below that threshold"
+              className="w-full h-auto rounded-lg mb-5"
+              loading="lazy"
+            />
+
             <div className="overflow-x-auto mb-4">
               <table className="w-full text-sm border-collapse">
                 <thead>

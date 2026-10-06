@@ -210,6 +210,13 @@ export default function RTSLinkGuidePage() {
               The Route: Bukit Chagar to Woodlands North
             </h2>
 
+            <img
+              src="/visuals/rts-link-route.svg"
+              alt="Route diagram: RTS Link connecting Bukit Chagar in Johor Bahru to Woodlands North in Singapore, approximately 4km elevated rail, 5-minute crossing, target opening February 2027"
+              className="w-full h-auto rounded-lg mb-6"
+              loading="lazy"
+            />
+
             <h3 className="text-base font-semibold text-[var(--text-primary)] mb-2">
               Bukit Chagar (Johor Bahru)
             </h3>

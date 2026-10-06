@@ -293,6 +293,13 @@ export default function PropertyTenurePage() {
           </p>
         </section>
 
+        <img
+          src="/visuals/tenure-timeline.svg"
+          alt="Timeline showing freehold title has no expiry while leasehold runs 99 years from state issue date, with bank financing risk rising when less than 60 years remain and title expiry at year 99 unless renewed by the state"
+          className="w-full h-auto rounded-lg mb-8"
+          loading="lazy"
+        />
+
         {/* Head-to-head table */}
         <section className="mb-8">
           <h2 className="text-xl font-bold text-[var(--foreground)] mb-3 pb-2 border-b border-[var(--border)]">

@@ -24,8 +24,8 @@
 
 ### Common rules that apply to every type
 
-- **Answer capsule:** The article's title question must be answered in the first 40–60 words. This is the most-cited block for AI Overviews and ChatGPT.
-- **Definitive language:** Write "The RTS Link connects…" not "The RTS Link may potentially connect…". Hedging loses AI citations.
+- **Answer capsule:** The article's title question must be answered in the first 40–60 words. This is answer-first structure: it respects the reader's time, satisfies search intent immediately, and signals relevance to search engines. It does not guarantee AI citation or featured snippet placement.
+- **Definitive language:** Write "The RTS Link connects…" not "The RTS Link may potentially connect…". Write definitively only when the fact is verified (see §6). Vague language is a reader experience problem; it also reflects unverified claims, which should not be published at all.
 - **Paragraph length:** 2–3 sentences max. 120–180 words between H2/H3 headings.
 - **Visible "Last Updated" date** on every page.
 - **Author attribution:** Link to `/terry-toh` on every guide page for E-E-A-T.
@@ -307,8 +307,9 @@ Use an `@graph` array with both `BlogPosting` and `FAQPage` in one block:
 ```
 
 **Notes on FAQPage schema:**
-- Google deprecated FAQ rich results (June 2025) — no visual expansion in SERP. Keep schema anyway: Gemini, ChatGPT, Perplexity, and Claude still read FAQPage markup for answer extraction.
-- 5–8 questions per page. Each answer 40–60 words. No CTAs or promotional language inside `acceptedAnswer.text`.
+- FAQ structured data must accurately describe Q&A content that is visible on the page. Add it because it correctly marks up the page's structure — not as an AI ranking or citation mechanism.
+- 5–8 questions per page. Questions should be ones real buyers ask. Each answer 40–60 words. No CTAs or promotional language inside `acceptedAnswer.text`.
+- Google deprecated FAQ rich results (June 2025) — FAQ schema no longer produces visual SERP expansion. Keep it for accurate page description.
 - All Q&As must be visible on the page — never hidden in accordion closed state.
 
 ### Technical
@@ -364,13 +365,60 @@ These are hard rules. No article ships without confirming each one.
 | **AI content** | All AI-assisted drafts must be reviewed and edited for factual accuracy before publish. Every article must contain at least one original claim — a distance, a verified date, a first-person observation from Terry — not available on other websites. This protects against Google's Scaled Content Abuse policy. |
 | **Form submissions** | The Register Interest form does not send or store data (WhatsApp redirect). Do not add copy claiming "we received your enquiry" unless that functionality is added. |
 
+### Factual Verification Gate
+
+Before writing, locate a source for every specific claim the article will make. Complete this check:
+
+| Claim type | Required minimum source |
+|-----------|------------------------|
+| Foreign buyer minimum price | Malaysian state government gazette or official authority circular (state + year) |
+| State levy amount and tiers | Same as above |
+| Stamp duty rates | LHDN official schedule or Malaysian government gazette (state year) |
+| Developer name, project name | `lib/projects.ts` or developer's official site |
+| Project tenure | Developer's official site or land office records |
+| `ciqDistance` | `lib/projects.ts` — do not estimate |
+| RTS / infrastructure timeline | LTA, Prasarana, or official Malaysian government release |
+| Completion date | Developer's official press release or official state approval |
+| Unit types, facilities | Developer's official site for that project |
+| Loan and financing rules | Bank Negara Malaysia or licensed financial institution guidance |
+
+**Do not publish if verification fails.** If a key claim cannot be verified to the required source tier (see §6), either:
+1. Remove the specific claim and replace with "TBC — verify directly with [authority/developer]", or
+2. Hold the article until the information is confirmed.
+
+Do not publish an article with unverified factual claims to maintain the publishing schedule. One accurate article is better than a daily article with wrong figures.
+
 **Standard disclaimer block** (paste at bottom of every guide):
 
 > This guide is for general informational purposes only. It does not constitute legal, financial or investment advice. Project details, distances, and infrastructure timelines are based on publicly available information as of the date shown and may change. Verify all details directly with the relevant developer or authority before making any property decision. This page is operated by an independent marketing negotiator registered under GT Nelson Realty Sdn Bhd (REN 84844) and is not the official website of any developer, government agency or transport authority.
 
 ---
 
-## 6. Topic Queue — 30 Articles
+## 6. Source Quality Hierarchy
+
+All factual claims must be traceable to a source at the appropriate tier. Use the highest-quality source available. Do not publish a claim if no adequate source exists.
+
+| Tier | Source types | Examples |
+|------|-------------|---------|
+| **1 — Government / official authority** | Malaysian federal and state government portals, Singapore government portals, statutory bodies | NAPIC, JTanah, LHDN, LTA Singapore, Prasarana, Jabatan Ketua Pengarah Tanah dan Galian |
+| **2 — Developer / project official** | Developer's own official website or official press release for that specific project | R&F Properties official site, Setia Tropika launch materials |
+| **3 — Authoritative institutions** | Licensed valuers, law firms publishing practice notes, professional bodies | Bar Council conveyancing guides, RISM valuation notes, REHDA position papers |
+| **4 — Reputable secondary sources** | Established property portals, established news publications with named sources | EdgeProp, The Star property section, PropertyGuru |
+| **5 — General secondary sources** | Blogs, forums, social media | Use only to identify what questions buyers are asking — never as a factual source |
+
+### Tier requirements by claim type
+
+- **Prices and PSF:** Tier 1 or Tier 2 only. No estimated or interpolated prices.
+- **Legal requirements (stamp duty, state levy, foreign buyer minimums):** Tier 1 only. State the year of the ruling.
+- **Distances:** Use `lib/projects.ts` `ciqDistance` field only. Do not estimate distances not in the codebase.
+- **Completion dates and project status:** Tier 2 minimum, with announcement date stated.
+- **RTS and infrastructure timelines:** Tier 1 only (LTA, Prasarana, official Malaysian government releases).
+- **Tenure:** Tier 2 minimum, confirmed against developer's official documents or land office records.
+- If the best available source is Tier 4 or 5, do not publish the claim. Mark it "TBC — enquire" or remove it.
+
+---
+
+## 7. Topic Queue — 30 Articles
 
 Articles are ordered by priority. Mark done with ✅ when published. Add to `lib/guides.ts` with `available: true` and update `app/sitemap.ts`.
 
@@ -426,10 +474,85 @@ Articles are ordered by priority. Mark done with ✅ when published. Add to `lib
 
 ---
 
+## 8. Topic Cluster Strategy
+
+The goal is not to publish a high volume of articles. The goal is to make CIQ Property Hub the most useful, coherent knowledge source on JB CIQ property for Singapore buyers. A topic cluster is a group of pages that collectively answer every meaningful question a buyer has about one subject, linked to each other and to a hub page.
+
+### Clusters for this site
+
+| Cluster | Hub page | Satellite articles (planned) |
+|---------|----------|------------------------------|
+| **RTS & Transport** | `/guides/rts-link` | `rts-vs-causeway-commute`, `jb-sg-commute-guide`, `shuttle-vs-walking` |
+| **Location: JB CIQ Area** | `/locations/ciq` | `jb-ciq-area`, `walking-distance-ciq`, `jb-city-centre-vs-ciq` |
+| **Singapore Buyer Rules** | `/guides/singapore-buyers` | `singapore-buyer-minimum-price`, `stamp-duty-legal-fees`, `malaysia-property-loan-guide` |
+| **Buying Process** | `/guides/how-to-buy` | `due-diligence`, `understanding-spa`, `developer-track-record` |
+| **Property Fundamentals** | `/guides/property-tenure` | `bumiputera-lot-explained`, `new-launch-vs-subsale`, `iskandar-malaysia-explained` |
+| **Projects** | `/projects` (index) | One guide per project (9 planned) |
+
+### Linking rules within a cluster
+- Every satellite article links to its hub page.
+- Every satellite article links to at least 2 sibling satellites in the same cluster where relevant.
+- The hub page is updated to link to new satellite articles as they publish.
+- Do not publish a satellite article without also updating the hub page's internal links.
+
+### Prioritising what to write next
+Rather than strictly following the numbered queue:
+1. Does a cluster have a hub but few or no satellites? Write the next satellite.
+2. Is a recently published hub article getting impressions but low CTR (Search Console)? Write a satellite that covers the specific angle driving impressions.
+3. Is an existing article under-performing? Consider whether a missing satellite is the cause — write that first.
+
+---
+
+## 9. Content Freshness Rules
+
+Some articles become inaccurate over time. Information that changes must be updated — do not leave stale figures or outdated status live.
+
+### Articles requiring active monitoring
+
+| Content type | Trigger for update | Source required |
+|-------------|-------------------|----------------|
+| Foreign buyer minimum price | State government circular or credible media report of a change | Tier 1 before updating |
+| State levy amounts and tiers | Same as above | Tier 1 |
+| Stamp duty rates | LHDN or government budget announcement | Tier 1 |
+| RTS Link status and timeline | Official LTA or Prasarana announcement | Tier 1 |
+| Project completion / VP dates | Developer update or site observation | Tier 2 minimum |
+| Developer or project branding change | Public announcement | Tier 2 minimum |
+| "As of [date]" claims | When the date passes 12 months | Review and reconfirm or update |
+
+### When an article is updated
+- Update the `lastUpdated` field in `lib/guides.ts` to the revision date.
+- Update `dateModified` in the page's JSON-LD.
+- Update the visible "Last Updated" date on the page.
+- Note what changed in the git commit message.
+
+If a fact in a published article is found to be incorrect or outdated, update or remove it before the next publishing cycle. Do not wait for a scheduled review.
+
+---
+
+## 10. Search Console Feedback Loop
+
+Use Search Console data to inform future topics and existing-article improvements once sufficient data exists (typically 4–8 weeks after indexing, with at least 10 published articles).
+
+### Signals to act on
+
+| Signal | What it tells you | Action |
+|--------|------------------|--------|
+| High impressions, low CTR | The article is ranking but the title/meta description isn't compelling | Rewrite title tag and meta description |
+| High impressions for a query not yet covered | Real buyers are searching for something the site doesn't answer | Add to topic queue or move up in priority |
+| Clicks with high average position but likely thin content | Article is ranking but may not fully answer the query | Expand with missing sub-topics |
+| Zero impressions after 8 weeks | Page may not be indexed, or competes with much stronger sites | Check indexing; consider consolidating with another article |
+| Queries driving clicks that differ from the article's intended keyword | Revise the article's focus or create a dedicated article for the actual query |
+
+Search Console informs *which articles to write next* and *which to improve*. It does not replace the topic queue — use it to re-prioritise within the queue, not to abandon the cluster strategy.
+
+---
+
 ## Writing Each Article: Step-by-Step Workflow
 
-1. **Pick next ⬜ topic** from queue above (Batch A first, then B, then C, then D)
-2. **Web-search to verify current facts** — especially for News/Infrastructure types. Confirm any dates, policy amounts, or project statuses before writing
+**Quality over volume.** Do not publish an article to maintain the daily schedule if verification fails or the draft is not ready. One accurate, complete article is better than a daily article with wrong or missing information.
+
+1. **Pick the next article** from the queue in §7 (Batch A first, then B, then C, then D). Consider cluster priorities from §8 when multiple articles are equally ready.
+2. **Verify facts first (§5 + §6).** Before writing, locate a source for every specific claim — prices, distances, legal minimums, project tenure, timelines. If a key claim cannot be verified to the required source tier, do not begin writing until it is resolved.
 3. **Write following the template** for the article's type (§2 above)
 4. **Check compliance** (§5): no invented prices/distances/dates, standard disclaimer included
 5. **Fill JSON-LD** using the template in §3 with real values
@@ -438,6 +561,41 @@ Articles are ordered by priority. Mark done with ✅ when published. Add to `lib
 8. **Run `next build`** to confirm no type errors
 9. **Show draft to Terry for review** before committing
 10. **After approval:** commit to a branch named `guide/[slug]`, do not merge to main without Terry's review
+11. **Update hub page internal links** (§8): add a link to the new article from its cluster's hub page.
+
+---
+
+## §11 Visual Guidelines
+
+Add a visual to an article only when it materially aids comprehension — a diagram, timeline, process flow, cost breakdown or data chart that is genuinely clearer than prose. Do not add illustrations representing real properties (photographs), decorative graphics, or stock imagery.
+
+### When to add a visual
+
+| Article type | Visual that helps |
+|---|---|
+| Route / infrastructure | Route schematic with stations, distances, travel time |
+| Process / How-To | Numbered step diagram (before/after split if two phases) |
+| Cost / fee structure | Side-by-side panels with the rates and worked examples |
+| Tenure / ownership | Timeline bar showing duration and key milestones |
+| Project comparison | Comparison chart (only if values are verified) |
+
+### Visual rules
+
+- **Verified data only.** Every figure, date, distance and rate in a visual must have a source at Tier 1–3 (§6). Do not add a visual whose accuracy cannot be verified — mark the claim TBC in the article and leave the visual out.
+- **Branding.** Use brand colours: `#1C1C1E` (dark), `#FAF9F6` (background), `#C9A84C` (gold accent), `#A8893A` (darker gold), `#4A4A4C` (secondary text), `#8C8C8E` (muted), `#E8E6E0` (border). Font stack: `system-ui,-apple-system,sans-serif`.
+- **Alt text.** Write descriptive alt text that conveys the information to a screen reader — not "infographic" but the actual content summarised in a sentence.
+- **File location.** Save to `public/visuals/[descriptive-filename].svg`. Filename should describe the content, not the article.
+- **Format.** SVG only. Use `viewBox` so it scales to any width. Embed as `<img src="/visuals/filename.svg" className="w-full h-auto rounded-lg mb-6" loading="lazy" />`.
+- **Source note.** Include a source or verification note inside the visual where relevant (e.g. "Source: Johor state government. Verify before purchase.").
+- **No fictional photographs.** Never generate or use images that purport to represent real properties, real people, or real locations photographically.
+
+### Insertion point
+
+Insert the `<img>` tag immediately after the section heading or introductory paragraph it illustrates — not at the top of the article and not in a sidebar. The visual should appear at the point in the article where the reader most needs it.
+
+### Workflow addition
+
+Step 2a (after verifying facts, before writing): assess whether any section would be materially clearer with a visual. If yes, plan the visual type and confirm data availability. Create the SVG after writing the article text, before the `next build` step.
 
 ---
 

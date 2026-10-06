@@ -1,0 +1,28 @@
+<svg viewBox="0 0 800 248" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Johor state levy structure for foreign buyers. Below RM1 million: fixed levy of RM53,000 regardless of price. RM1 million and above: 3 percent of purchase price. At exactly RM1 million, the levy is RM30,000 — lower than the fixed RM53,000 that applies just below RM1 million.">
+  <title>Johor State Levy — Foreign Buyer Structure</title>
+  <rect width="800" height="248" fill="#FAF9F6" rx="10"/>
+  <!-- Header -->
+  <rect width="800" height="42" fill="#1C1C1E" rx="10"/>
+  <rect y="32" width="800" height="10" fill="#1C1C1E"/>
+  <text x="400" y="27" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" letter-spacing="0.5" fill="#C9A84C">JOHOR STATE LEVY — FOREIGN BUYERS</text>
+  <!-- Left panel: below RM1M -->
+  <rect x="20" y="54" width="365" height="148" rx="9" fill="#FFFBEB" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="202" y="80" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#8C8C8E">PURCHASE PRICE BELOW RM1,000,000</text>
+  <text x="202" y="120" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="32" font-weight="900" fill="#1C1C1E">RM 53,000</text>
+  <text x="202" y="140" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#4A4A4C">Fixed amount — does not change with price</text>
+  <line x1="60" y1="154" x2="344" y2="154" stroke="#E8E6E0" stroke-width="1"/>
+  <text x="202" y="169" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8C8C8E">RM600,000 purchase → levy = RM53,000 (8.8%)</text>
+  <text x="202" y="185" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8C8C8E">RM900,000 purchase → levy = RM53,000 (5.9%)</text>
+  <!-- Right panel: RM1M+ -->
+  <rect x="415" y="54" width="365" height="148" rx="9" fill="#F0FDF4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="598" y="80" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#8C8C8E">PURCHASE PRICE RM1,000,000 AND ABOVE</text>
+  <text x="598" y="125" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="52" font-weight="900" fill="#1C1C1E">3%</text>
+  <text x="598" y="144" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#4A4A4C">Of the full purchase price</text>
+  <line x1="455" y1="154" x2="740" y2="154" stroke="#E8E6E0" stroke-width="1"/>
+  <text x="598" y="169" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#16a34a">RM1,000,000 purchase → levy = RM30,000</text>
+  <text x="598" y="185" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8C8C8E">RM1,200,000 purchase → levy = RM36,000</text>
+  <!-- Insight callout -->
+  <rect x="20" y="212" width="760" height="26" rx="6" fill="#1C1C1E"/>
+  <text x="400" y="229" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#C9A84C">At RM1M the levy drops from RM53,000 to RM30,000 — the RM1M+ bracket has a lower effective rate</text>
+  <text x="400" y="243" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" fill="#8C8C8E">Separate from 8% MOT stamp duty. Applies to new-launch (developer) purchases. Source: Johor state government. Verify before purchase.</text>
+</svg>

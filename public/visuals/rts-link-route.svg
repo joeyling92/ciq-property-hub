@@ -1,0 +1,35 @@
+<svg viewBox="0 0 800 205" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RTS Link route schematic: Bukit Chagar station in Johor Bahru, Malaysia connected to Woodlands North station in Singapore via approximately 4km of elevated rail. Estimated crossing time: 5 minutes. Target opening: February 2027, pending safety certification.">
+  <title>RTS Link Route — Bukit Chagar to Woodlands North</title>
+  <rect width="800" height="205" fill="#FAF9F6" rx="10"/>
+  <!-- Header -->
+  <rect width="800" height="42" fill="#1C1C1E" rx="10"/>
+  <rect y="32" width="800" height="10" fill="#1C1C1E"/>
+  <text x="400" y="27" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" letter-spacing="1" fill="#C9A84C">RTS LINK — JB TO SINGAPORE</text>
+  <!-- Zone labels -->
+  <text x="148" y="63" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#8C8C8E">MALAYSIA</text>
+  <text x="652" y="63" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#8C8C8E">SINGAPORE</text>
+  <!-- Strait divider -->
+  <line x1="400" y1="52" x2="400" y2="84" stroke="#E8E6E0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="400" y="50" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" fill="#8C8C8E">Johor Strait</text>
+  <!-- Track -->
+  <line x1="162" y1="100" x2="638" y2="100" stroke="#C9A84C" stroke-width="5" stroke-linecap="round"/>
+  <!-- JB station -->
+  <circle cx="162" cy="100" r="9" fill="#FAF9F6" stroke="#C9A84C" stroke-width="3"/>
+  <circle cx="162" cy="100" r="4" fill="#C9A84C"/>
+  <!-- SG station -->
+  <circle cx="638" cy="100" r="9" fill="#FAF9F6" stroke="#C9A84C" stroke-width="3"/>
+  <circle cx="638" cy="100" r="4" fill="#C9A84C"/>
+  <!-- Distance / time label -->
+  <rect x="316" y="83" width="168" height="22" rx="11" fill="#C9A84C" opacity="0.13"/>
+  <text x="400" y="98" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#A8893A">≈ 4 km  ·  ~5 min crossing</text>
+  <!-- JB station label -->
+  <text x="162" y="123" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#1C1C1E">Bukit Chagar</text>
+  <text x="162" y="139" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#4A4A4C">JB CIQ — Johor Bahru</text>
+  <!-- SG station label -->
+  <text x="638" y="123" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#1C1C1E">Woodlands North</text>
+  <text x="638" y="139" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#4A4A4C">Thomson–East Coast Line</text>
+  <!-- Target opening -->
+  <rect x="264" y="158" width="272" height="34" rx="7" fill="#1C1C1E"/>
+  <text x="400" y="173" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#C9A84C" letter-spacing="0.5">TARGET OPENING — February 2027</text>
+  <text x="400" y="186" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" fill="#8C8C8E">Pending safety certification. Announced 2 October 2026.</text>
+</svg>

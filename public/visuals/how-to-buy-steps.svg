@@ -1,0 +1,75 @@
+<svg viewBox="0 0 800 412" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How to buy JB property: 8 steps. Steps 1–4 before signing: set budget and check loan eligibility; shortlist property and visit sales gallery; pay booking fee RM1,000 to RM5,000; appoint a Malaysian property solicitor. Steps 5–8 after signing: sign the SPA with 10 percent deposit; apply for bank loan over 4 to 8 weeks; progressive payments tied to construction milestones; collect keys and follow up on strata title.">
+  <title>How to Buy JB Property — 8 Steps</title>
+  <rect width="800" height="412" fill="#FAF9F6" rx="10"/>
+  <!-- Header -->
+  <rect width="800" height="42" fill="#1C1C1E" rx="10"/>
+  <rect y="32" width="800" height="10" fill="#1C1C1E"/>
+  <text x="400" y="27" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" letter-spacing="0.5" fill="#C9A84C">HOW TO BUY JB PROPERTY — 8 STEPS</text>
+  <!-- Column headers -->
+  <rect x="15" y="50" width="382" height="24" rx="5" fill="#E8E6E0"/>
+  <text x="206" y="66" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" letter-spacing="1" fill="#4A4A4C">STEPS 1–4: BEFORE SIGNING</text>
+  <rect x="403" y="50" width="382" height="24" rx="5" fill="#E8E6E0"/>
+  <text x="594" y="66" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" letter-spacing="1" fill="#4A4A4C">STEPS 5–8: AFTER SIGNING</text>
+  <!-- ===== LEFT COLUMN: Steps 1–4 ===== -->
+  <!-- Step 1 -->
+  <rect x="15" y="82" width="382" height="62" rx="7" fill="#FFFFFF" stroke="#E8E6E0" stroke-width="1"/>
+  <circle cx="47" cy="113" r="14" fill="#C9A84C"/>
+  <text x="47" y="118" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="72" y="106" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#1C1C1E">Set budget &amp; check loan eligibility</text>
+  <text x="72" y="122" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">Incl. stamp duty, legal fees &amp; levy. Get preliminary</text>
+  <text x="72" y="136" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">bank indication if financing. CPF cannot be used.</text>
+  <!-- Step 2 -->
+  <rect x="15" y="150" width="382" height="62" rx="7" fill="#FFFFFF" stroke="#E8E6E0" stroke-width="1"/>
+  <circle cx="47" cy="181" r="14" fill="#C9A84C"/>
+  <text x="47" y="186" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="72" y="174" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#1C1C1E">Shortlist property &amp; visit the sales gallery</text>
+  <text x="72" y="190" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">Confirm tenure, floor plan, completion timeline and</text>
+  <text x="72" y="204" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">whether the unit is a non-Bumi lot (foreign buyers).</text>
+  <!-- Step 3 -->
+  <rect x="15" y="218" width="382" height="62" rx="7" fill="#FFFFFF" stroke="#E8E6E0" stroke-width="1"/>
+  <circle cx="47" cy="249" r="14" fill="#C9A84C"/>
+  <text x="47" y="254" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="72" y="242" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#1C1C1E">Pay booking fee to secure the unit</text>
+  <text x="72" y="258" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">New-launch: typically RM1,000–RM5,000. Credited</text>
+  <text x="72" y="272" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">toward the 10% deposit on SPA signing.</text>
+  <!-- Step 4 -->
+  <rect x="15" y="286" width="382" height="62" rx="7" fill="#FFFFFF" stroke="#E8E6E0" stroke-width="1"/>
+  <circle cx="47" cy="317" r="14" fill="#C9A84C"/>
+  <text x="47" y="322" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">4</text>
+  <text x="72" y="310" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#1C1C1E">Appoint a Malaysian property solicitor</text>
+  <text x="72" y="326" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">Malaysian-registered lawyer required. Bar Council scale</text>
+  <text x="72" y="340" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">fees ~1% on first RM500k, scaling down above.</text>
+  <!-- ===== RIGHT COLUMN: Steps 5–8 ===== -->
+  <!-- Step 5 -->
+  <rect x="403" y="82" width="382" height="62" rx="7" fill="#FFFFFF" stroke="#E8E6E0" stroke-width="1"/>
+  <circle cx="435" cy="113" r="14" fill="#A8893A"/>
+  <text x="435" y="118" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">5</text>
+  <text x="460" y="106" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#1C1C1E">Sign the SPA (10% deposit due)</text>
+  <text x="460" y="122" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">HDA projects: must sign within 21 days of booking.</text>
+  <text x="460" y="136" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">State consent (JTG) filed by solicitor for strata units.</text>
+  <!-- Step 6 -->
+  <rect x="403" y="150" width="382" height="62" rx="7" fill="#FFFFFF" stroke="#E8E6E0" stroke-width="1"/>
+  <circle cx="435" cy="181" r="14" fill="#A8893A"/>
+  <text x="435" y="186" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">6</text>
+  <text x="460" y="174" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#1C1C1E">Apply for bank loan (if financing)</text>
+  <text x="460" y="190" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">Submit signed SPA + income docs. Foreign buyers:</text>
+  <text x="460" y="204" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">4–8 weeks. LTV typically 70–80%. No CPF.</text>
+  <!-- Step 7 -->
+  <rect x="403" y="218" width="382" height="62" rx="7" fill="#FFFFFF" stroke="#E8E6E0" stroke-width="1"/>
+  <circle cx="435" cy="249" r="14" fill="#A8893A"/>
+  <text x="435" y="254" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">7</text>
+  <text x="460" y="242" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#1C1C1E">Progressive payments: construction milestones</text>
+  <text x="460" y="258" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">Each stage (foundation, structure, roof…) triggers a</text>
+  <text x="460" y="272" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">payment claim. Solicitor/bank manages disbursements.</text>
+  <!-- Step 8 -->
+  <rect x="403" y="286" width="382" height="62" rx="7" fill="#FFFFFF" stroke="#E8E6E0" stroke-width="1"/>
+  <circle cx="435" cy="317" r="14" fill="#A8893A"/>
+  <text x="435" y="322" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">8</text>
+  <text x="460" y="310" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#1C1C1E">Collect keys (VP) &amp; follow up on strata title</text>
+  <text x="460" y="326" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">Document defects on VP day (24-month DLP). MOT</text>
+  <text x="460" y="340" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">stamp duty + levy due. Strata title may take 2–5 yrs.</text>
+  <!-- Footer: foreign buyer cost summary -->
+  <rect x="15" y="358" width="770" height="42" rx="7" fill="#1C1C1E"/>
+  <text x="400" y="374" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" fill="#C9A84C">INDICATIVE TRANSACTION COSTS — FOREIGN BUYER AT RM1,000,000</text>
+  <text x="400" y="392" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#8C8C8E">MOT stamp duty RM80,000 (8% flat) + Johor state levy RM30,000 (3%) + legal fees ~RM10,000  ≈  RM120,000 on top of purchase price</text>
+</svg>
