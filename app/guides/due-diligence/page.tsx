@@ -8,14 +8,14 @@ import Disclosure from "@/components/Disclosure";
 export const metadata: Metadata = {
   title: "Questions to Ask Before You Buy JB Property (2026 Checklist)",
   description:
-    "Due diligence checklist for JB CIQ property buyers — what to ask about the developer, the project title, financing, and the location before signing anything.",
+    "Practical due diligence checklist for JB CIQ property buyers — what to ask about the project, the developer, your finances, and the location before signing anything.",
   alternates: {
     canonical: `${siteConfig.url}/guides/due-diligence`,
   },
   openGraph: {
     title: "Questions to Ask Before You Buy JB Property (2026 Checklist)",
     description:
-      "A practical checklist for buyers near JB CIQ — developer track record, title type, financing, location and agent questions to ask before you commit.",
+      "A practical checklist for buyers near JB CIQ — project title, developer track record, financing, location, and agent questions to ask before you commit.",
     images: [{ url: "/hero-jb-night.jpg", width: 1920, height: 1080, alt: "Johor Bahru cityscape — due diligence checklist for property buyers" }],
   },
 };
@@ -30,7 +30,7 @@ const jsonLd = {
       "@id": `${siteConfig.url}/guides/due-diligence#article`,
       headline: "Questions to Ask Before You Buy JB Property (2026 Checklist)",
       description:
-        "Due diligence checklist for JB CIQ property buyers — what to ask about the developer, the project title, financing, and the location before signing anything.",
+        "Practical due diligence checklist for JB CIQ property buyers — what to ask about the project, the developer, your finances, and the location before signing anything.",
       url: `${siteConfig.url}/guides/due-diligence`,
       image: `${siteConfig.url}/hero-jb-night.jpg`,
       datePublished: "2026-10-08T08:00:00+08:00",
@@ -58,55 +58,39 @@ const jsonLd = {
           name: "How do I check a Malaysian developer's track record?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Search the developer's name on the CIDB (Construction Industry Development Board) website for registration status, and check REHDA's member directory. For completed projects, look for reviews on EdgeProp, Property Guru, and forum sites, and ask the sales team for a list of completed developments you can verify independently. Ask specifically about projects that were late or had defect issues — how were they handled?",
+            text: "Ask the sales team for a list of their completed projects — project name, location, and year of handover. Then check independently: search the project name on EdgeProp or PropertyGuru and read the reviews. Look for comments about delivery timing, defect resolution, and how the management has been post-handover. A developer who has delivered multiple projects on time and handled issues professionally is a much safer bet.",
           },
         },
         {
           "@type": "Question",
-          name: "What documents should I ask for before signing a booking form?",
+          name: "What should I confirm in writing before paying a booking fee?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Before signing any booking form, ask the developer or agent for: the approved developer's licence (ADL) and advertisement and sale permit (ASNP/AP), the master land title showing tenure (freehold or leasehold), the layout plan for your specific unit, the progressive payment schedule, and a written breakdown of all fees and charges. Do not rely on a verbal summary of terms.",
+            text: "Before paying any booking fee, confirm in writing: the specific unit number, floor, and size; the purchase price; the number of car parks included; the booking fee amount and whether it is refundable; and the expected date the Sale and Purchase Agreement (SPA) will be ready. Do not rely on verbal promises — anything the agent says that matters to your decision should be in the booking form.",
           },
         },
         {
           "@type": "Question",
-          name: "What is the defect liability period for new-launch properties in Malaysia?",
+          name: "Can I use CPF to buy property in Johor Bahru?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Under the Housing Development Act (HDA), the defect liability period (DLP) for HDA-governed residential properties is 24 months from the date of vacant possession (VP). During this period, the developer is required to repair any defects you report at no cost. Document all defects in writing on the VP inspection and submit formally to the developer — verbal reports may not be honoured.",
+            text: "No. CPF savings cannot be used for Malaysian property purchases under any circumstances. All payments — booking fee, deposit, progressive payments, stamp duties, and levies — must come from cash or a Malaysian bank loan.",
           },
         },
         {
           "@type": "Question",
-          name: "Should I use the developer's panel solicitor or appoint my own?",
+          name: "What is the actual walking distance from a project to JB CIQ?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You are legally entitled to appoint your own solicitor, and it is generally advisable to do so. A panel solicitor is paid by the developer and may, in practice, prioritise completing the transaction over negotiating terms on your behalf. Your own independent solicitor reviews the SPA with your interests in mind. Solicitor fees follow a Bar Council scale — the cost difference between panel and independent is usually small.",
+            text: "Marketing materials often quote straight-line distances, which are always shorter than the actual walking route. Use Google Maps to check the pedestrian route specifically, then walk it yourself — ideally during a weekday commute period. A project described as a 5-minute walk may take longer when you factor in road crossings, heat, and waiting times.",
           },
         },
         {
           "@type": "Question",
-          name: "How do I verify that a unit is a non-Bumiputera lot?",
+          name: "Do I pay the agent's commission when buying a new launch in JB?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Ask the developer or agent for written confirmation that the specific unit you are purchasing is released as a non-Bumiputera lot. This is especially important for foreign buyers and Malaysian non-Bumiputera buyers. Your solicitor can also verify this from the approved layout plan and the title conditions. Do not proceed on a verbal assurance — get it in the booking form or SPA.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is the actual walking distance from a project to JB CIQ, and how is it measured?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "\"Walking distance\" is often stated in straight-line distance, which understates the real walk time — the actual pedestrian route may be longer and include crossings, elevation changes, or exposed sections. Ask the agent for the walking route specifically, then verify on Google Maps using the pedestrian route option. Visit the project in person during peak commute hours to experience the route before committing.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What happens if the project is delayed beyond the completion date in the SPA?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Under the HDA, if a developer fails to deliver vacant possession by the date in the SPA, the buyer is entitled to liquidated ascertained damages (LAD) — typically calculated as 10% of the purchase price per year, prorated to the number of days of delay. LAD is paid automatically without you needing to sue. Your solicitor should confirm the LAD clause is included in your SPA before signing.",
+            text: "No. For new-launch properties, the developer pays the registered marketing negotiator's commission. As a buyer, your costs are the purchase price, stamp duties, legal fees, and the state levy if you are a foreign buyer. You do not pay a separate buyer's agent fee for new launches.",
           },
         },
       ],
@@ -148,10 +132,11 @@ export default function DueDiligencePage() {
               · {siteConfig.consultant.ren}
             </p>
             <p className="text-white/65 text-base leading-relaxed max-w-2xl">
-              Before signing any property booking form, you should have answers to four
-              categories of questions: developer track record, project title and legal status,
-              your financing position, and the location&rsquo;s actual commute reality. This
-              checklist covers what to ask — and what to watch for in the answers.
+              These are the practical questions I encourage every buyer to have answered
+              before paying a booking fee — covering the project itself, the developer&rsquo;s
+              track record, your financing position, and whether the location actually works
+              for your daily commute. For legal questions about the SPA and your rights as
+              a buyer, appoint a Malaysian property solicitor.
             </p>
           </div>
         </div>
@@ -162,237 +147,36 @@ export default function DueDiligencePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="max-w-2xl">
 
-            {/* Section 1 — Developer */}
+            {/* Section 1 — Project */}
             <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mt-0 mb-4">
-              Questions About the Developer
-            </h2>
-            <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-              The developer&rsquo;s track record is the single most important factor in a
-              new-launch purchase. A well-designed project from an unreliable developer carries
-              real risk — delayed delivery, unresolved defects, or a management company that
-              does not perform after handover.
-            </p>
-
-            <div className="space-y-4 mb-10">
-              {[
-                {
-                  q: "What projects have you completed, and can I see a list?",
-                  a: "Ask for a list of completed developments — project name, location, and year of vacant possession. Then verify independently: check EdgeProp listings, PropertyGuru reviews, or forum discussions about those projects. Look specifically for comments about delay, defect resolution, and post-handover management quality.",
-                },
-                {
-                  q: "Were any of your previous projects delivered late? If so, how late, and was LAD paid?",
-                  a: "Liquidated ascertained damages (LAD) are owed by law when a developer is late, but enforcement is the buyer's burden. A developer who has been late before and handled it professionally is not automatically a red flag; one who disputes or ignores LAD claims is.",
-                },
-                {
-                  q: "Is the developer registered with REHDA and CIDB?",
-                  a: "REHDA (Real Estate and Housing Developers Association) membership is voluntary but indicates engagement with the industry body. CIDB (Construction Industry Development Board) registration is required for construction contractors. Ask to see the developer's licence (ADL) and the project's advertisement and sale permit (ASNP/AP) — these are legal requirements for any developer selling in Malaysia.",
-                },
-                {
-                  q: "Who manages the building after vacant possession?",
-                  a: "Under the Strata Management Act, a Joint Management Body (JMB) is formed after handover to manage common areas until the Management Corporation (MC) is established once the strata title is issued. Ask who the developer's nominated property manager is, and check the estimated maintenance fee. A low headline maintenance fee that rises sharply after a few years is a common complaint.",
-                },
-              ].map(({ q, a }, i) => (
-                <div key={i} className="border border-[var(--border)] rounded-xl p-4">
-                  <p className="text-sm font-semibold text-[var(--text-primary)] mb-2">
-                    &ldquo;{q}&rdquo;
-                  </p>
-                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-                    {a}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Section 2 — Project */}
-            <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-4">
               Questions About the Project
             </h2>
             <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-              Project-level due diligence covers title, legal classification, unit eligibility,
-              and what is actually in the Sale and Purchase Agreement — not just the brochure.
+              Get these confirmed in writing — not verbally — before you pay a booking
+              fee. Once you have signed and paid, your options narrow significantly.
             </p>
 
             <div className="space-y-4 mb-10">
               {[
                 {
-                  q: "What is the title type — freehold or leasehold? And is it strata or individual?",
-                  a: "Strata freehold is the most common type for condo and serviced apartment developments near JB CIQ, and is what most Singapore buyers should look for. Leasehold carries financing and resale risk as the remaining tenure shortens. \"Commercial title\" (sometimes called HDA commercial) means the development is classified as commercial but governed by the HDA — verify this with your solicitor. See our guide on Malaysian property tenure for more detail.",
-                  link: { text: "Malaysian property tenure", href: "/guides/property-tenure" },
-                },
-                {
-                  q: "Is this an HDA-governed project?",
-                  a: "The Housing Development Act (HDA) provides statutory protections for buyers: the standard SPA format, the 24-month defect liability period, LAD for delays, and a 10% deposit cap. Not all developments are HDA-governed — commercial title projects and projects above 4 storeys sometimes fall outside HDA scope, though many developers in JB voluntarily adopt HDA terms. Confirm with your solicitor.",
+                  q: "What is the title type — freehold or leasehold?",
+                  a: "For new-launch condos and serviced apartments near JB CIQ, freehold strata is the most common and most favourable for Singapore buyers — no expiry, easier to finance, and better for long-term resale. Always verify the title type from the master land title, not the brochure. All nine residential projects listed on this site are freehold strata.",
                 },
                 {
                   q: "Is my unit a non-Bumiputera lot?",
-                  a: "Foreign buyers and Malaysian non-Bumiputera buyers can only purchase units released as non-Bumiputera (non-Bumi) lots. Get written confirmation from the developer that the specific unit you are purchasing carries non-Bumi status. Do not proceed on a verbal assurance — this must be documented in the booking form or confirmed by your solicitor from the approved layout plan.",
+                  a: "Foreign buyers and Malaysian non-Bumiputera buyers can only purchase units released as non-Bumi lots. Ask the agent and get written confirmation that the specific unit you are purchasing carries non-Bumi status — in the booking form itself, not a separate verbal assurance.",
                 },
                 {
-                  q: "What is the exact unit size, layout, and floor? Does the price include a car park?",
-                  a: "Confirm the built-up area in square feet from the approved floor plan — not the brochure. Clarify whether the stated area is the net interior area or includes balcony and air-conditioning ledge. Confirm the number of car parks included in the price and their location in the layout plan. Get these specifics in writing before paying any booking fee.",
+                  q: "What exactly is included in the price — unit size, floor, car park?",
+                  a: "Confirm the built-up area in square feet, the exact floor and unit number, and how many car parks are included. Ask whether the stated size is net interior or includes balcony and AC ledge. These details should be in the booking form before you sign.",
                 },
                 {
-                  q: "What is the expected vacant possession date, and what is in the SPA?",
-                  a: "Developers often give an optimistic \"estimated completion\" verbally or in marketing materials. The legally binding date is the one in the SPA — check it carefully. The SPA completion period for strata properties under the HDA is typically 36 months from SPA signing for under-construction projects, with an extension of time clause. Your solicitor should review the timeline before you sign.",
-                },
-              ].map(({ q, a, link }, i) => (
-                <div key={i} className="border border-[var(--border)] rounded-xl p-4">
-                  <p className="text-sm font-semibold text-[var(--text-primary)] mb-2">
-                    &ldquo;{q}&rdquo;
-                  </p>
-                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-                    {a.split(link?.text ?? "|||").map((part, j) =>
-                      link && j === 1 ? (
-                        <span key={j}>
-                          <Link href={link.href} className="text-[var(--accent)] hover:underline">
-                            {link.text}
-                          </Link>
-                          {part}
-                        </span>
-                      ) : (
-                        <span key={j}>{part}</span>
-                      )
-                    )}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Section 3 — Financing */}
-            <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-4">
-              Questions About Your Finances
-            </h2>
-            <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-              Many buyers focus on the purchase price and overlook total acquisition cost.
-              For a Singapore buyer purchasing at RM1,000,000 in 2026, the transaction costs
-              alone — stamp duty, levy, legal fees — add approximately RM120,000 on top of
-              the purchase price.
-            </p>
-
-            <div className="space-y-4 mb-10">
-              {[
-                {
-                  q: "What is my total budget, including all transaction costs?",
-                  a: "For foreign buyers in 2026: MOT stamp duty is 8% of the purchase price (flat rate for non-citizens from 1 January 2026), plus the Johor state foreign levy (RM53,000 fixed below RM1,000,000, or 3% at RM1,000,000 and above), plus solicitor fees (approximately 1% on the first RM500,000, scaling down), plus SPA stamp duty. At RM1,000,000, total transaction costs are approximately RM120,000 before financing costs. For a full breakdown, see our Singapore buyer's guide.",
-                  link: { text: "Singapore buyer's guide", href: "/guides/singapore-buyers" },
+                  q: "What is the expected vacant possession (VP) date?",
+                  a: "The estimated completion date in marketing materials is not legally binding. The binding date is in the SPA. Ask the agent for the expected VP date and check it against the SPA when it is prepared. For under-construction projects, this is your single most important timeline to track.",
                 },
                 {
-                  q: "Have I confirmed I can get a Malaysian bank loan?",
-                  a: "Not all Malaysian banks lend to non-residents, and those that do offer a lower LTV — typically 70–80% for foreigners versus up to 90% for Malaysian citizens. Income from Singapore is accepted but converted at the prevailing exchange rate, which affects your eligible loan amount. Get a Letter of Offer or at least a preliminary assessment from a Malaysian bank before signing the SPA, not after. CPF cannot be used for any Malaysian property purchase.",
-                },
-                {
-                  q: "What happens if my loan is declined after I sign the SPA?",
-                  a: "If your bank loan is declined after signing the SPA and there is no financing clause in the SPA, you may be in breach of contract and could forfeit your 10% deposit. Some SPAs include a clause allowing withdrawal if financing is genuinely unavailable, but this is not standard and must be negotiated before signing. Discuss this scenario explicitly with your solicitor before you sign.",
-                },
-                {
-                  q: "What is my total monthly exposure if I own this property?",
-                  a: "Work out: monthly loan repayment + monthly maintenance fee + sinking fund contribution + property assessment tax (cukai pintu) + any loan insurance premium. For a furnished unit you plan to rent out, subtract expected rental income — but do not assume it will be rented continuously. Conservative planning means covering full monthly exposure from your own income, with rental as upside.",
-                },
-              ].map(({ q, a, link }, i) => (
-                <div key={i} className="border border-[var(--border)] rounded-xl p-4">
-                  <p className="text-sm font-semibold text-[var(--text-primary)] mb-2">
-                    &ldquo;{q}&rdquo;
-                  </p>
-                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-                    {link
-                      ? a.split(link.text).map((part, j) =>
-                          j === 1 ? (
-                            <span key={j}>
-                              <Link href={link.href} className="text-[var(--accent)] hover:underline">
-                                {link.text}
-                              </Link>
-                              {part}
-                            </span>
-                          ) : (
-                            <span key={j}>{part}</span>
-                          )
-                        )
-                      : a}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Section 4 — Location */}
-            <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-4">
-              Questions About the Location
-            </h2>
-            <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-              For Singapore buyers buying near JB CIQ specifically, the commute is central to
-              the purchase case. The RTS Link opens in February 2027 (pending safety
-              certification); until then, all crossings use the Causeway or Second Link.
-              Test the commute yourself before you commit.
-            </p>
-
-            <div className="space-y-4 mb-10">
-              {[
-                {
-                  q: "What is the actual walking route from this project to CIQ — not the straight-line distance?",
-                  a: "Marketing materials often quote straight-line distance, which is always shorter than the pedestrian walking route. Open Google Maps and check the walking route specifically — it should account for road crossings, elevation, and covered walkways (or the lack of them). Then walk the route yourself. A project described as \"5 minutes to CIQ\" may be 5 minutes on a clear day in flat shoes; add crossing wait times and you have a different picture. See our RTS Link guide for the current status of the Bukit Chagar station.",
-                  link: { text: "RTS Link guide", href: "/guides/rts-link" },
-                },
-                {
-                  q: "What is the current commute experience before the RTS opens?",
-                  a: "Until February 2027, Causeway crossings by bus or car remain the daily reality. During peak hours, the Woodlands checkpoint queues regularly add 30–60 minutes to the crossing. If you plan to work in Singapore and live in JB, test the commute during the week — not on a Saturday morning — before you commit to a purchase that depends on it.",
-                },
-                {
-                  q: "What is the rental market like for this type of unit in this location?",
-                  a: "If the purchase is partly an investment, research what similar units in the same area are currently renting for — not the projected figures in the developer's brochure. Check EdgeProp and PropertyGuru for actual asking rents in the vicinity. Ask the agent what the typical occupancy rate is and who the tenant pool is. Be conservative: assume a rental yield that is achievable in the current market, not the target after RTS opens.",
-                },
-                {
-                  q: "What other developments are under construction nearby that will compete?",
-                  a: "The CIQ area has several projects under construction simultaneously. A large supply of similar units completing at around the same time creates rental competition. Ask the agent or check the Johor housing board (JPBD) website for planned developments in the area. For the projects currently listed on this site, see our overview of the JB CIQ area.",
-                  link: { text: "JB CIQ area", href: "/guides/jb-ciq-area" },
-                },
-              ].map(({ q, a, link }, i) => (
-                <div key={i} className="border border-[var(--border)] rounded-xl p-4">
-                  <p className="text-sm font-semibold text-[var(--text-primary)] mb-2">
-                    &ldquo;{q}&rdquo;
-                  </p>
-                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-                    {link
-                      ? a.split(link.text).map((part, j) =>
-                          j === 1 ? (
-                            <span key={j}>
-                              <Link href={link.href} className="text-[var(--accent)] hover:underline">
-                                {link.text}
-                              </Link>
-                              {part}
-                            </span>
-                          ) : (
-                            <span key={j}>{part}</span>
-                          )
-                        )
-                      : a}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Section 5 — Agent */}
-            <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-4">
-              Questions About Your Agent
-            </h2>
-            <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-              In Malaysia, property agents at new-launch projects are typically registered
-              marketing negotiators (RENs) paid by the developer. Their commission is a
-              developer cost — buyers do not pay separately. That said, not all agents
-              operate with the same level of transparency.
-            </p>
-
-            <div className="space-y-4 mb-10">
-              {[
-                {
-                  q: "Are you a registered marketing negotiator (REN)?",
-                  a: "All real estate agents and negotiators in Malaysia are required to be registered with LPPEH (Board of Valuers, Appraisers, Estate Agents and Property Managers). A registered negotiator carries a REN number and registration tag. You can verify registration on the LPPEH website (lppeh.gov.my). Dealing with an unregistered person removes your statutory protections in the event of a dispute.",
-                },
-                {
-                  q: "Whose interests do you represent — the developer's or mine?",
-                  a: "For new-launch projects, the marketing negotiator is appointed by and paid by the developer. They are obligated to present the project accurately, but their role is to facilitate the developer's sale — not to negotiate on your behalf. You can appoint an independent buyer's agent, though this is uncommon for new launches in Malaysia. Regardless, your solicitor acts exclusively for you and is the appropriate person to review and negotiate SPA terms.",
-                },
-                {
-                  q: "What is the total fee structure — what do I pay, and what does the developer pay?",
-                  a: "For a new-launch purchase, you should not be charged a buyer's agent commission. Confirm that no separate fee will be charged to you beyond the purchase price, stamp duties, and solicitor fees. If you are purchasing a subsale (secondary market) property, the commission structure is different — typically 2–3% paid by the seller, but confirm this clearly before proceeding.",
+                  q: "What is the booking fee, and is it refundable?",
+                  a: "For new-launch projects near JB CIQ, booking fees are typically RM1,000–RM5,000 and credited toward the 10% deposit due at SPA signing. Check the booking form carefully for refund conditions — some are refundable if the SPA is not ready within the prescribed period, others are not.",
                 },
               ].map(({ q, a }, i) => (
                 <div key={i} className="border border-[var(--border)] rounded-xl p-4">
@@ -404,38 +188,169 @@ export default function DueDiligencePage() {
               ))}
             </div>
 
-            {/* What this means for CIQ buyers */}
+            {/* Section 2 — Developer */}
+            <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-4">
+              Questions About the Developer
+            </h2>
+            <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
+              The developer&rsquo;s track record matters more than the brochure. A project
+              from a developer who has delivered well before is a different risk profile
+              from one who hasn&rsquo;t.
+            </p>
+
+            <div className="space-y-4 mb-10">
+              {[
+                {
+                  q: "What projects have you completed before, and can I see a list?",
+                  a: "Ask for a list of completed developments — project name, location, year of handover. Then verify independently: search each project on EdgeProp or PropertyGuru and read the reviews. Look specifically for comments about delivery timing, defect handling, and post-handover management quality. A developer with a clear track record of on-time delivery is reassuring; a developer who cannot name completed projects is a flag.",
+                },
+                {
+                  q: "Who manages the building after keys are handed over?",
+                  a: "Ask who the developer's appointed property management company is, and check the estimated monthly maintenance fee. Get clarity on what the maintenance fee covers — some developments have split charges (maintenance + sinking fund separately). A low headline maintenance fee that rises sharply after the first year is one of the most common buyer complaints post-handover.",
+                },
+                {
+                  q: "What facilities are guaranteed, and are they shown in the SPA?",
+                  a: "Show-unit presentations often include facilities that look impressive on renders — swimming pool, gym, lounge. Confirm which facilities are committed in the SPA, not just the brochure. Developers are only legally obligated to deliver what is specified in the agreement.",
+                },
+              ].map(({ q, a }, i) => (
+                <div key={i} className="border border-[var(--border)] rounded-xl p-4">
+                  <p className="text-sm font-semibold text-[var(--text-primary)] mb-2">
+                    &ldquo;{q}&rdquo;
+                  </p>
+                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{a}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Section 3 — Finances */}
+            <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-4">
+              Questions About Your Finances
+            </h2>
+            <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
+              Budget for the full cost of ownership, not just the purchase price. For
+              Singapore buyers in 2026, transaction costs alone add approximately RM120,000
+              on top of a RM1,000,000 purchase.{" "}
+              <Link href="/guides/singapore-buyers" className="text-[var(--accent)] hover:underline">
+                See the full cost breakdown for Singapore buyers.
+              </Link>
+            </p>
+
+            <div className="space-y-4 mb-10">
+              {[
+                {
+                  q: "Have I included all transaction costs in my budget?",
+                  a: "For foreign buyers purchasing at RM1,000,000 in 2026: MOT stamp duty RM80,000 (8% flat), Johor state levy RM30,000 (3%), solicitor fees approximately RM10,000. Total: roughly RM120,000 on top of the purchase price, before any financing costs. These are paid in addition to — not out of — your deposit.",
+                },
+                {
+                  q: "Have I confirmed I can get a Malaysian bank loan before signing the SPA?",
+                  a: "Not all Malaysian banks lend to non-residents. Get a preliminary assessment from a bank before you sign the SPA — not after. For Singapore buyers, Malaysian bank LTV is typically 70–80% of the purchase price. CPF cannot be used. Income from Singapore is accepted but converted at the prevailing exchange rate, which affects your eligible loan amount.",
+                },
+                {
+                  q: "What is my total monthly cost if I own this property?",
+                  a: "Work out the full picture: monthly loan repayment + maintenance fee + sinking fund + property assessment tax (cukai pintu). If you plan to rent it out, do not assume it will always be occupied. Plan for a conservative vacancy assumption — cover all monthly costs from your own income, and treat rental as upside.",
+                },
+              ].map(({ q, a }, i) => (
+                <div key={i} className="border border-[var(--border)] rounded-xl p-4">
+                  <p className="text-sm font-semibold text-[var(--text-primary)] mb-2">
+                    &ldquo;{q}&rdquo;
+                  </p>
+                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{a}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Section 4 — Location */}
+            <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-4">
+              Questions About the Location
+            </h2>
+            <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
+              For Singapore buyers, the commute is the central question. The{" "}
+              <Link href="/guides/rts-link" className="text-[var(--accent)] hover:underline">
+                RTS Link opens in February 2027
+              </Link>{" "}
+              (pending safety certification). Until then, the Causeway is the daily reality.
+            </p>
+
+            <div className="space-y-4 mb-10">
+              {[
+                {
+                  q: "What is the actual walking route to CIQ — not the straight-line distance?",
+                  a: "Marketing materials quote straight-line distances, which are always shorter than the pedestrian route. Use Google Maps to check the actual walking route and then walk it yourself. A project that is \"450m from CIQ\" on a map may involve road crossings, exposed sections in the heat, and waiting times that stretch the real walk to 10–15 minutes.",
+                },
+                {
+                  q: "What does the commute actually look like right now, during the week?",
+                  a: "Until the RTS opens, all JB–Singapore crossings use the Causeway or Second Link. Test the commute during a weekday morning and evening — not a Saturday. Peak-hour Woodlands checkpoint queues regularly add 30–60 minutes. If you are buying on the assumption of a daily JB–Singapore commute, the pre-RTS experience is your near-term reality.",
+                },
+                {
+                  q: "What is the current rental market like in this area?",
+                  a: "If rental income is part of your plan, check what similar units in the same project or nearby are currently renting for — not the developer's projected figures. Search EdgeProp and PropertyGuru for actual listed rents in the area. The CIQ corridor has multiple projects completing in the same period, which means more rental supply competing for the same pool of tenants.",
+                },
+              ].map(({ q, a }, i) => (
+                <div key={i} className="border border-[var(--border)] rounded-xl p-4">
+                  <p className="text-sm font-semibold text-[var(--text-primary)] mb-2">
+                    &ldquo;{q}&rdquo;
+                  </p>
+                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{a}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Section 5 — Agent */}
+            <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-4">
+              Questions About the Agent
+            </h2>
+            <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
+              At new-launch projects in Malaysia, the marketing negotiator is paid by the
+              developer — you do not pay a buyer&rsquo;s agent fee. That said, it&rsquo;s worth
+              confirming a few basics.
+            </p>
+
+            <div className="space-y-4 mb-10">
+              {[
+                {
+                  q: "Are you a registered marketing negotiator (REN)?",
+                  a: "All real estate negotiators in Malaysia must be registered with LPPEH. A registered negotiator has a REN number and a registration tag card. You can verify registration at lppeh.gov.my. Working with a registered negotiator gives you access to the board's complaint process if something goes wrong.",
+                },
+                {
+                  q: "Do I pay any separate fee as a buyer?",
+                  a: "For new-launch projects, the answer should be no — the developer pays the agent's commission. Confirm explicitly that no buyer's fee will be charged to you beyond the purchase price, stamp duties, and solicitor fees. For subsale (secondary market) purchases, the commission structure is different.",
+                },
+              ].map(({ q, a }, i) => (
+                <div key={i} className="border border-[var(--border)] rounded-xl p-4">
+                  <p className="text-sm font-semibold text-[var(--text-primary)] mb-2">
+                    &ldquo;{q}&rdquo;
+                  </p>
+                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{a}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* CIQ projects note */}
             <section className="mb-10">
               <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-4">
-                Applying This to Projects Near JB CIQ
+                A Note on Projects Near JB CIQ
               </h2>
               <p className="text-[var(--text-secondary)] leading-relaxed mb-4">
-                The projects near the JB CIQ complex and Bukit Chagar RTS station share some
-                common characteristics worth noting in the context of this checklist.
+                A few things worth knowing about the specific projects listed on this site,
+                in the context of this checklist.
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-[var(--text-secondary)] text-sm leading-relaxed mb-4">
+              <ul className="list-disc pl-5 space-y-2 text-[var(--text-secondary)] text-sm leading-relaxed mb-6">
                 <li>
-                  All nine residential projects currently listed on this site carry{" "}
-                  <strong>freehold strata titles</strong>. Freehold strata is the most
-                  favourable title type for Singapore buyers — no expiry, no leasehold
-                  tenure decline, and standard financing treatment.
+                  All nine residential projects carry <strong>freehold strata titles</strong>,
+                  which is the most straightforward title type for Singapore buyers.
                 </li>
                 <li>
-                  Most are <strong>under construction</strong> or recently launched, which
-                  means developer track record and SPA completion dates are directly relevant.
-                  The estimated completion dates on this site are taken from developer-provided
-                  data; verify against the SPA before signing.
+                  Distances on project pages are <strong>straight-line from developer data</strong>.
+                  Walking route distances are longer. Visit the project and walk the route
+                  before committing.
                 </li>
                 <li>
-                  The proximity claims on project pages use{" "}
-                  <strong>straight-line distances from developer data</strong>. Walking route
-                  distances will vary. Projects labelled &ldquo;walking distance from CIQ&rdquo;
-                  should be verified on the ground before purchase.
+                  Estimated completion dates are from developer-provided data. The{" "}
+                  <strong>legally binding date is in the SPA</strong> — verify with your
+                  solicitor before signing.
                 </li>
               </ul>
-              <p className="text-[var(--text-secondary)] leading-relaxed mb-2">
-                Browse the projects on this site:
-              </p>
+              <p className="text-[var(--text-secondary)] text-sm mb-3">Browse the projects:</p>
               <div className="flex flex-wrap gap-2">
                 {[
                   { label: "Gensphere", href: "/projects/gensphere" },
@@ -464,17 +379,17 @@ export default function DueDiligencePage() {
                 {[
                   {
                     title: "How to Buy Property in Johor Bahru",
-                    desc: "Step-by-step process guide from booking to keys",
+                    desc: "Step-by-step process from booking to keys",
                     href: "/guides/how-to-buy",
                   },
                   {
                     title: "Singapore Buyer's Guide to JB Property",
-                    desc: "Eligibility, costs, levy and financing for Singaporeans",
+                    desc: "Eligibility, costs, levy and financing",
                     href: "/guides/singapore-buyers",
                   },
                   {
                     title: "Understanding Malaysian Property Tenure",
-                    desc: "Freehold vs leasehold — what each means for buyers",
+                    desc: "Freehold vs leasehold explained",
                     href: "/guides/property-tenure",
                   },
                   {
@@ -506,31 +421,23 @@ export default function DueDiligencePage() {
                 {[
                   {
                     q: "How do I check a Malaysian developer's track record?",
-                    a: "Search the developer's name on the CIDB website for registration status, and check REHDA's member directory. For completed projects, look for reviews on EdgeProp, PropertyGuru, and forum sites, and ask the sales team for a list of completed developments you can verify independently. Ask specifically about projects that were late or had defect issues — how were they handled?",
+                    a: "Ask the sales team for a list of completed projects with handover dates, then verify independently on EdgeProp and PropertyGuru. Look for buyer reviews on each project — delivery timing, defect handling, and post-handover management are the key things to check.",
                   },
                   {
-                    q: "What documents should I ask for before signing a booking form?",
-                    a: "Before signing any booking form, ask for: the approved developer's licence (ADL) and advertisement and sale permit (ASNP/AP), the master land title showing tenure, the layout plan for your specific unit, the progressive payment schedule, and a written breakdown of all fees and charges. Do not rely on a verbal summary of terms.",
+                    q: "What should I confirm in writing before paying a booking fee?",
+                    a: "The specific unit number, floor, and size; the purchase price; the number of car parks included; the booking fee amount and whether it is refundable; and the expected SPA ready date. Do not rely on verbal promises — anything that matters to your decision should be in the booking form.",
                   },
                   {
-                    q: "What is the defect liability period for new-launch properties in Malaysia?",
-                    a: "Under the HDA, the defect liability period (DLP) is 24 months from the date of vacant possession. The developer must repair any defects you report during this period at no cost. Document all defects in writing on the VP inspection and submit formally — verbal reports may not be honoured.",
-                  },
-                  {
-                    q: "Should I use the developer's panel solicitor or appoint my own?",
-                    a: "You are legally entitled to appoint your own solicitor, and it is generally advisable. A panel solicitor is paid by the developer. Your own independent solicitor reviews the SPA with your interests in mind. The cost difference is usually small — solicitor fees follow a Bar Council scale.",
-                  },
-                  {
-                    q: "How do I verify that a unit is a non-Bumiputera lot?",
-                    a: "Ask the developer or agent for written confirmation that the specific unit is released as a non-Bumi lot. Your solicitor can also verify this from the approved layout plan and the title conditions. Do not proceed on a verbal assurance — get it in writing before paying any booking fee.",
+                    q: "Can I use CPF to buy property in Johor Bahru?",
+                    a: "No. CPF cannot be used for any Malaysian property purchase. All payments — booking fee, deposit, progressive payments, stamp duties, and levies — must come from cash or a Malaysian bank loan.",
                   },
                   {
                     q: "What is the actual walking distance from a project to JB CIQ?",
-                    a: "Walking distance is often stated as straight-line distance, which understates the real walk time. Check the pedestrian walking route on Google Maps, then walk it yourself. Visit during peak commute hours to assess covered sections, crossings, and real-world conditions.",
+                    a: "Marketing materials quote straight-line distances. Check the actual pedestrian route on Google Maps, then walk it yourself during a weekday. A project described as a 5-minute walk may take longer once you factor in road crossings and waiting times.",
                   },
                   {
-                    q: "What happens if the project is delayed beyond the SPA completion date?",
-                    a: "Under the HDA, buyers are entitled to liquidated ascertained damages (LAD) for each day of delay — typically 10% of the purchase price per year, prorated. LAD is a statutory right that does not require a lawsuit to trigger. Confirm the LAD clause is in your SPA before signing.",
+                    q: "Do I pay the agent's commission when buying a new launch in JB?",
+                    a: "No. For new-launch properties, the developer pays the registered marketing negotiator's commission. Your costs as a buyer are the purchase price, stamp duties, legal fees, and the state levy (if applicable as a foreign buyer). No separate buyer's agent fee.",
                   },
                 ].map(({ q, a }, i) => (
                   <div key={i}>
@@ -541,10 +448,7 @@ export default function DueDiligencePage() {
               </div>
             </section>
 
-            {/* Disclaimer */}
             <Disclosure />
-
-            {/* CTA */}
             <WhatsAppCTA />
 
           </div>

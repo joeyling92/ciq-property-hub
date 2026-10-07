@@ -85,7 +85,7 @@ export const guides: Guide[] = [
       "How to buy property in JB — a practical step-by-step guide covering the full purchase process, fees and documents.",
     topics: ["Step-by-step process", "Required documents", "Legal fees & stamp duty", "Loan eligibility"],
     lastUpdated: "2026-10-03",
-    available: false,
+    available: true,
   },
   {
     slug: "due-diligence",
@@ -99,8 +99,8 @@ export const guides: Guide[] = [
     ogDescription:
       "Key questions to ask before buying property near JB CIQ — a due diligence guide covering developer, project and financial checks.",
     topics: ["Project track record", "Developer questions", "Financial questions", "Location due diligence"],
-    lastUpdated: "2026-10-03",
-    available: false,
+    lastUpdated: "2026-10-08",
+    available: true,
   },
 ];
 
