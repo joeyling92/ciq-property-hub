@@ -84,7 +84,7 @@ export const guides: Guide[] = [
     ogDescription:
       "How to buy property in JB — a practical step-by-step guide covering the full purchase process, fees and documents.",
     topics: ["Step-by-step process", "Required documents", "Legal fees & stamp duty", "Loan eligibility"],
-    lastUpdated: "2026-10-03",
+    lastUpdated: "2026-10-07",
     available: true,
   },
   {
