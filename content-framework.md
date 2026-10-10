@@ -431,7 +431,7 @@ Articles are ordered by priority. Mark done with ✅ when published. Add to `lib
 | 3 | `singapore-buyers` | Can Singaporeans Buy Property in Johor Bahru? | Buyer Question | ✅ Published at /guides/singapore-buyers |
 | 4 | `property-tenure` | Freehold vs Leasehold in Malaysia: A JB Buyer's Guide | Buyer Question / Comparison | ✅ Published at /guides/property-tenure |
 | 5 | `how-to-buy` | How to Buy Property in Johor Bahru: Step-by-Step Guide | How-To | ✅ Published at /guides/how-to-buy |
-| 6 | `due-diligence` | Questions to Ask Before You Buy JB Property | Buyer Question | ⬜ Not started |
+| 6 | `due-diligence` | Questions to Ask Before You Buy JB Property | Buyer Question | ✅ Published at /guides/due-diligence |
 
 ### Batch B — CIQ Cluster (high priority, high search intent)
 
