@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const lastUpdated = "10 October 2026";
+const lastUpdated = "12 October 2026";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -33,8 +33,8 @@ const jsonLd = {
         "How to evaluate rental yield for JB CIQ properties: what drives demand, how to check actual rents on EdgeProp and PropertyGuru, and realistic questions before assuming rental income.",
       url: `${siteConfig.url}/guides/rental-yield-ciq`,
       image: `${siteConfig.url}/hero-jb-night.jpg`,
-      datePublished: "2026-10-10T08:00:00+08:00",
-      dateModified: "2026-10-10T08:00:00+08:00",
+      datePublished: "2026-10-12T08:00:00+08:00",
+      dateModified: "2026-10-12T08:00:00+08:00",
       author: { "@type": "Person", name: siteConfig.consultant.name, url: `${siteConfig.url}/terry-toh` },
       publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
       mainEntityOfPage: { "@id": `${siteConfig.url}/guides/rental-yield-ciq#article` },

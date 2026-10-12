@@ -114,8 +114,8 @@ export const guides: Guide[] = [
     ogDescription:
       "Compare the three JB properties within walking distance of CIQ — Gensphere, R&F Princess Cove and Summer Suites — with distances, walkway coverage and prices.",
     topics: ["Walking distance comparison", "Covered walkway details", "Project overview", "Commute reality"],
-    lastUpdated: "2026-10-10",
-    available: false,
+    lastUpdated: "2026-10-12",
+    available: true,
   },
   {
     slug: "shuttle-vs-walking",
@@ -129,8 +129,8 @@ export const guides: Guide[] = [
     ogDescription:
       "Should you buy a JB property within walking distance of CIQ, or is a shuttle just as good? A practical comparison for Singapore commuters.",
     topics: ["Walking vs shuttle pros/cons", "Buyer profiles", "RTS factor", "Questions to ask"],
-    lastUpdated: "2026-10-10",
-    available: false,
+    lastUpdated: "2026-10-12",
+    available: true,
   },
   {
     slug: "singapore-buyer-minimum-price",
@@ -144,8 +144,8 @@ export const guides: Guide[] = [
     ogDescription:
       "What is the minimum price Singapore buyers can pay for JB property? Strata, landed and zone-by-zone breakdown plus the state levy table.",
     topics: ["Minimum price by property type", "State levy table", "What foreigners cannot buy", "Budget planning"],
-    lastUpdated: "2026-10-10",
-    available: false,
+    lastUpdated: "2026-10-12",
+    available: true,
   },
   {
     slug: "rental-yield-ciq",
@@ -159,8 +159,8 @@ export const guides: Guide[] = [
     ogDescription:
       "Thinking about renting out your JB CIQ property? Learn how to estimate rental yield from real market data — not developer projections.",
     topics: ["What drives rental demand", "How to check market rents", "Net yield costs", "RTS demand vs supply"],
-    lastUpdated: "2026-10-10",
-    available: false,
+    lastUpdated: "2026-10-12",
+    available: true,
   },
   {
     slug: "jb-sg-commute-guide",
@@ -174,8 +174,8 @@ export const guides: Guide[] = [
     ogDescription:
       "Planning to commute between JB and Singapore? A realistic guide to crossing times, RTS changes and daily commute realities for property buyers.",
     topics: ["Current crossing options", "Peak vs off-peak times", "RTS changes", "Who the commute suits"],
-    lastUpdated: "2026-10-10",
-    available: false,
+    lastUpdated: "2026-10-12",
+    available: true,
   },
   {
     slug: "jb-city-centre-vs-ciq",
@@ -189,8 +189,8 @@ export const guides: Guide[] = [
     ogDescription:
       "Comparing JB City Centre and the CIQ corridor for property buyers — connectivity, lifestyle, prices and which location suits you.",
     topics: ["Area definitions", "Head-to-head comparison", "Buyer profiles", "Projects by location"],
-    lastUpdated: "2026-10-10",
-    available: false,
+    lastUpdated: "2026-10-12",
+    available: true,
   },
   {
     slug: "stamp-duty-legal-fees",
@@ -204,8 +204,8 @@ export const guides: Guide[] = [
     ogDescription:
       "Full cost breakdown for buying JB property in 2026 — stamp duty, state levy, legal fees and RPGT for Singapore buyers.",
     topics: ["MOT stamp duty 2026", "State levy table", "SPA legal fee scale", "Full cost summary"],
-    lastUpdated: "2026-10-10",
-    available: false,
+    lastUpdated: "2026-10-12",
+    available: true,
   },
   {
     slug: "malaysia-property-loan-guide",
@@ -219,8 +219,8 @@ export const guides: Guide[] = [
     ogDescription:
       "Can Singapore buyers get a Malaysian bank loan? LTV ratios, income requirements, documents needed and the loan process explained.",
     topics: ["Which banks lend to foreigners", "LTV ratios", "Singapore income documents", "Loan application process"],
-    lastUpdated: "2026-10-10",
-    available: false,
+    lastUpdated: "2026-10-12",
+    available: true,
   },
 ];
 

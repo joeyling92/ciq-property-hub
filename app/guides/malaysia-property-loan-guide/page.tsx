@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const lastUpdated = "10 October 2026";
+const lastUpdated = "12 October 2026";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -33,8 +33,8 @@ const jsonLd = {
         "A practical guide for Singapore buyers on obtaining a Malaysian bank loan for JB property: LTV, income documents, process and key considerations.",
       url: `${siteConfig.url}/guides/malaysia-property-loan-guide`,
       image: `${siteConfig.url}/hero-jb-night.jpg`,
-      datePublished: "2026-10-10T08:00:00+08:00",
-      dateModified: "2026-10-10T08:00:00+08:00",
+      datePublished: "2026-10-12T08:00:00+08:00",
+      dateModified: "2026-10-12T08:00:00+08:00",
       author: { "@type": "Person", name: siteConfig.consultant.name, url: `${siteConfig.url}/terry-toh` },
       publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
       mainEntityOfPage: { "@id": `${siteConfig.url}/guides/malaysia-property-loan-guide#article` },
