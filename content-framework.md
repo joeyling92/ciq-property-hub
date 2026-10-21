@@ -3,7 +3,7 @@
 > **Site:** ciq-property.com · **Operator:** Terry Toh, REN 84844, GT Nelson Realty Sdn Bhd E(1)1836  
 > **Primary audience:** Singapore-based buyers and cross-border commuters researching JB residential property  
 > **Secondary audience:** Malaysian buyers seeking CIQ-corridor investments; Chinese-speaking buyers (MY/SG)  
-> **Last updated:** 2026-10-03
+> **Last updated:** 2026-10-21
 
 ---
 
@@ -437,14 +437,14 @@ Articles are ordered by priority. Mark done with ✅ when published. Add to `lib
 
 | # | Slug | Title | Type | Status |
 |---|------|-------|------|--------|
-| 7 | `walking-distance-ciq` | Condos Within Walking Distance of JB CIQ: All Options Compared | Comparison | ⬜ |
-| 8 | `shuttle-vs-walking` | Shuttle vs Walking Distance: Which JB Property Works Best for Commuters? | Comparison | ⬜ |
-| 9 | `singapore-buyer-minimum-price` | RM600,000 Minimum: What Singapore Buyers Need to Know About JB Property Rules | Buyer Question | ⬜ |
-| 10 | `rental-yield-ciq` | Rental Yield Near JB CIQ: What the Numbers Say | Buyer Question | ⬜ |
-| 11 | `jb-sg-commute-guide` | Living in JB, Working in Singapore: A Realistic Commute Guide | Area Guide | ⬜ |
-| 12 | `jb-city-centre-vs-ciq` | JB City Centre vs CIQ Area: Which Location Is Better for Singapore Buyers? | Comparison | ⬜ |
-| 13 | `stamp-duty-legal-fees` | Stamp Duty and Legal Fees When Buying Property in Malaysia | How-To | ⬜ |
-| 14 | `malaysia-property-loan-guide` | Getting a Property Loan in Malaysia: A Guide for Singapore Buyers | How-To | ⬜ |
+| 7 | `walking-distance-ciq` | Condos Within Walking Distance of JB CIQ: All Options Compared | Comparison | ✅ Published at /guides/walking-distance-ciq |
+| 8 | `shuttle-vs-walking` | Shuttle vs Walking Distance: Which JB Property Works Best for Commuters? | Comparison | ✅ Published at /guides/shuttle-vs-walking |
+| 9 | `singapore-buyer-minimum-price` | RM600,000 Minimum: What Singapore Buyers Need to Know About JB Property Rules | Buyer Question | ✅ Published at /guides/singapore-buyer-minimum-price |
+| 10 | `rental-yield-ciq` | Rental Yield Near JB CIQ: What the Numbers Say | Buyer Question | ✅ Published at /guides/rental-yield-ciq |
+| 11 | `jb-sg-commute-guide` | Living in JB, Working in Singapore: A Realistic Commute Guide | Area Guide | ✅ Published at /guides/jb-sg-commute-guide |
+| 12 | `jb-city-centre-vs-ciq` | JB City Centre vs CIQ Area: Which Location Is Better for Singapore Buyers? | Comparison | ✅ Published at /guides/jb-city-centre-vs-ciq |
+| 13 | `stamp-duty-legal-fees` | Stamp Duty and Legal Fees When Buying Property in Malaysia | How-To | ✅ Published at /guides/stamp-duty-legal-fees |
+| 14 | `malaysia-property-loan-guide` | Getting a Property Loan in Malaysia: A Guide for Singapore Buyers | How-To | ✅ Published at /guides/malaysia-property-loan-guide |
 
 ### Batch C — Project Deep-Dives (one per project)
 
