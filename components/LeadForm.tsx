@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { siteConfig } from "@/lib/siteConfig";
 
+const SHEETS_URL =
+  "https://script.google.com/macros/s/AKfycbxe8AVNov4Go9DFyZcUWDyRvktTF9VnrzJzmhb6r20Wwrv2rAnC48Ruy6i6BCEgtao/exec";
+
 type LeadFormProps = {
   projectName?: string;
 };
@@ -24,6 +27,8 @@ export default function LeadForm({ projectName }: LeadFormProps) {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+
+    // Fire GTM event
     if (typeof window !== "undefined" && (window as any).dataLayer) {
       (window as any).dataLayer.push({
         event: "submit_lead_form",
@@ -32,6 +37,26 @@ export default function LeadForm({ projectName }: LeadFormProps) {
         location: "ciq_jb",
       });
     }
+
+    // Send to Google Sheets (fire and forget — don't block the UI)
+    try {
+      fetch(SHEETS_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify({
+          name: form.name,
+          whatsapp: form.whatsapp,
+          email: form.email,
+          project: form.project,
+          purpose: form.purpose,
+          source: typeof window !== "undefined" ? window.location.href : "",
+        }),
+      });
+    } catch {
+      // silently fail — GTM event already fired, don't block the user
+    }
+
     setSubmitted(true);
   }
 
