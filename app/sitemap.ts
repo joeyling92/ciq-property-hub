@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/projects`, priority: 0.9 },
     { url: `${base}/locations/ciq`, priority: 0.9 },
     { url: `${base}/guides`, priority: 0.8 },
+    { url: `${base}/terry-toh`, priority: 0.8 },
     { url: `${base}/about`, priority: 0.7 },
     { url: `${base}/contact`, priority: 0.8 },
     { url: `${base}/privacy-policy`, priority: 0.3 },

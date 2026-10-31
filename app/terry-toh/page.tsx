@@ -5,17 +5,17 @@ import Breadcrumb from "@/components/Breadcrumb";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 
 export const metadata: Metadata = {
-  title: "Terry Toh | Property Consultant Johor Bahru",
+  title: "Terry Toh | Property Agent Johor Bahru — REN 84844",
   description:
-    "Terry Toh (REN 84844) — registered property consultant under GT Nelson Realty Sdn Bhd, specialising in residential developments across Johor Bahru CIQ, Iskandar Puteri and Kota Masai.",
+    "Terry Toh is a registered property agent in Johor Bahru (REN 84844), licensed under GT Nelson Realty Sdn Bhd. Specialising in CIQ, Bukit Chagar RTS, Iskandar Puteri and JB City Centre. Consults in English, Mandarin and Cantonese.",
   alternates: {
     canonical: `${siteConfig.url}/terry-toh`,
   },
   openGraph: {
-    title: "Terry Toh | Property Consultant Johor Bahru",
+    title: "Terry Toh | Property Agent Johor Bahru — REN 84844",
     description:
-      "Registered property consultant (REN 84844) based in Johor Bahru, specialising in CIQ, Iskandar Puteri and Kota Masai residential developments.",
-    images: [{ url: "/terry-toh.jpg", width: 960, height: 1200, alt: "Terry Toh — Property Consultant" }],
+      "Registered property agent (REN 84844) in Johor Bahru, specialising in CIQ, Bukit Chagar RTS, Iskandar Puteri and JB City Centre. English, Mandarin and Cantonese.",
+    images: [{ url: "/terry-toh.jpg", width: 960, height: 1200, alt: "Terry Toh — Property Agent, Johor Bahru" }],
   },
 };
 
@@ -39,8 +39,19 @@ export default function TerryTohPage() {
         url: `${siteConfig.url}/terry-toh`,
         image: `${siteConfig.url}/terry-toh.jpg`,
         identifier: siteConfig.consultant.ren,
-        description: `Terry Toh is a registered Real Estate Negotiator (${siteConfig.consultant.ren}) under ${siteConfig.consultant.company} and a Johor Bahru property consultant.`,
+        description: `Terry Toh is a registered property agent (Real Estate Negotiator ${siteConfig.consultant.ren}) licensed under ${siteConfig.consultant.company} in Johor Bahru, Malaysia. Specialising in residential developments near JB CIQ, Bukit Chagar RTS, Iskandar Puteri and JB City Centre.`,
         telephone: siteConfig.consultant.phone,
+        knowsLanguage: ["English", "Chinese (Mandarin)", "Chinese (Cantonese)"],
+        knowsAbout: [
+          "Johor Bahru property",
+          "JB CIQ area residential developments",
+          "RTS Link Bukit Chagar property",
+          "Iskandar Puteri new launches",
+          "Singapore buyer property guide Malaysia",
+          "Malaysia property purchase process",
+          "Foreign buyer minimum price Johor",
+          "Freehold serviced apartments Johor Bahru",
+        ],
         worksFor: {
           "@type": "Organization",
           name: siteConfig.consultant.company,
@@ -51,6 +62,7 @@ export default function TerryTohPage() {
           "CIQ",
           "Kota Masai",
           "Johor Bahru City Centre",
+          "Bukit Chagar",
         ],
         sameAs: [
           siteConfig.social.facebook,
@@ -58,6 +70,44 @@ export default function TerryTohPage() {
           siteConfig.social.tiktok,
           siteConfig.social.youtube,
         ].filter(Boolean),
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${siteConfig.url}/terry-toh#faq`,
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "Is Terry Toh a registered property agent in Johor Bahru?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: `Yes. Terry Toh is a registered Real Estate Negotiator under the Board of Valuers, Appraisers, Estate Agents and Property Managers (BOVAEP) Malaysia, with registration number ${siteConfig.consultant.ren}. Terry operates under ${siteConfig.consultant.company}, a licensed real estate agency in Johor Bahru.`,
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What areas does Terry Toh cover in Johor Bahru?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Terry Toh specialises in residential developments across the JB CIQ corridor (Bukit Chagar, near the Sultan Iskandar CIQ checkpoint and Bukit Chagar RTS station), Johor Bahru City Centre, Iskandar Puteri and Kota Masai.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What languages does Terry Toh speak?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Terry Toh consults in English, Mandarin and Cantonese, making it easier for Singapore buyers, Malaysian Chinese buyers and English-speaking expatriates to get guidance on Johor Bahru property.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How do I contact a property agent for JB CIQ property?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: `You can reach Terry Toh directly via WhatsApp at ${siteConfig.consultant.whatsapp}. Terry is a registered property agent (${siteConfig.consultant.ren}) based in Johor Bahru and specialises in CIQ and RTS-corridor properties.`,
+            },
+          },
+        ],
       },
     ],
   };
@@ -128,14 +178,19 @@ export default function TerryTohPage() {
             <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-5">About Terry</h2>
             <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed">
               <p>
-                I&apos;m Terry Toh ({siteConfig.consultant.ren}), a registered property consultant under{" "}
-                {siteConfig.consultant.company}. I&apos;m two years into the industry, focused on residential
-                developments across Johor Bahru — from Iskandar Puteri and the CIQ corridor to Kota Masai.
+                I&apos;m Terry Toh ({siteConfig.consultant.ren}), a registered property agent in Johor Bahru
+                under {siteConfig.consultant.company}. Three years in the industry, focused on residential
+                developments across Johor Bahru — from the CIQ corridor and Bukit Chagar RTS to Iskandar Puteri
+                and Kota Masai.
               </p>
               <p>
-                I set up CIQ Property Hub to give buyers clear, honest information about this specific
-                area, without the noise of a general listing portal. My focus is helping you understand
-                the location, the projects, and the process so you can make a well-informed decision.
+                I consult in English, Mandarin and Cantonese — which helps Singapore buyers, Malaysian
+                Chinese clients and expatriates alike get clear answers without the language barrier.
+              </p>
+              <p>
+                I set up CIQ Property Hub to give buyers honest, specific information about this area
+                — without the noise of a general listing portal. My focus is helping you understand the
+                location, the projects, and the purchase process before you commit.
               </p>
             </div>
           </div>
@@ -209,6 +264,41 @@ export default function TerryTohPage() {
                   <span className="text-sm font-semibold text-[var(--text-primary)]">{s.label}</span>
                   <span className="text-xs text-[var(--text-muted)]">{s.handle}</span>
                 </a>
+              ))}
+            </div>
+          </div>
+
+          {/* FAQ */}
+          <div>
+            <h2 className="font-serif text-2xl font-bold text-[var(--text-primary)] mb-5">Common Questions</h2>
+            <div className="space-y-4">
+              {[
+                {
+                  q: "Is Terry Toh a registered property agent in Johor Bahru?",
+                  a: `Yes. Terry Toh is a registered Real Estate Negotiator (${siteConfig.consultant.ren}) under the Board of Valuers, Appraisers, Estate Agents and Property Managers (BOVAEP) Malaysia, operating under ${siteConfig.consultant.company}.`,
+                },
+                {
+                  q: "What areas does Terry cover?",
+                  a: "The JB CIQ corridor (Bukit Chagar, near the Sultan Iskandar checkpoint and the Bukit Chagar RTS station), Johor Bahru City Centre, Iskandar Puteri and Kota Masai.",
+                },
+                {
+                  q: "What languages does Terry speak?",
+                  a: "English, Mandarin and Cantonese — useful for Singapore buyers, Malaysian Chinese clients and English-speaking expats.",
+                },
+                {
+                  q: "How do I contact Terry?",
+                  a: `WhatsApp is the fastest channel: ${siteConfig.consultant.whatsapp}. Terry typically responds within a few hours during business hours.`,
+                },
+              ].map(({ q, a }) => (
+                <details
+                  key={q}
+                  className="border border-[var(--border)] rounded"
+                >
+                  <summary className="cursor-pointer px-5 py-4 font-medium text-[var(--text-primary)] text-sm select-none list-none">
+                    {q}
+                  </summary>
+                  <p className="px-5 pb-4 text-sm text-[var(--text-secondary)] leading-relaxed">{a}</p>
+                </details>
               ))}
             </div>
           </div>
